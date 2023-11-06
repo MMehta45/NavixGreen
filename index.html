@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Navix</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="general.css">
 </head>
@@ -34,9 +35,62 @@
       We could have a section with like a animiated windmill have it talk about what is green/clean energy why need it whatever really.
     </p>
     <p>We could also do cards like we had on last years page but instead of text and img just do img with text on hover?</p>
-  </div>
-      
+    <div class="section">
+      <div class="image-container">
+        <div class="image" style="background-image: url('imgs/forest_fire.jpg')"></div>
+      </div>
+    </div>
+    <div class="section">
+      <div class="image-container">
+        <div class="image" style="background-image: url('imgs/factorypollution.jpg')"></div>
+      </div>
+    </div>
+    <div class="section">
+      <div class="image-container">
+        <div class="image" style="background-image: url('imgs/hurricanedamge.jpg')"></div>
+      </div>
+    </div>
   <footer>
+    <script>
+      window.onscroll = function() { changeImage() }
+  
+      function changeImage() {
+        var scroll = window.scrollY + (window.innerHeight/3);
+  
+        [...document.getElementsByClassName('section')].forEach(el => {
+          el.classList.remove('active');
+  
+          if(el.offsetTop <= scroll && el.offsetTop + el.offsetHeight > scroll) {
+            el.classList.add('active');
+          }
+        })
+      } changeImage();
+    </script>
+    <script src="index.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        // Disable AOS on mobile devices
+        disable: 'mobile',
+        // Set the duration of the fade effect
+        duration: 1000,
+        // Set the offset for the fade effect
+        offset: 0,
+        // Set the delay for the fade effect
+        delay: 0,
+        // Set the easing function for the fade effect
+        easing: 'ease',
+        // Set the anchor placement for the fade effect
+        anchorPlacement: 'top-center',
+        // Set the callback function for the fade out effect
+        onFadeOut: function(element, instance) {
+          // Replace the first image with the second image
+          element.children[0].src = 'https://picsum.photos/1920/1080?random=1';
+          // Replace the first text with the second text
+          element.children[1].innerHTML = 'This is the second image and text';
+        }
+      });
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
