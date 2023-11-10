@@ -71,14 +71,14 @@ a {
 .bushes {
   background: url('imgs/bigmountain.png') no-repeat center;
   background-size: cover;
-  transform: translateZ(-525px) scale(2.819);
+  transform: translateZ(-525px) scale(2.75);
   z-index: 2;
 }
 
 .water {
   background: url('imgs/betweenmountain.png') no-repeat center;
   background-size: cover;
-  transform: translateZ(-469px) scale(2.592);
+  transform: translateZ(-400px) scale(2.33333333);
   z-index: 3;
 }
 
