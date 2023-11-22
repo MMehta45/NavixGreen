@@ -257,13 +257,41 @@ a {
   }
 }
 
- /* Custom CSS for the 2x2 grid */
+ /* Styles for the card */
  
-.card {
-  flex: 1;
-  margin: 10px 0;
-  width: 100%;
-}
 .container{
   margin-top: 100px;
+}
+.card{
+  height: fit-content;
+  width: 50%;
+  transition: all 1s ease-in-out ;
+  margin-bottom: 5px;
+}
+
+.card:hover {
+  /* Change the background color on hover */
+  background-color:#00AC51;
+  border:none;
+}
+
+.icon{
+  margin-bottom:20px;
+}
+.icon2{
+  display: none;
+  width: 100%;
+}
+.card:hover .icon {
+  /* Hide the first icon on hover */
+  transition: display 1s ease-in-out;
+  display: none;
+ 
+}
+.card:hover .icon2 {
+  /* Show the second icon on hover */
+  display: inline-block;
+}
+.card:hover .card-body{
+  color: #fff;
 }
