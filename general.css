@@ -1,0 +1,11 @@
+#logo {
+    height: 200px;
+}
+.navbar{
+    max-height: 125px;
+    background-color: azure;
+}
+.navbar-nav{
+    margin: auto;
+    
+}
