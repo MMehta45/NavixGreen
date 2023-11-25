@@ -1,7 +1,17 @@
-/* Logo Colors
+/* IMPORTANT
+Logo Colors
 #05783F
 #00AD51
 #79C253
+
+2 fonts 
+    Montserrat for all titles
+    Karla for p
+    USE BOOTSTRAP DISPLAYS 
+
+-Build mobile friendly
+-Add img sources to about page as you go 
+- Go for a relativy minimalistc look
 */
 #logo {
     height: 200px;
@@ -13,4 +23,33 @@
 .navbar-nav{
     margin: auto;
     
+}
+.navix_rounded_image {
+    border-radius: 3%;
+}
+.nav-link{
+    display: block;
+    padding-bottom: .25rem;
+    position: relative;
+}
+
+.nav-link::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: aliceblue;
+    transition: width 0.25s ease-out;
+}
+.nav-link:hover::before{
+    width: 100%;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Montserrat', sans-serif;
+}
+p{
+    font-family: 'Karla', sans-serif;
+
 }
