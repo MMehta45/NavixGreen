@@ -295,3 +295,14 @@ a {
 .card:hover .card-body{
   color: #fff;
 }
+#section_2{
+  background-color:#00AD51;
+  padding: 50px;
+}
+.title_area{
+  padding-top:25px;
+}
+.section_2_container{
+  padding-bottom:40px;
+ 
+}
