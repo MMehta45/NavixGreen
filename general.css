@@ -55,3 +55,35 @@ p{
     font-family: 'Karla', sans-serif;
 
 }
+
+.slant-container {
+    position: relative;
+    overflow: hidden;
+   
+  }
+  
+  .slant-container::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background:#357960;
+    transform: skewY(5deg);
+    transform-origin: left top;
+    
+  }
+  .slant-content {
+    position: relative;
+    top: 20%;
+    left: 10%;
+    color: white;
+    
+  }
+  .on_top{
+    font-size:20px;
+    font-weight: bold;
+    display: block;
+    
+  }
