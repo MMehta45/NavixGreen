@@ -1,0 +1,118 @@
+<!-- this is andrew im just trying to learn the basics of web development pls dont judge me for this garbage code -->
+<!-- this file is temporary pls tell me if u want it gone -->
+<!DOCTYPE html>
+<html class="no-js">
+  <head>
+    <title>test</title>
+    <link rel="icon" href="imgs\Background.png" type="image/x-icon">
+  </head>
+  <style>
+    body {
+      background-color: gray;
+      display: inline-block;
+    }
+    .b1{
+      background-color: red;
+      border: 5px solid;
+      position: absolute;
+      top: 50%;
+      left: 80%;
+      padding-top: 200px;
+      padding-left: 100px;
+      transition: all 0.25s;
+      color: white;
+    }
+
+    .b1:hover {
+      color: brown;
+      background-color: orange;
+      padding-bottom: 100px;
+      padding-right: 100px;
+      text-transform:uppercase;
+    }
+
+    .b1:active {
+      text-shadow: 100px;
+      border-bottom-width: 50px;
+      color: green;
+    }
+
+    .b2 {
+      position: inherit;
+      top: 50%;
+    }
+    #b3 {
+      position: absolute;
+      top: 70%;
+      height: 50px;
+      width: 100px;
+      color:blue;
+      background-color: brown;
+      transition: 1s;
+      perspective: 100px;
+    }
+  </style>
+  <body>
+    <button class="button b1" onclick="test()">put nature stuff</button>
+    <button class="button b2" onclick="clear1()">clear</button>
+    <button id="b3" onclick="go()">go</button>
+
+  </body>
+  <script>
+    let w = 1
+    function go() {
+      const e = document.getElementById("b3").style
+      e.top = "50%"
+      e.left = "50%"
+      
+      e.transform = choose_axis() + String(180 * w) + "deg)"      
+      e.width = String(w*1.1 + 50) + "px"
+      e.height = String(w*1.1 + 50) + "px"
+      w++
+    }    
+
+    let a = 0;
+    let c = 0;
+    function test() {
+      const b = document.createElement("img");
+      b.id = String(a);
+      console.log(b.id)
+      b.width = String(100);
+      b.height = String(75 + a)
+      b.innerHTML = a;
+      b.src = choose_image();
+      
+
+      document.querySelector("body").appendChild(b);
+
+      a++;
+    }
+  
+    function choose_image() {
+      const pics = ["imgs/Background.png", "imgs/betweenmountain.png", "imgs/bigmountain.png",
+      "imgs/mountain1.png", "imgs/trees.png", "imgs/green_plant.jpg", "imgs/trees.png", "imgs/sky1.png"]
+      var final = pics[Math.floor(pics.length * Math.random())]
+      // console.log(final)
+      return final
+    }
+    
+    function choose_axis() {
+      const l = ["rotateX(", "rotateY(", "rotateZ("]
+      return l[Math.floor(l.length * Math.random())]
+
+    }
+
+    function clear1() {
+      document.getElementById("b3").style.width = "100px"
+      document.getElementById("b3").style.transform = "rotateX(360deg)"
+      for (let i = a-1; i >= 0; i--) {
+        const p = document.getElementById(String(i));
+        p.remove();
+        
+      }
+      a = 0
+      // w = 0
+    }
+
+</script>
+</html>
