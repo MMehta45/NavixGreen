@@ -1,89 +1,230 @@
+<!--READ THE COMMENTS IN GENERAL STYLES-->
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome to Firebase Hosting</title>
+<html class="no-js">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Home | Navix</title>
+        <!--Stylesheets! DO NOT DELETE-->
+        <!--General Stylesheet--><link rel="stylesheet" href="css/general-style.css">
+        <!--Index Stylesheet--><link rel="stylesheet" href="css/index-style.css">
+        <!--Bootstrap v5.3--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <!--Hover.css v2.3.1--><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover.css" integrity="sha512-Qg72y9f1a3aVc1FVnjq5YURLOOG8fDKQjMnhxYaZgBz4nIVjpVOBUtuMMMqkZPS1FlVrzzEBXq2sM6Qp1zen/Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!--AOS v2.3.1--><link  rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    </head>
+    <body>
+        <!--  
+        <div class="wrapper">
+            <div class="parallax__group hero-container">
+                <div class="parallax__layer sky"></div>
+                <div class="parallax__layer bushes"></div>
+                <div class="parallax__layer water"></div>
+                <div class="parallax__layer people1"></div>
+                <div class="parallax__layer people2"></div>
+                <div class="parallax__layer people3"></div>
+                <div class="parallax__layer hero-text">
+                    <div class="year-container">
+                        <h1>NAVIX</h1>
+                        <h2>Go Green</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        -->
+        
+        <div class="parallax__group">
+            <!--Margin Top Temp while we figure out parralax-->
+            <div style="margin-top: 800px;">
+                <nav class="navbar navbar-expand-lg ">
+                    <div class="container-fluid">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                            <div class="navbar-nav" style="display: flex; justify-content: center; align-items: center;">
+                                <a class="nav-link" href="index.html">Home</a>
+                                <a class="nav-link" href="blog.html">Blog</a>
+                                <a class="nav-link" href="history.html">History</a>
+                                <a class="nav-link" href="why-switch.html">Why Switch?</a>
+                                <a class="navbar-brand" href="#" style="margin: 0 20px;">
+                                    <img src="img/logo/NavixLogo_NoBG_BlackText.png" class="d-inline-block" id="logo">
+                                </a>
+                                <div class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="solutions/solutions.html" role="button" data-bs-toggle="toggle">Our Solutions</a>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" href="solutions/solar.html">Solar Energy</a>
+                                        <a class="dropdown-item" href="solutions/wind.html">Wind Energy</a>
+                                        <a class="dropdown-item" href="solutions/geothermal.html">Geothermal Energy</a>
+                                        <a class="dropdown-item" href="solutions/micro-hydro.html">Microhydro Systems</a>
+                                    </div>
+                                </div>
+                                <a class="nav-link" href="providers.html">Providers</a>
+                                <a class="nav-link" href="pricing-calculator.html">Pricing Calculator</a>
+                                <a class="nav-link" href="about.html">About</a>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
 
-    <!-- update the version number as needed -->
-    <script defer src="/__/firebase/10.7.1/firebase-app-compat.js"></script>
-    <!-- include only the Firebase features as you need -->
-    <script defer src="/__/firebase/10.7.1/firebase-auth-compat.js"></script>
-    <script defer src="/__/firebase/10.7.1/firebase-database-compat.js"></script>
-    <script defer src="/__/firebase/10.7.1/firebase-firestore-compat.js"></script>
-    <script defer src="/__/firebase/10.7.1/firebase-functions-compat.js"></script>
-    <script defer src="/__/firebase/10.7.1/firebase-messaging-compat.js"></script>
-    <script defer src="/__/firebase/10.7.1/firebase-storage-compat.js"></script>
-    <script defer src="/__/firebase/10.7.1/firebase-analytics-compat.js"></script>
-    <script defer src="/__/firebase/10.7.1/firebase-remote-config-compat.js"></script>
-    <script defer src="/__/firebase/10.7.1/firebase-performance-compat.js"></script>
-    <!-- 
-      initialize the SDK after all desired features are loaded, set useEmulator to false
-      to avoid connecting the SDK to running emulators.
-    -->
-    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+        <!--The Basics Section-->
+        <div class="container">
+            <h1 class="text-center display-2">The Basics</h1>
+            <div class="d-flex flex-row align-items-center justify-content-evenly row mt-3 mt-md-5 mb-md-5 mb-0" data-aos="fade-left">
+                <div class="col-md-6 col-12">
+                    <img class="navix_rounded_image img-fluid" src="img/green_plant.jpg" style="width: 100%;">
+                </div>
+                <div class="col-md-6 col-12 flex-grow-1 text-center px-5 py-2">
+                    <h1 class=" display-5 mt-md-0">
+                        What is Green Energy?
+                    </h1>
+                    <p class="lead">
+                        A cleaner more sustainable way <br class="d-md-none d-block">of living.
+                    </p>
+                    <p>
+                        Green energy is an energy generated from natural sources without harming the natural environment.
+                        These sources are often renewable meaning they are repleshined naturally and will not run out.
+                        Homeowners have many options when it comes to supplying their home with green power, with the 2 most common being Green Pricing & Self Supply.
+                    </p>
+                </div>
+            </div>
+            <div class="d-flex flex-row align-items-center justify-content-evenly row mt-3 mt-md-0 mb-md-5 mb-0" data-aos="fade-right">
+                <div class="col-md-6 col-12 d-md-none d-block">
+                    <img class="navix_rounded_image img-fluid" src="img/power_lines.jpg" style="width: 100%;">
+                </div>
+                <div class="col-md-6 col-12 flex-grow-1 text-center px-5 py-2">
+                    <h1 class="display-5 mt-2 mt-md-0">
+                        What is Green Pricing?
+                    </h1>
+                    <p class="lead">
+                        Simple. Affordable. <br class="d-md-none d-block">Quick.
+                    </p>
+                    <p>
+                        Many homeowners have the option to opt in for green power for their electricity. Referred to as green pricing or utility green power products these are offered directly through your utility provider.
+                        Some homeowners live in de-regulated electricity markets. In these markets you have the option to purchase green energy from an alternative provider other than your default utility provider.
+                        Learn more about what Green Pricing is & state specific info <a href="" style="text-decoration: none;">here</a>
+                    </p>
+                </div>
+                <div class="col-md-6 col-12 d-md-block d-none">
+                    <img class="navix_rounded_image img-fluid" src="img/power_lines.jpg" style="width: 100%;">
+                </div>
+            </div>
+            <div class="d-flex flex-row align-items-center justify-content-evenly row mt-3 mt-md-0 mb-3 mb-md-5" data-aos="fade-left">
+                <div class="col-md-6 col-12">
+                    <img class="navix_rounded_image img-fluid" src="img/rooftop_solar.jpg" style="width: 100%;"> 
+                </div>
+                <div class="col-md-6 col-12 flex-grow-1 text-center px-5 py-2">
+                    <h1 class="display-5 mt-2 mt-md-0">
+                        What is Self Supply?
+                    </h1>
+                    <p class="lead">
+                        For those who live <br class="d-md-none d-block"> DIY.
+                    </p>
+                    <p>
+                        As the name implies self-supply is for households who want to provide their own green power. From solar panels to geothermal plants there's many options. Learn more about the self supply options that are available to you <a href="" style="text-decoration: none;">here</a>.
+                    </p>
+                </div>
+            </div>
+            <!--Button Placeholder-->
+        </div>
+     
+        <section class=" slant-container">
+            <div class="slant-content container">
+                <p class="on_top">The Numbers</p>
+                <h2 class="display-4">A World On Fire</h2>
+                <p class="lead">
+                    Climate change is one of the most urgent<br>and complex challenges facing humanity today. It affects every aspect of our lives,<br> from our health and well-being, to our economy and environment.
+                </p>
+            </div>
+        </section>
+        
+        <!--Cards Start HERE!-->
+        <div class="container">
+            <div class="row">
+                <div class=" col-4">
+                    <h2 class="display-3">Switching Made Easy <br> With Navix</h2>
+                    <p class="lead">Navix provides the tools and info to help you switch quick and easy.  </p>
+                </div>
+                <div class=" col-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <i class="fa-solid fa-toggle-off fa-2xl icon" style="color:#00AD51"></i>
+                            <h4 class="card-title">Why Should You Switch?</h4>
+                            <p class="card-text">Explore the benefits of green energy and see the impact you'd be making on the world.</p>
+                            <i class="fa-solid fa-arrow-right-long fa-2xl icon2" style="color: #ffffff;"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class=" col-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <i class="fa-solid fa-bolt fa-2xl icon" style="color:#00AD51"></i>
+                            <h4 class="card-title">Green Energy Solutions</h4>
+                            <p class="card-text">Explore green and clean energy solutions for your home.</p>
+                            <i class="fa-solid fa-arrow-right-long fa-2xl icon2" style="color: #ffffff;"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class=" col-4"></div>
+                <div class=" col-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <i class="fa-solid fa-square-rss fa-2xl icon" style="color:#00AD51"></i>
+                            <h4 class="card-title">Blog</h4>
+                            <p class="card-text">Explore our blog, full of diy green and clean practices. Know something we don't? Add your own posts!</p>
+                            <i class="fa-solid fa-arrow-right-long fa-2xl icon2" style="color: #ffffff;"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class=" col-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <i class="fa-solid fa-wrench fa-2xl icon" style="color:#00AD51"></i>
+                            <h4 class="card-title">Tools</h4>
+                            <p class="card-text">Explore Navix's full set of tools to help you switch easier.</p>
+                            <i class="fa-solid fa-arrow-right-long fa-2xl icon2" style="color: #ffffff;"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-    <style media="screen">
-      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
-      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
-      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
-      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
-      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
-      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
-      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
-      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
-      @media (max-width: 600px) {
-        body, #message { margin-top: 0; background: white; box-shadow: none; }
-        body { border-top: 16px solid #ffa100; }
-      }
-    </style>
-  </head>
-  <body>
-    <div id="message">
-      <h2>Welcome</h2>
-      <h1>Firebase Hosting Setup Complete</h1>
-      <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!</p>
-      <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
-    </div>
-    <p id="load">Firebase SDK Loading&hellip;</p>
 
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        const loadEl = document.querySelector('#load');
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-        // // The Firebase SDK is initialized and available here!
-        //
-        // firebase.auth().onAuthStateChanged(user => { });
-        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
-        // firebase.firestore().doc('/foo/bar').get().then(() => { });
-        // firebase.functions().httpsCallable('yourFunction')().then(() => { });
-        // firebase.messaging().requestPermission().then(() => { });
-        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
-        // firebase.analytics(); // call to activate
-        // firebase.analytics().logEvent('tutorial_completed');
-        // firebase.performance(); // call to activate
-        //
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
 
-        try {
-          let app = firebase.app();
-          let features = [
-            'auth', 
-            'database', 
-            'firestore',
-            'functions',
-            'messaging', 
-            'storage', 
-            'analytics', 
-            'remoteConfig',
-            'performance',
-          ].filter(feature => typeof app[feature] === 'function');
-          loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
-        } catch (e) {
-          console.error(e);
-          loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
-        }
-      });
-    </script>
-  </body>
+        <!--Scripts! DO NOT DELETE-->
+        <!--General JS Script--><script src="js/general-js.js"></script>
+        <!--Index JS Script--><script src="js/index-js.js"></script>
+        <!--Popper JS (required for Boostrap)--><script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+        <!--Bootstrap JS--><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+        <!--Font Awesome--><script src="https://kit.fontawesome.com/9a3636e96b.js" crossorigin="anonymous"></script>
+        <!--AnimeJS v3.2.2--><script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.2/anime.js" integrity="sha512-FSNQjUUq97PtDnAJyMlBTH8EhV4o5X5FLVbzS9ttrdEVVbmrssJBh/PgXFQbxS+6yYx5n5irOj7de6Th0TRQZA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <!--AOS--><script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script><script>AOS.init();</script>
+        <script type="module">
+          // Import the functions you need from the SDKs you need
+          import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
+          import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-analytics.js";
+          // TODO: Add SDKs for Firebase products that you want to use
+          // https://firebase.google.com/docs/web/setup#available-libraries
+        
+          // Your web app's Firebase configuration
+          // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+          const firebaseConfig = {
+            apiKey: "AIzaSyAL7mqwOiCME-_WB670N1pLJmiNoCMQluM",
+            authDomain: "navix-energy-39903.firebaseapp.com",
+            projectId: "navix-energy-39903",
+            storageBucket: "navix-energy-39903.appspot.com",
+            messagingSenderId: "1010785463871",
+            appId: "1:1010785463871:web:9420cfe22d1938adad528a",
+            measurementId: "G-XYLSK6C6T2"
+          };
+        
+          // Initialize Firebase
+          const app = initializeApp(firebaseConfig);
+          const analytics = getAnalytics(app);
+        </script>
+    </body>
 </html>
