@@ -1,34 +1,38 @@
 /* IMPORTANT
- Colors - Dark To Light
+Colors - Dark To Light
 #357960
 #00AD51
 #79C253
 #02ec88
 
 
-2 fonts 
-    Montserrat for all titles
-    Karla for p
-    USE BOOTSTRAP DISPLAYS 
+2 fonts:
+Montserrat for all titles [USE BOOTSTRAP DISPLAYS]
+Karla for text
 
--Build mobile friendly
--Add img sources to about page as you go 
-- Go for a relativy minimalistc look
+Important Points:
+- Build using responsive design!
+- Add image sources to documentation page as you go!
+- A relatively minimalistic look is recommended!
 */
+
 #logo {
     height: 200px;
 }
+
+.navix_rounded_image {
+    border-radius: 3%;
+}
+
 .navbar{
     max-height: 125px;
     background-color: azure;
 }
+
 .navbar-nav{
-    margin: auto;
-    
+    margin: auto; 
 }
-.navix_rounded_image {
-    border-radius: 3%;
-}
+
 .nav-link{
     display: block;
     padding-bottom: .25rem;
@@ -45,22 +49,23 @@
     background-color: aliceblue;
     transition: width 0.25s ease-out;
 }
+
 .nav-link:hover::before{
     width: 100%;
 }
-h1,h2,h3,h4,h5,h6{
+
+h1, h2, h3, h4, h5, h6{
     font-family: 'Montserrat', sans-serif;
 }
+
 p{
     font-family: 'Karla', sans-serif;
-
 }
 
 .slant-container {
     position: relative;
     overflow: hidden;
-   
-  }
+}
   
   .slant-container::before {
     content: "";
@@ -72,18 +77,17 @@ p{
     background:#357960;
     transform: skewY(5deg);
     transform-origin: left top;
-    
   }
+
   .slant-content {
     position: relative;
     top: 20%;
     left: 10%;
     color: white;
-    
   }
+
   .on_top{
     font-size:20px;
     font-weight: bold;
     display: block;
-    
   }

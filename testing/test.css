@@ -1,23 +1,19 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
 
-@font-face {
-  font-family: Bebas;
-  src: url('BebasKai-Regular.otf');
-}
+
 
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-
 }
 
 html,
 body {
-  width:100%;
+  width: 100%;
   height: 100%;
   color: #fff;
-  /*background-color: rgba(71, 148, 45, 0.867);*/
+  background-color: rgba(71, 148, 45, 0.867);
   font-family: Montserrat, Arial, Helvetica, sans-serif;
   font-weight: 700;
 }
@@ -35,7 +31,7 @@ a {
 }
 
 .btn:hover {
-  color:white;
+  color: #000;
   background: #fff;
 }
 
@@ -49,7 +45,7 @@ a {
 .parallax__group {
   position: relative;
   height: 100vh;
-  width: 100%;
+  width: 100vw;
   transform-style: preserve-3d;
 }
 
@@ -62,42 +58,42 @@ a {
 }
 
 .sky {
-  background: url('imgs/sky1.png') no-repeat center;
+  background: url('../img/home-parallax/HomeParallaxImage5_Sky.png') no-repeat center;
   background-size: cover;
   transform: translateZ(-600px) scale(3);
   z-index: 1;
 }
 
 .bushes {
-  background: url('imgs/bigmountain.png') no-repeat center;
+  background: url('../img/home-parallax/HomeParallaxImage3_BigMountain.png') no-repeat center;
   background-size: cover;
   transform: translateZ(-525px) scale(2.75);
   z-index: 2;
 }
 
 .water {
-  background: url('imgs/betweenmountain.png') no-repeat center;
+  background: url('../img/home-parallax/HomeParallaxImage2_BetweenMountains.png') no-repeat center;
   background-size: cover;
   transform: translateZ(-400px) scale(2.33333333);
   z-index: 3;
 }
 
 .people1 {
-  background: url('imgs/mountain1.png') no-repeat center;
+  background: url('../img/home-parallax/HomeParallaxImage4_SmallMountains.png') no-repeat center;
   background-size: cover;
   transform: translateZ(-250px) scale(1.833333333);
   z-index: 4;
 }
 
 .people2 {
-  background: url('imgs/treesbehindtrees.png') no-repeat center;
+  background: url('../img/home-parallax/HomeParallaxImage6_TreesBehindTrees.png') no-repeat center;
   background-size: cover;
   transform: translateZ(-125px) scale(1.4167);
   z-index: 5;
 }
 
 .people3 {
-  background: url('imgs/trees.png') no-repeat center;
+  background: url('../img/home-parallax/HomeParallaxImage7_Trees.png') no-repeat center;
   background-size: cover;
   transform: translateZ(0) scale(1);
   z-index: 6;
@@ -141,7 +137,7 @@ a {
 
 .year-container {
   position: absolute;
-  left: 44%;
+  left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
   width: 17rem;
@@ -154,22 +150,24 @@ a {
   position: absolute;
   font-size: 12.5rem;
 }
-.year-container h2{
-  font-family: Bebas, sans-serif;
-  font-weight: 200;
-  position: absolute;
-  font-size: 3.5rem;
-  top: 50%;
-  left: 35%;
-}
 
 .year-container h1:nth-of-type(1) {
-  top: 2%;
+  top: 10%;
 }
 
 .year-container h1:nth-of-type(2) {
-  left: 25%;
+  left: 30%;
   bottom: 0;
+}
+
+.year-container h1:nth-of-type(3) {
+  top: 0;
+  right: 30%;
+}
+
+.year-container h1:nth-of-type(4) {
+  right: 0;
+  bottom: 20%;
 }
 
 .social-container {
@@ -184,7 +182,7 @@ a {
 }
 
 .info-container {
-  background: white;
+  background: #000;
   transform: translateZ(0) scale(1);
   z-index: 8;
   display: flex;
@@ -255,55 +253,4 @@ a {
   .hero-text {
     background-size: contain;
   }
-}
-
- /* Styles for the card */
- 
-.container{
-  margin-top: 100px;
-}
-.card{
-  height: fit-content;
-  width: 50%;
-  transition: all 1s ease-in-out ;
-  margin-bottom: 5px;
-}
-
-.card:hover {
-  /* Change the background color on hover */
-  background-color:#00AC51;
-  border:none;
-}
-
-.icon{
-  margin-bottom:20px;
-}
-.icon2{
-  display: none;
-  width: 100%;
-}
-.card:hover .icon {
-  /* Hide the first icon on hover */
-  transition: display 1s ease-in-out;
-  display: none;
- 
-}
-.card:hover .icon2 {
-  /* Show the second icon on hover */
-  display: inline-block;
-}
-.card:hover .card-body{
-  color: #fff;
-}
-#section_2{
-  background-color:#357960;
-  padding: 50px;
-}
-.title_area{
-  padding-top:25px;
-  
-}
-.section_2_container{
-  padding-bottom:40px;
- 
 }
