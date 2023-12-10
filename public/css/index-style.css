@@ -25,6 +25,14 @@ a {
   color: #fff;
 }
 
+hr {
+  border: none;
+  height: 1px;
+  background-color: #000; /* Set the color of the horizontal rule */
+  width: 100%; /* Make the hr element extend the full width of its container */
+  margin: 0; /* Remove default margin */
+}
+
 .btn {
   border: 1.5px solid #fff;
   border-radius: 0.75rem;
