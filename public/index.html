@@ -36,38 +36,50 @@
         <div class="parallax__group">
             <!--Margin Top Temp while we figure out parralax-->
             <div style="margin-top: 800px;">
-                <nav class="navbar navbar-expand-lg ">
+                <nav class="navbar navbar-expand-lg sticky-top navbar-dark main_pagetop_navbar_background">
                     <div class="container-fluid">
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                            <div class="navbar-nav" style="display: flex; justify-content: center; align-items: center;">
-                                <a class="nav-link" href="index.html">Home</a>
-                                <a class="nav-link" href="blog.html">Blog</a>
-                                <a class="nav-link" href="history.html">History</a>
-                                <a class="nav-link" href="why-switch.html">Why Switch?</a>
-                                <a class="navbar-brand" href="#" style="margin: 0 20px;">
-                                    <img src="img/logo/NavixLogo_NoBG_BlackText.png" class="d-inline-block" id="logo">
-                                </a>
-                                <div class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="solutions/solutions.html" role="button" data-bs-toggle="toggle">Our Solutions</a>
-                                    <div class="dropdown-menu">
-                                        <a class="dropdown-item" href="solutions/solar.html">Solar Energy</a>
-                                        <a class="dropdown-item" href="solutions/wind.html">Wind Energy</a>
-                                        <a class="dropdown-item" href="solutions/geothermal.html">Geothermal Energy</a>
-                                        <a class="dropdown-item" href="solutions/micro-hydro.html">Microhydro Systems</a>
+                        <a class="navbar-brand" href="index.html">
+                            <img src="img/logo/NavixLogo_NoBG_BlackText.png" class="d-inline-block" id="logo">
+                        </a>
+                        
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav ms-auto">
+                                <li class="nav-item" id="seperator">
+                                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                                </li>
+                                <li class="nav-item dropdown" id="seperator">
+                                    <a class="nav-link dropdown-toggle" href="solutions/solutions.html" id="toursandpricing" aria-haspopup="true" aria-expanded="false">
+                                        Green Energy &amp; Solutions
+                                    </a>
+                                    <div class="dropdown-menu dropdown-menu-dark" aria-labelledby="toursandpricing">
+                                        <a class="dropdown-item text-white-100" href="solutions/greenpricing.html">Green Pricing</a>
+                                        <a class="dropdown-item text-white-100" href="solutions/solar.html">Solar Power</a>
+                                        <a class="dropdown-item text-white-100" href="solutions/wind.html">Wind Energy</a>
+                                        <a class="dropdown-item text-white-100" href="solutions/geothermal.html">Geothermal Power</a>
+                                        <a class="dropdown-item text-white-100" href="solutions/micro-hydro.html">Microhydro Power</a>
                                     </div>
-                                </div>
-                                <a class="nav-link" href="providers.html">Providers</a>
-                                <a class="nav-link" href="pricing-calculator.html">Pricing Calculator</a>
-                                <a class="nav-link" href="about.html">About</a>
-                            </div>
+                                </li>
+                                <li class="nav-item" id="seperator">
+                                    <a class="nav-link" href="blog.html">Green Energy Practices</a>
+                                </li>
+                                <li class="nav-item" id="seperator">
+                                    <a class="nav-link" href="energystar.html">Energy Star</a>
+                                </li>
+                                <li class="nav-item" id="seperator">
+                                    <a class="nav-link" href="history.html">History</a>
+                                </li>
+                                <li class="nav-item" id="seperator">
+                                    <a class="nav-link" href="why-switch.html" tabindex="-1">Your Impact</a>
+                                </li>
+                                <li class="nav-item" id="seperator">
+                                    <a class="nav-link" href="about.html">About</a>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </nav>
-            </div>
-        </div>
+                </div>
+                </div>
 
         <!--The Basics Section-->
         <div class="container">
