@@ -278,7 +278,8 @@ hr {
 .card:hover {
   /* Change the background color on hover */
   background-color:#00AC51;
-  border:none;
+  /* border:none; */
+  border-color: #00AC51;
 }
 
 .icon{
@@ -291,7 +292,8 @@ hr {
 .card:hover .icon {
   /* Hide the first icon on hover */
   transition: display 1s ease-in-out;
-  display: none;
+  opacity: 0%;
+  /* display: none; */
  
 }
 .card:hover .icon2 {
