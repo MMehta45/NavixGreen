@@ -1,60 +1,273 @@
+<!--READ THE COMMENTS IN GENERAL STYLES-->
 <!DOCTYPE html>
 <html class="no-js">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>2019</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="../css/test.css" />
-    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet"/>
-  </head>
-  <body>
-    <div class="wrapper">
-      <div class="parallax__group hero-container">
-        <div class="parallax__layer sky"></div>
-        <div class="parallax__layer bushes"></div>
-        <div class="parallax__layer water"></div>
-        <div class="parallax__layer people1"></div>
-        <div class="parallax__layer people2"></div>
-        <div class="parallax__layer people3"></div>
-        <div class="parallax__layer hero-text">
-          <h2>Level Up Inc.</h2>
-          <ul>
-            <li><a href="#">Passions</a></li>
-            <li><a href="#">Goals</a></li>
-            <li><a href="#" class="btn">Get Started Now</a></li>
-          </ul>
-          <div class="year-container">
-            <h1>2</h1>
-            <h1>0</h1>
-            <h1>1</h1>
-            <h1>9</h1>
-          </div>
-          <div class="social-container">
-            <a href="https://github.com/KiaanCastillo" target="_blank"
-              ><i class="icon ion-logo-github"></i
-            ></a>
-            <a href="https://www.instagram.com/craftedbykiaan/" target="_blank"
-              ><i class="icon ion-logo-instagram"></i
-            ></a>
-            <a href="https://dribbble.com/kiaancastillo" target="_blank"
-              ><i class="icon ion-logo-dribbble"></i
-            ></a>
-            <a href="https://www.youtube.com/c/KiaanCastillo" target="_blank"
-              ><i class="icon ion-logo-youtube"></i
-            ></a>
-          </div>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Home | Navix</title>
+        <!--Stylesheets! DO NOT DELETE-->
+        <!--General Stylesheet--><link rel="stylesheet" href="css/general-style.css">
+        <!--Index Stylesheet--><link rel="stylesheet" href="css/index-style.css">
+        <!--Bootstrap v5.3--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <!--Hover.css v2.3.1--><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover.css" integrity="sha512-Qg72y9f1a3aVc1FVnjq5YURLOOG8fDKQjMnhxYaZgBz4nIVjpVOBUtuMMMqkZPS1FlVrzzEBXq2sM6Qp1zen/Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!--AOS v2.3.1--><link  rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    </head>
+    <body>
+        <!--  
+        <div class="wrapper">
+            <div class="parallax__group hero-container">
+                <div class="parallax__layer sky"></div>
+                <div class="parallax__layer bushes"></div>
+                <div class="parallax__layer water"></div>
+                <div class="parallax__layer people1"></div>
+                <div class="parallax__layer people2"></div>
+                <div class="parallax__layer people3"></div>
+                <div class="parallax__layer hero-text">
+                    <div class="year-container">
+                        <h1>NAVIX</h1>
+                        <h2>Go Green</h2>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-      <div class="parallax__group info-container">
-        <img src="../img/concert.jpg" alt="Lively and colourful concert" />
-        <div class="text-container">
-          <h2>This is your year.</h2>
-          <p>What would life be if we had no courage to attempt anything?</p>
-          <p>- Vincent Van Gogh</p>
-          <a href="#" class="btn">Get Started Now</a>
+        -->
+        
+        <div class="parallax__group">
+            <!--Margin Top Temp while we figure out parralax-->
+            <div>
+                <nav class="navbar navbar-expand-lg sticky-top navbar-dark main_pagetop_navbar_background">
+                    <div class="container-fluid">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                          </button>
+                        <a class="navbar-brand" href="index.html">
+                            <img src="img/logo/NavixLogo_NoBG_WhiteText.png" class="d-inline-block" id="logo">
+                        </a>
+                        
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav ms-auto">
+                                <li class="nav-item" id="seperator">
+                                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                                </li>
+                                <li class="nav-item dropdown" id="seperator">
+                                    <a class="nav-link dropdown-toggle" href="solutions/solutions.html" id="toursandpricing" aria-haspopup="true" aria-expanded="false">
+                                        Green Energy Solutions
+                                    </a>
+                                    <div class="dropdown-menu dropdown-menu-dark" aria-labelledby="toursandpricing">
+                                        <a class="dropdown-item text-white-100" href="solutions/greenpricing.html">Green Pricing</a>
+                                        <a class="dropdown-item text-white-100" href="solutions/solar.html">Solar Power</a>
+                                        <a class="dropdown-item text-white-100" href="solutions/wind.html">Wind Energy</a>
+                                        <a class="dropdown-item text-white-100" href="solutions/geothermal.html">Geothermal Power</a>
+                                        <a class="dropdown-item text-white-100" href="solutions/micro-hydro.html">Microhydro Power</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item" id="seperator">
+                                    <a class="nav-link" href="blog.html">Green Energy Practices</a>
+                                </li>
+                                <li class="nav-item" id="seperator">
+                                    <a class="nav-link" href="energystar.html">Energy Star</a>
+                                </li>
+                                <li class="nav-item" id="seperator">
+                                    <a class="nav-link" href="history.html">History</a>
+                                </li>
+                                <li class="nav-item" id="seperator">
+                                    <a class="nav-link" href="why-switch.html" tabindex="-1">Your Impact</a>
+                                </li>
+                                <li class="nav-item" id="seperator">
+                                    <a class="nav-link" href="about.html">About</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+                </div>
+                </div>
+
+        <!--The Basics Section-->
+        <div class="container">
+            <h1 class="text-center display-2">The Basics</h1>
+            <div class="d-flex flex-row align-items-center justify-content-evenly row mt-3 mt-md-5 mb-md-5 mb-0" data-aos="fade-left">
+                <div class="col-md-6 col-12">
+                    <img class="navix_rounded_image img-fluid" src="img/green_plant.jpg" style="width: 100%;">
+                </div>
+                <div class="col-md-6 col-12 flex-grow-1 text-center px-5 py-2">
+                    <h1 class=" display-5 mt-md-0">
+                        What is Green Energy?
+                    </h1>
+                    <p class="lead">
+                        A cleaner more sustainable way <br class="d-md-none d-block">of living.
+                    </p>
+                    <p>
+                        Green energy is an energy generated from natural sources without harming the natural environment.
+                        These sources are often renewable meaning they are repleshined naturally and will not run out.
+                        Homeowners have many options when it comes to supplying their home with green power, with the 2 most common being Green Pricing & Self Supply.
+                    </p>
+                </div>
+            </div>
+            <div class="d-flex flex-row align-items-center justify-content-evenly row mt-3 mt-md-0 mb-md-5 mb-0" data-aos="fade-right">
+                <div class="col-md-6 col-12 d-md-none d-block">
+                    <img class="navix_rounded_image img-fluid" src="img/power_lines.jpg" style="width: 100%;">
+                </div>
+                <div class="col-md-6 col-12 flex-grow-1 text-center px-5 py-2">
+                    <h1 class="display-5 mt-2 mt-md-0">
+                        What is Green Pricing?
+                    </h1>
+                    <p class="lead">
+                        Simple. Affordable. <br class="d-md-none d-block">Quick.
+                    </p>
+                    <p>
+                        Many homeowners have the option to opt in for green power for their electricity. Referred to as green pricing or utility green power products these are offered directly through your utility provider.
+                        Some homeowners live in de-regulated electricity markets. In these markets you have the option to purchase green energy from an alternative provider other than your default utility provider.
+                        Learn more about what Green Pricing is & state specific info <a href="" style="text-decoration: none;">here</a>
+                    </p>
+                </div>
+                <div class="col-md-6 col-12 d-md-block d-none">
+                    <img class="navix_rounded_image img-fluid" src="img/power_lines.jpg" style="width: 100%;">
+                </div>
+            </div>
+            <div class="d-flex flex-row align-items-center justify-content-evenly row mt-3 mt-md-0 mb-3 mb-md-5" data-aos="fade-left">
+                <div class="col-md-6 col-12">
+                    <img class="navix_rounded_image img-fluid" src="img/rooftop_solar.jpg" style="width: 100%;"> 
+                </div>
+                <div class="col-md-6 col-12 flex-grow-1 text-center px-5 py-2">
+                    <h1 class="display-5 mt-2 mt-md-0">
+                        What is Self Supply?
+                    </h1>
+                    <p class="lead">
+                        For those who live <br class="d-md-none d-block"> DIY.
+                    </p>
+                    <p>
+                        As the name implies self-supply is for households who want to provide their own green power. From solar panels to geothermal plants there's many options. Learn more about the self supply options that are available to you <a href="" style="text-decoration: none;">here</a>.
+                    </p>
+                </div>
+            </div>
+            <!--Button Placeholder-->
         </div>
-      </div>
-    </div>
-  </body>
+     
+        <section class=" slant-container">
+            <div class="slant-content container">
+                <p class="on_top">The Numbers</p>
+                <h2 class="display-4">A World On Fire</h2>
+                <p class="lead">
+                    Climate change is one of the most urgent<br>and complex challenges facing humanity today. It affects every aspect of our lives,<br> from our health and well-being, to our economy and environment.
+                </p>
+            </div>
+        </section>
+        
+        <!--Cards Start HERE!-->
+        <div class="container">
+            <div class="row">
+                <div class=" col-4">
+                    <h2 class="display-3">Switching Made Easy <br> With Navix</h2>
+                    <p class="lead">Navix provides the tools and info to help you switch quick and easy.  </p>
+                </div>
+                <div class=" col-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <i class="fa-solid fa-toggle-off fa-2xl icon" style="color:#00AD51"></i>
+                            <h4 class="card-title">Why Should You Switch?</h4>
+                            <p class="card-text">Explore the benefits of green energy and see the impact you'd be making on the world.</p>
+                            <i class="fa-solid fa-arrow-right-long fa-2xl icon2" style="color: #ffffff;"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class=" col-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <i class="fa-solid fa-bolt fa-2xl icon" style="color:#00AD51"></i>
+                            <h4 class="card-title">Green Energy Solutions</h4>
+                            <p class="card-text">Explore green and clean energy solutions for your home.</p>
+                            <i class="fa-solid fa-arrow-right-long fa-2xl icon2" style="color: #ffffff;"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class=" col-4"></div>
+                <div class=" col-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <i class="fa-solid fa-square-rss fa-2xl icon" style="color:#00AD51"></i>
+                            <h4 class="card-title">Blog</h4>
+                            <p class="card-text">Explore our blog, full of diy green and clean practices. Know something we don't? Add your own posts!</p>
+                            <i class="fa-solid fa-arrow-right-long fa-2xl icon2" style="color: #ffffff;"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class=" col-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <i class="fa-solid fa-wrench fa-2xl icon" style="color:#00AD51"></i>
+                            <h4 class="card-title">Tools</h4>
+                            <p class="card-text">Explore Navix's full set of tools to help you switch easier.</p>
+                            <i class="fa-solid fa-arrow-right-long fa-2xl icon2" style="color: #ffffff;"></i>
+                        </div>
+                    </div>
+                </div>
+                <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+                    <symbol id="facebook" viewBox="0 0 16 16">
+                        <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+                    </symbol>
+                    <symbol id="instagram" viewBox="0 0 16 16">
+                        <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+                    </symbol>
+                    <symbol id="twitter" viewBox="0 0 16 16">
+                        <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+                    </symbol>
+                </svg>
+                <hr>
+                <div class="container mt-0">
+                    <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 pt-3 pb-5">
+                        <div class="col mb-1">
+                            <img src="img/logo/NavixLogo_NoBG_BlackText.png" width="200" height="150" class="d-inline-block" id="footer_name">
+                            <!-- <img src="" class="d-inline-block" id="footer_name"><br> -->
+                            &copy;<em>2023. All rights reserved.</em><br>
+                            2023-24 TSA Webmaster<br>
+                            <a href="" style="text-decoration: none; color: #00AD51;">Copyright Info</a><br><br>
+                            <ul class="list-unstyled d-flex">
+                                <li class="ms-0"><a class="link-body-emphasis" href="https://twitter.com/" target="_blank" ><svg class="bi" width="24" height="24"><use xlink:href="#twitter"/></svg></a></li>
+                                <li class="ms-3"><a class="link-body-emphasis" href="https://www.instagram.com/ranchviewtsa/" target="_blank" ><svg class="bi" width="24" height="24"><use xlink:href="#instagram"/></svg></a></li>
+                                <li class="ms-3"><a class="link-body-emphasis" href="https://facebook.com/" target="_blank" ><svg class="bi" width="24" height="24"><use xlink:href="#facebook"/></svg></a></li>
+                            </ul>
+                        </div>
+                    </footer>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!--Scripts! DO NOT DELETE-->
+        <!--General JS Script--><script src="js/general-js.js"></script>
+        <!--Index JS Script--><script src="js/index-js.js"></script>
+        <!--Popper JS (required for Boostrap)--><script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+        <!--Bootstrap JS--><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+        <!--Font Awesome--><script src="https://kit.fontawesome.com/9a3636e96b.js" crossorigin="anonymous"></script>
+        <!--AnimeJS v3.2.2--><script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.2/anime.js" integrity="sha512-FSNQjUUq97PtDnAJyMlBTH8EhV4o5X5FLVbzS9ttrdEVVbmrssJBh/PgXFQbxS+6yYx5n5irOj7de6Th0TRQZA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <!--AOS--><script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script><script>AOS.init();</script>
+        <script type="module">
+          // Import the functions you need from the SDKs you need
+          import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
+          import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-analytics.js";
+          // TODO: Add SDKs for Firebase products that you want to use
+          // https://firebase.google.com/docs/web/setup#available-libraries
+        
+          // Your web app's Firebase configuration
+          // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+          const firebaseConfig = {
+            apiKey: "AIzaSyAL7mqwOiCME-_WB670N1pLJmiNoCMQluM",
+            authDomain: "navix-energy-39903.firebaseapp.com",
+            projectId: "navix-energy-39903",
+            storageBucket: "navix-energy-39903.appspot.com",
+            messagingSenderId: "1010785463871",
+            appId: "1:1010785463871:web:9420cfe22d1938adad528a",
+            measurementId: "G-XYLSK6C6T2"
+          };
+        
+          // Initialize Firebase
+          const app = initializeApp(firebaseConfig);
+          const analytics = getAnalytics(app);
+        </script>
+    </body>
 </html>

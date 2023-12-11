@@ -312,3 +312,26 @@ hr {
 .section_2_container{
   padding-bottom:40px;
 }
+.wrap{
+  margin-top: 50vh;
+  display: flex;
+}
+.highlightdiv{
+  position: relative;
+  font-family: sans-serif;
+  font-size: 36px;
+  font-weight: 600;
+}
+
+.highlightdiv {
+  display: inline-block;
+}
+.higlightspan{
+  position: absolute;
+  width: 0;
+  height: 100%;
+  color: #0fd10f;
+  left: 0;
+  overflow:hidden;
+
+}

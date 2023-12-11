@@ -7,11 +7,32 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <title>Home | Navix</title>
         <!--Stylesheets! DO NOT DELETE-->
+         <!--General Stylesheet--> <script src="js\index-js.js"></script>
         <!--General Stylesheet--><link rel="stylesheet" href="css/general-style.css">
         <!--Index Stylesheet--><link rel="stylesheet" href="css/index-style.css">
         <!--Bootstrap v5.3--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
         <!--Hover.css v2.3.1--><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover.css" integrity="sha512-Qg72y9f1a3aVc1FVnjq5YURLOOG8fDKQjMnhxYaZgBz4nIVjpVOBUtuMMMqkZPS1FlVrzzEBXq2sM6Qp1zen/Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <!--AOS v2.3.1--><link  rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+        <script src="https://unpkg.co/gsap@3/dist/gsap.min.js"></script>
+<script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
+        <script>
+            gsap.set('span', { width: 0 })
+
+gsap.timeline({
+    scrollTrigger:{
+      trigger: 'span',
+      scrub:0.3,
+      start:"top 40%",
+      end:"top 20%",
+      //markers:true
+    }
+ })
+  .to('span', {
+  width:'100%', 
+  duration:1, ease:'none',
+  stagger:1
+})
+        </script>
     </head>
     <body>
         <!--  
@@ -93,7 +114,7 @@
                 </div>
                 <div class="col-md-6 col-12 flex-grow-1 text-center px-5 py-2">
                     <h1 class=" display-5 mt-md-0">
-                        What is Green Energy?
+                        What is <span class="highlight">Green Energy</span>?
                     </h1>
                     <p class="lead">
                         A cleaner more sustainable way <br class="d-md-none d-block">of living.
@@ -110,9 +131,13 @@
                     <img class="navix_rounded_image img-fluid" src="img/power_lines.jpg" style="width: 100%;">
                 </div>
                 <div class="col-md-6 col-12 flex-grow-1 text-center px-5 py-2">
-                    <h1 class="display-5 mt-2 mt-md-0">
-                        What is Green Pricing?
-                    </h1>
+                    
+                    <div class="wrap">
+                        <div class="wrap-container">
+                   What is <div class="highlightdiv">Green <span class="higlightspan">Green</span></div>
+                    </div>
+                    </div>
+                    
                     <p class="lead">
                         Simple. Affordable. <br class="d-md-none d-block">Quick.
                     </p>
@@ -132,7 +157,7 @@
                 </div>
                 <div class="col-md-6 col-12 flex-grow-1 text-center px-5 py-2">
                     <h1 class="display-5 mt-2 mt-md-0">
-                        What is Self Supply?
+                        What is <span class="highlight">Self Supply</span>?
                     </h1>
                     <p class="lead">
                         For those who live <br class="d-md-none d-block"> DIY.
