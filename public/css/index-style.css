@@ -337,3 +337,6 @@ hr {
   overflow:hidden;
 
 }
+#numbers{
+  max-width:500px;
+}

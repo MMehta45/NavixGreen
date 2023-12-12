@@ -74,35 +74,48 @@ p{
     font-family: 'Karla', sans-serif;
 }
 
-.slant-container {
-    position: relative;
-    overflow: hidden;
-}
-  
-  .slant-container::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    background:#357960;
-    transform: skewY(5deg);
-    transform-origin: left top;
-  }
+
+.slant-container{
+      position: relative;
+      width: 100%;
+      height: auto;
+      background:#357960;
+      box-sizing: border-box;
+      padding: 30px;
+      
+      margin-bottom: 200px;
+      margin-top: 200px;
+    }
+
+    .slant-container:after{
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      content: '';
+      background: inherit;
+      z-index: -1;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      transform-origin: top left;
+      transform: skewY(-6deg);
+    }
 
   .slant-content {
     position: relative;
     top: 20%;
     left: 10%;
-    color: white;
+
   }
 
   .on_top{
     font-size:20px;
     font-weight: bold;
     display: block;
+    margin-top: 30px;
   }
+  /* link tag = button */
   .link{
     border-radius:8px;
     background-color:#00AD51;
