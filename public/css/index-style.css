@@ -265,44 +265,58 @@ hr {
 
  /* Styles for the card */
  
-.container{
+ .container {
   margin-top: 100px;
 }
-.card{
-  height: fit-content;
-  width: 50%;
-  transition: all 1s ease-in-out ;
-  margin-bottom: 5px;
+
+.card {
+  margin-bottom: 15px; /* Adjust the margin between cards */
+  transition: transform 0.3s; /* Add a smooth transition for the hover effect */
+  width: 100%; /* Set the card width to 100% within the column */
 }
 
 .card:hover {
-  /* Change the background color on hover */
-  background-color:#00AC51;
-  /* border:none; */
-  border-color: #00AC51;
+  background-color: #00ac51;
+  border-color: #00ac51;
+  transform: scale(1.05); /* Increase the size on hover */
 }
 
-.icon{
-  margin-bottom:20px;
+.icon {
+  margin-bottom: 20px;
+  color: #00ac51; /* Set the initial icon color to green */
 }
-.icon2{
+
+.icon2 {
   display: none;
   width: 100%;
 }
+
 .card:hover .icon {
-  /* Hide the first icon on hover */
-  transition: display 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
   opacity: 0%;
-  /* display: none; */
- 
+  color: #fff; /* Set the icon color to white on hover */
 }
+
 .card:hover .icon2 {
-  /* Show the second icon on hover */
   display: inline-block;
 }
-.card:hover .card-body{
+
+.card:hover .card-body {
   color: #fff;
 }
+
+/* Adjust the margin for the "Blog" card */
+.col-2:nth-child(2) .card {
+  margin-top: -30px; /* You can adjust this value as needed */
+}
+
+/* Adjust the margin for the "Tools" card */
+.col-3:last-child .card {
+  margin-top: 6px; /* You can adjust this value as needed */
+}
+
+/* End of card styles */
+
 #section_2{
   background-color:#357960;
   padding: 50px;
