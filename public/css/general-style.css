@@ -81,10 +81,10 @@ p{
       position: relative;
       width: 100%;
       height: auto;
-      background:#02ec88;
+      background:#357960;
       box-sizing: border-box;
       padding: 30px;
-      
+      color: azure;
       margin-bottom: 200px;
       margin-top: 200px;
     }
@@ -107,8 +107,8 @@ p{
   .slant-content {
     position: relative;
     top: 20%;
-    left: 10%;
-
+    left: 35%;
+  
   }
 
   .on_top{
