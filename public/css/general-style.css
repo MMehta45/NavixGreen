@@ -22,9 +22,7 @@ nav {
     z-index: 999;
 }
 
-#logo {
-    height: 200px;
-}
+@media only screen and (min-width: 992px){ #logo { min-height: 75px; min-width: 100px; max-height: 150px; max-width: 100px; margin-left: 15px; } } @media only screen and (max-width: 992px) { #logo { height: 50px; width: 75px; } }
 
 .navix_rounded_image {
     border-radius: 3%;
