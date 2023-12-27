@@ -16,27 +16,40 @@ Important Points:
 - A relatively minimalistic look is recommended!
 */
 
+/* General Elements*/
+body{
+    background-color: white !important;
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Montserrat', sans-serif;
+}
+
+p{
+    font-family: 'Karla', sans-serif;
+}
+
+/*Nav Bar*/
 nav {
     position: fixed;
     top: 0px;
     z-index: 999;
 }
 
-@media only screen and (min-width: 992px){ #logo { min-height: 75px; min-width: 100px; max-height: 150px; max-width: 100px; margin-left: 15px; } } @media only screen and (max-width: 992px) { #logo { height: 50px; width: 75px; } }
+
 
 .navix_rounded_image {
     border-radius: 3%;
 }
 
 .navbar{
-    max-height: 125px;
-    background-color:black;
+    
+    background-color:lightcyan;
 }
 
 .navbar-nav{
     margin: auto; 
+   
 }
-
 .nav-link{
     display: block;
     padding-bottom: .25rem;
@@ -50,7 +63,7 @@ nav {
     bottom: 0;
     width: 0;
     height: 2px;
-    background-color:#02ec88;
+    background-color:#00AD51;
     transition: width 0.25s ease-out;
 }
 
@@ -66,15 +79,23 @@ nav {
     font-size: large;
     
 }
-h1, h2, h3, h4, h5, h6{
-    font-family: 'Montserrat', sans-serif;
+/*Nav Bar Logo Mobile Friendleness*/
+@media only screen and (min-width: 992px){ 
+    #logo { 
+    min-height: 75px; 
+    min-width: 100px; 
+    max-height: 150px; 
+    max-width: 100px; 
+    margin-left: 15px; 
+    } 
 }
-
-p{
-    font-family: 'Karla', sans-serif;
+ @media only screen and (max-width: 992px) { 
+    #logo { 
+        height: 50px; 
+        width: 75px; 
+    } 
 }
-
-
+/*Slant Container*/
 .slant-container{
       position: relative;
       width: 100%;
@@ -116,6 +137,7 @@ p{
     margin-top: 30px;
    
   }
+
   /* link tag = button */
   .link{
     border-radius:8px;
@@ -130,6 +152,7 @@ p{
 .link:hover{
     background-color:#357960;color:white
 }
+/*Highlight*/
 ::selection{
     background: #00AD51;
     color: aliceblue;

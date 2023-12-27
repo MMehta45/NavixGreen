@@ -47,3 +47,18 @@ img{
 .newsletter{
     box-shadow:5px 10px;
 }
+@media only screen and (min-width: 992px){ 
+    #logo2 { 
+    min-height: 150px; 
+    min-width: 175px; 
+    max-height: 150px; 
+    max-width: 175px; 
+ 
+    } 
+}
+ @media only screen and (max-width: 992px) { 
+    #logo2 { 
+        height: 80px; 
+        width: 100px; 
+    } 
+}

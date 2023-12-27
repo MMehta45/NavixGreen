@@ -12,56 +12,55 @@
         <!--AOS v2.3.1--><link  rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
     </head>
     <body>
-        <nav class="navbar navbar-expand-lg sticky-top navbar-dark main_pagetop_navbar_background">
-            <div class="container-fluid">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                <a class="navbar-brand" href="index.html">
-                    <img src="img/logo/NavixBlogLogo_NoBG_WhiteText.png" class="d-inline-block" id="logo">
-                </a>
-                
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item" id="seperator">
-                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                        </li>
-                        <li class="nav-item dropdown" id="seperator">
-                            <a class="nav-link dropdown-toggle" href="solutions/solutions.html" id="toursandpricing" aria-haspopup="true" aria-expanded="false">
-                                Energy Solutions
-                            </a>
-                            <div class="dropdown-menu dropdown-menu-dark" aria-labelledby="toursandpricing">
-                                <a class="dropdown-item text-white-100" href="solutions/greenpricing.html">Green Pricing</a>
-                                <a class="dropdown-item text-white-100" href="solutions/solar.html">Solar Power</a>
-                                <a class="dropdown-item text-white-100" href="solutions/wind.html">Wind Energy</a>
-                                <a class="dropdown-item text-white-100" href="solutions/geothermal.html">Geothermal Power</a>
-                                <a class="dropdown-item text-white-100" href="solutions/micro-hydro.html">Microhydro Power</a>
-                            </div>
-                        </li>
-                        <li class="nav-item" id="seperator">
-                            <a class="nav-link" href="blog.html">Blog</a>
-                        </li>
-                        <li class="nav-item" id="seperator">
-                            <a class="nav-link" href="energystar.html">Energy Star</a>
-                        </li>
-                        <li class="nav-item" id="seperator">
-                            <a class="nav-link" href="history.html">History</a>
-                        </li>
-                        <li class="nav-item" id="seperator">
-                            <a class="nav-link" href="why-switch.html" tabindex="-1">Your Impact</a>
-                        </li>
-                        <li class="nav-item" id="seperator">
-                            <a class="nav-link" href="about.html">About</a>
-                        </li>
-                    </ul>
-                </div>
+      <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="img/logo/NavixBlogLogo_NoBG_BlackText.png" class="d-inline-block" id="logo2" alt="Your Logo">
+            </a>
+    
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown" id="seperator">
+                        <a class="nav-link dropdown-toggle" href="solutions/solutions.html" id="toursandpricing" aria-haspopup="true" aria-expanded="false">
+                            Energy Solutions
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-dark" aria-labelledby="toursandpricing">
+                            <a class="dropdown-item text-white-100" href="solutions/greenpricing.html">Green Pricing</a>
+                            <a class="dropdown-item text-white-100" href="solutions/solar.html">Solar Power</a>
+                            <a class="dropdown-item text-white-100" href="solutions/wind.html">Wind Energy</a>
+                            <a class="dropdown-item text-white-100" href="solutions/geothermal.html">Geothermal Power</a>
+                            <a class="dropdown-item text-white-100" href="solutions/micro-hydro.html">Microhydro Power</a>
+                        </div>
+                    </li>
+                    <li class="nav-item" id="seperator">
+                        <a class="nav-link" href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item" id="seperator">
+                        <a class="nav-link" href="energystar.html">Energy Star</a>
+                    </li>
+                    <li class="nav-item" id="seperator">
+                        <a class="nav-link" href="history.html">History</a>
+                    </li>
+                    <li class="nav-item" id="seperator">
+                        <a class="nav-link" href="why-switch.html" tabindex="-1">Your Impact</a>
+                    </li>
+                    <li class="nav-item" id="seperator">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                </ul>
             </div>
-        </nav>
-    </div>
-</div>
+        </div>
+    </nav>
 
        <!-- Hero Section -->
-       <div class="container-fluid">
+       <div class="container-fluid hero-container">
         <div class="row">
           <div class="col-12 p-0">
             <div class="hero-image" style="background-image: url('img/drying.jpg');">
@@ -226,13 +225,52 @@
         </section>
 
         
-        <!--Scripts! DO NOT DELETE-->
-        <!--General JS Script--><script src="js/general-js.js"></script>
-        <!--Blog JS Script--><script src="js/blog-js.js"></script>
+         <!--Scripts! DO NOT DELETE-->
+        <!--GSAP SCRIPTS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/gsap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/gsap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/Flip.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/ScrollTrigger.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/Observer.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/ScrollToPlugin.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/Draggable.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/MotionPathPlugin.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/EaselPlugin.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/PixiPlugin.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/TextPlugin.min.js"></script>
+        <!-- RoughEase, ExpoScaleEase and SlowMo are all included in the EasePack file -->    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/EasePack.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/CustomEase.min.js"></script>
+        <!--Jquery--> <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
         <!--Popper JS (required for Boostrap)--><script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
         <!--Bootstrap JS--><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
         <!--Font Awesome--><script src="https://kit.fontawesome.com/9a3636e96b.js" crossorigin="anonymous"></script>
         <!--AnimeJS v3.2.2--><script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.2/anime.js" integrity="sha512-FSNQjUUq97PtDnAJyMlBTH8EhV4o5X5FLVbzS9ttrdEVVbmrssJBh/PgXFQbxS+6yYx5n5irOj7de6Th0TRQZA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <!--AOS--><script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script><script>AOS.init();</script>
+         <!--General JS Script--><script src="js/general-js.js"></script>
+        <!--Blog JS Script--><script src="js/blog-js.js"></script>
+       <script type="module">
+          // Import the functions you need from the SDKs you need
+          import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
+          import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-analytics.js";
+          // TODO: Add SDKs for Firebase products that you want to use
+          // https://firebase.google.com/docs/web/setup#available-libraries
+        
+          // Your web app's Firebase configuration
+          // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+          const firebaseConfig = {
+            apiKey: "AIzaSyAL7mqwOiCME-_WB670N1pLJmiNoCMQluM",
+            authDomain: "navix-energy-39903.firebaseapp.com",
+            projectId: "navix-energy-39903",
+            storageBucket: "navix-energy-39903.appspot.com",
+            messagingSenderId: "1010785463871",
+            appId: "1:1010785463871:web:9420cfe22d1938adad528a",
+            measurementId: "G-XYLSK6C6T2"
+          };
+        
+          // Initialize Firebase
+          const app = initializeApp(firebaseConfig);
+          const analytics = getAnalytics(app);
+        </script>
     </body>
 </html>
