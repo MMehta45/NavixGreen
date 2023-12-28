@@ -54,6 +54,7 @@ nav {
     display: block;
     padding-bottom: .25rem;
     position: relative;
+    font-size: large !important;
 }
 
 .nav-link::before{
@@ -75,18 +76,27 @@ nav {
     display: block;
     margin-top: 0;
     transition: display 4s ease-in-out 2s;
-    width:300px;
+     width: 650px;
     font-size: large;
+    padding: 15px;
     
 }
+.dropdown .dropdown-menu .dropdown-item:hover {
+   background-color: #00AD51;
+   color: aliceblue;  
+}
+.dropdown .dropdown-menu .dropdown-item:hover .icon{
+    opacity: 1;
+ }
+ 
 /*Nav Bar Logo Mobile Friendleness*/
 @media only screen and (min-width: 992px){ 
     #logo { 
     min-height: 75px; 
-    min-width: 100px; 
+    min-width: 125px; 
     max-height: 150px; 
-    max-width: 100px; 
-    margin-left: 15px; 
+    max-width: 150px; 
+  
     } 
 }
  @media only screen and (max-width: 992px) { 
