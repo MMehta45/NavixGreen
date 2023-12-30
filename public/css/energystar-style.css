@@ -1,11 +1,4 @@
-.energyheader{
-    left: 200px;
-}
-/* view div borders */
-/* body * {
-    border: 1px solid black;
-} */
-.es-info {
+/* .es-info {
     width: 20%;
     height: auto;
     margin: 10%;
@@ -25,4 +18,9 @@
 }
 .card:hover {
     background-color: #00833d;
+} */
+
+/* how do i put stuff in here and still have it be used by my html page */
+.energyheader{
+    left: 200px;
 }
