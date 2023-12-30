@@ -17,44 +17,139 @@ Important Points:
 */
 
 /* General Elements*/
-body{
-    background-color: white !important;
+body {
+    color: #ffffff;
+    background-color: #292b2c;
 }
+.light-theme{
+    background-color: whitesmoke;
+    color: #292b2c;
+}    
+.dark-theme{
+    background-color: #292b2c;
+    color: white;
+}
+/*
 h1, h2, h3, h4, h5, h6{
     font-family: 'Montserrat', sans-serif;
 }
-
 p{
     font-family: 'Karla', sans-serif;
 }
+*/
+.lead{
+    font-weight: 800px;
+}
+.bg_navix1 {
+    background-color: #00ad51;
+}
+.bg_navix2 {
+    background-color: #39d98b;
+}
+.bg_navix3 {
+    background-color: #20d4b9;
+}
+.text_navix1 {
+    color: #00ad51;
+}
+.text_navix2 {
+    color: #39d98b;
+}
+.text_navix3 {
+    color: #20d4b9;
+}
+.text_logogradient {
+    color: transparent;
+    background: linear-gradient(to right, #00ad51, #39d98b, #20d4b9);
+    background: -webkit-linear-gradient(to right, #00ad51, #39d98b, #20d4b9);
+    background: -moz-linear-gradient(to right, #00ad51, #39d98b, #20d4b9);
+    background: -ms-linear-gradient(to right, #00ad51, #39d98b, #20d4b9);
+    background: -o-linear-gradient(to right, #00ad51, #39d98b, #20d4b9);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -ms-background-clip: text;
+    -moz-background-clip: text;
+    -o-background-clip: text;
+}
+.navix_rounded_image {
+    border-radius: 3%;
+}
 
-/*Nav Bar*/
+/*Navbar & Footer*/
 nav {
     position: fixed;
     top: 0px;
     z-index: 999;
 }
-
-
-
-.navix_rounded_image {
-    border-radius: 3%;
+.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+    transition: display 4s ease-in-out 2s;
 }
-
-.navbar{
-    
-    background-color:lightcyan;
+/*The following line emphasizes that the styles are applied only when the screen size is atleast that of a small laptop.*/
+@media only screen and (min-width: 992px) {
+    #seperator {
+        border-right: 2px solid #ffffff;
+        padding: 0 10px 0 10px;
+        font-weight: 500;
+    }
+    .last {
+        padding: 0 0 0 10px;
+        font-weight: 500;
+    }
+    #logo {
+        min-height: 24px;
+        min-width: 30px;
+        max-height: 36px;
+        max-width: 45px;
+    }
+    /*
+    #termsandconditions_toppic {
+        min-height: 24px;
+        max-height: 45px;
+    }
+    */
 }
-
-.navbar-nav{
-    margin: auto; 
-   
+/*The following line emphasizes that the styles are applied only when the screen size is lesser than that of a small laptop.*/
+@media only screen and (max-width: 992px) {
+    #logo {
+        height: 24px;
+        width: 30px;
+    }
+    /*
+    #termsandconditions_toppic {
+        height: 24px;
+    }
+    */
+    .last {
+        background-color: var(--bg-dark);
+    }
 }
+.main_pagetop_navbar_background {
+    background-color: #414a4c;
+}
+#name{
+    height: 24px;
+    width: 70px;
+}
+/*
+#footer_name{
+    height: 24px;
+    width: 70px;
+}
+#tour_footer_name{
+    height: 24px;
+    width: 70px;
+}
+#account_footer_name{
+    height: 24px;
+    width: 70px;
+}
+*/
 .nav-link{
     display: block;
     padding-bottom: .25rem;
     position: relative;
-    font-size: large !important;
 }
 
 .nav-link::before{
@@ -64,47 +159,73 @@ nav {
     bottom: 0;
     width: 0;
     height: 2px;
-    background-color:#00AD51;
+    background-color: aliceblue;
     transition: width 0.25s ease-out;
 }
-
 .nav-link:hover::before{
     width: 100%;
 }
 
-.dropdown:hover .dropdown-menu {
-    display: block;
-    margin-top: 0;
-    transition: display 4s ease-in-out 2s;
-     width: 650px;
-    font-size: large;
-    padding: 15px;
+/*Toggle Button Styles*/
+.toggle {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+  
+.toggle input {
+    display: none;
+}
+
+.toggle label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: whitesmoke;
+    border-radius: 34px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
     
 }
-.dropdown .dropdown-menu .dropdown-item:hover {
-   background-color: #00AD51;
-   color: aliceblue;  
+    /*Toggle Styles*/
+
+.toggle label:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    /*Property below sets the color/background image of the circle when toggle is unchecked; i.e., light mode*/
+    background-image: url(../img/light_mode_toggle.png);
+    background-size: 100% 100%;
+    background-color: white;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
 }
-.dropdown .dropdown-menu .dropdown-item:hover .icon{
-    opacity: 1;
- }
- 
-/*Nav Bar Logo Mobile Friendleness*/
-@media only screen and (min-width: 992px){ 
-    #logo { 
-    min-height: 75px; 
-    min-width: 125px; 
-    max-height: 150px; 
-    max-width: 150px; 
-  
-    } 
+.toggle input:checked + label {
+    background-color: #292b2c;
+} 
+.toggle input:checked + label:before {
+    /*Property below sets the color/background image of the circle when toggle is checked; i.e., dark mode*/
+    background-image: url(../img/dark_mode_toggle.jpg);
+    background-size: 100% 100%;
+    background-color: whitesmoke;
+    transform: translateX(26px);
 }
- @media only screen and (max-width: 992px) { 
-    #logo { 
-        height: 50px; 
-        width: 75px; 
-    } 
+.toggle-text {
+    margin-left: 10px;
 }
+.toggle {
+    margin-left: 20px;
+}
+.toggle-text{
+    color:whitesmoke
+}
+
 /*Slant Container*/
 .slant-container{
       position: relative;
@@ -162,6 +283,7 @@ nav {
 .link:hover{
     background-color:#357960;color:white
 }
+
 /*Highlight*/
 ::selection{
     background: #00AD51;
@@ -173,7 +295,7 @@ nav {
     font-family: "Poppins", sans-serif;
   }
   
-  #progress {
+#progress {
     position: fixed;
     bottom: 20px;
     right: 10px;
@@ -184,8 +306,9 @@ nav {
     border-radius: 50%;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     cursor: pointer;
-    z-index: 1000; /* Adjust the z-index value as needed */}
-  #progress-value {
+    z-index: 1000; /* Adjust the z-index value as needed */
+}
+#progress-value {
     display: block;
     height: calc(100% - 15px);
     width: calc(100% - 15px);
@@ -195,4 +318,4 @@ nav {
     place-items: center;
     font-size: 35px;
     color: #001a2e;
-  }
+}
