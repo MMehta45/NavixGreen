@@ -2,7 +2,6 @@
 Colors - Dark To Light
 #357960
 #00AD51
-#79C253
 #02ec88
 
 
@@ -18,13 +17,13 @@ Important Points:
 
 /* General Elements*/
 body{
-    background-color: white !important;
+    background-color:white!important;
 }
 h1, h2, h3, h4, h5, h6{
     font-family: 'Montserrat', sans-serif;
 }
 
-p{
+p,a {
     font-family: 'Karla', sans-serif;
 }
 
@@ -148,8 +147,7 @@ nav {
    
   }
 
-  /* link tag = button */
-  .link{
+  .button{
     border-radius:8px;
     background-color:#00AD51;
     text-align: center;
@@ -159,7 +157,7 @@ nav {
     display: inline-block;
     padding:5px;
 } 
-.link:hover{
+.button:hover{
     background-color:#357960;color:white
 }
 /*Highlight*/
@@ -196,3 +194,12 @@ nav {
     font-size: 35px;
     color: #001a2e;
   }
+/*Footer*/
+footer a{
+    color:#02ec88;
+    font-size: medium !important;
+    font-weight: bold;
+    text-decoration: none;
+
+   
+}
