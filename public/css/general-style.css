@@ -18,6 +18,7 @@ Important Points:
 /* General Elements*/
 body{
     background-color:white!important;
+   
 }
 h1, h2, h3, h4, h5, h6{
     font-family: 'Montserrat', sans-serif;
@@ -200,6 +201,51 @@ footer a{
     font-size: medium !important;
     font-weight: bold;
     text-decoration: none;
-
-   
 }
+
+/*
+  .wrapper{
+    box-sizing: content-box;
+    background-color: #ffffff;
+    height: 70px;
+    padding: 50px 30px;
+    display: flex;
+    border-radius: 8px;
+    box-shadow: 0 20px 25px rgba(0,0,0,0.2);
+}
+.words{
+    overflow: hidden;
+}
+span{
+    display: block;
+    height: 100%;
+    padding-left: 10px;
+    color: #0e6ffc;
+    animation: spin_words 6s infinite;
+}
+@keyframes spin_words{
+    10%{
+        transform: translateY(-112%);
+    }
+    25%{
+        transform: translateY(-100%);
+    }
+    35%{
+        transform: translateY(-212%);
+    }
+    50%{
+        transform: translateY(-200%);
+    }
+    60%{
+        transform: translateY(-312%);
+    }
+    75%{
+        transform: translateY(-300%);
+    }
+    85%{
+        transform: translateY(-412%);
+    }
+    100%{
+        transform: translateY(-400%);
+    }
+}*/
