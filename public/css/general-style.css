@@ -28,6 +28,38 @@ p,a {
     font-family: 'Karla', sans-serif;
 }
 
+
+.bg_navix1 {
+    background-color: #00ad51;
+}
+.bg_navix2 {
+    background-color: #39d98b;
+}
+.bg_navix3 {
+    background-color: #20d4b9;
+}
+.text_navix1 {
+    color: #00ad51;
+}
+.text_navix2 {
+    color: #39d98b;
+}
+.text_navix3 {
+    color: #20d4b9;
+}
+.text_logogradient {
+    color: transparent;
+    background: linear-gradient(to right, #00ad51, #39d98b, #20d4b9);
+    background: -webkit-linear-gradient(to right, #00ad51, #39d98b, #20d4b9);
+    background: -moz-linear-gradient(to right, #00ad51, #39d98b, #20d4b9);
+    background: -ms-linear-gradient(to right, #00ad51, #39d98b, #20d4b9);
+    background: -o-linear-gradient(to right, #00ad51, #39d98b, #20d4b9);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -ms-background-clip: text;
+    -moz-background-clip: text;
+    -o-background-clip: text;
+}
 /*Nav Bar*/
 nav {
     position: fixed;
@@ -93,9 +125,9 @@ nav {
 @media only screen and (min-width: 992px){ 
     #logo { 
     min-height: 75px; 
-    min-width: 125px; 
-    max-height: 150px; 
-    max-width: 150px; 
+    min-width: 105px; 
+    max-height: 75px; 
+    max-width: 120px; 
   
     } 
 }
