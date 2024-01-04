@@ -105,6 +105,26 @@
 #numbers{
   max-width:500px;
 }
+
+.badge-with-image {
+  display: block;
+  background-size: cover;
+  width: 100%;
+  padding: 5px 10px;
+}
+
+.badge2{
+ border-bottom-right-radius: 80px;
+ border-bottom-left-radius: 80px;
+ border-top-left-radius: 80px;
+}
+.badge3{
+border-bottom-right-radius: 70px;
+ border-bottom-left-radius: 70px;
+ border-top-right-radius: 70px;
+ }
+ 
+/*
 .hero-image {
   height: 90vh;
   background-position: center;
@@ -131,3 +151,4 @@
   color: white;
   
 }
+*/
