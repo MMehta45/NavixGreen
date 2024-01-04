@@ -1,0 +1,23 @@
+.hero-section {
+    background: url('your-hero-image.jpg') center/cover no-repeat;
+    padding: 100px 0;
+    text-align: center;
+}
+.values-section {
+    padding: 60px 0;
+}
+.value-card {
+    text-align: center;
+    border: none;
+}
+.testimonials-section {
+    padding: 80px 0;
+}
+.testimonial-card {
+    text-align: center;
+}
+.cta-section {
+    background-color: #28a745;
+    color: #ffffff;
+    padding: 80px 0;
+}
