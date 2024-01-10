@@ -274,7 +274,7 @@ nav {
   .slanttitle{
     width:1000px;
     position: relative;
-    left:-27%;
+    margin-left: 45%;
   }
   /* Media query to hide the slanted container on smaller screens */
     @media screen and (max-width: 768px) {
