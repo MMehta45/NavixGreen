@@ -11,9 +11,18 @@
         <!--Bootstrap v5.3--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
         <!--Hover.css v2.3.1--><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover.css" integrity="sha512-Qg72y9f1a3aVc1FVnjq5YURLOOG8fDKQjMnhxYaZgBz4nIVjpVOBUtuMMMqkZPS1FlVrzzEBXq2sM6Qp1zen/Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <!--AOS v2.3.1--><link  rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+        <style>
+            #sub_navbar .nav-pills  {
+                --bs-nav-pills-link-active-color: #ffffff;
+                --bs-nav-pills-link-active-bg: #1bbc64;
+            }
+            #sub_navbar .nav-item {
+                --bs-nav-link-color: #1bbc64;
+            }
+        </style>
     </head>
     <body class="light-theme">
-        <nav class="navbar navbar-expand-lg navbar-dark sticky-top main_pagetop_navbar_background">
+        <nav class="navbar navbar-expand-lg navbar-dark sticky-top main_pagetop_navbar_background" id="main_navbar">
             <div class="container-fluid">
                 <a class="navbar-brand" href="../index.html">
                     <!-- 
@@ -78,6 +87,198 @@
                 </div>
             </div> 
         </nav>
+        <div class="text-center mx-auto" id="start_image">
+            <img src="../img/solutions/WindTurbines1.jpeg" class="img-fluid mx-auto" id="top_pic">
+            <h1 class=" carousel-caption display-3 text-center my-3 image_text" id="image_text1">Wind Energy</h1>
+        </div>
+        <nav id="sub_navbar" class="navbar px-3 mb-2 justify-content-center sub_navbar_background">
+            <ul class="nav nav-pills">
+                <li class="nav-item">
+                    <a class="nav-link link_disabled" href="#overview" id="link_disabled1">Overview</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link link_disabled" href="#quick_stats" id="link_disabled1">Basic Info</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link link_disabled" href="#pricing_and_tax" id="link_disabled1">Pricing & Tax Information</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link link_disabled" href="#services" id="link_disabled1">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link link_disabled" href="#faqs" id="link_disabled1">FAQs</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="container-fuild scrollspy p-3" data-bs-spy="scroll" data-bs-target="#sub_navbar" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" tabindex="0">
+            <div class="container px-3" id="overview">
+                <h1 class="display-5 text-center my-3">Overview</h1>
+                <p class="lead text-center">
+                    <strong>Wind energy is [fill text here]</strong><br>
+                    solutions available for only communities
+                </p>
+                <p class="text-center" id="overview_content">
+                    [fill overview text here]
+                </p>
+            </div>
+            <div class="container p-3 align-middle" id="cost">
+                <p class="lead my-0 text-center">
+                    currently priced at:
+                </p>
+                <h1 class="display-5 text-center">$99,999.99</h1>
+            </div>
+            <div class="container py-1 px-3" id="dates_and_schedule">
+                <h1 class="display-5 text-center my-3">Upcoming Tour Dates</h1>
+                <div class="flex-row justify-content-evenly align-items-stretch">
+                    <div class="p-2 flex-fill tour_date" id="border">
+                        <h3 class="text-center">2nd July, 2023</h3>
+                        <ul class="text-center" style="list-style-type: none; margin-right: 10%;">
+                            <li>
+                                <strong>Registration Deadline:</strong><br>
+                                10th June, 2023
+                            </li>
+                            <!-- Add 18 days-->
+                            <li>
+                                <strong>Training/Health Checkup Deadline:</strong><br>
+                                28th June, 2023
+                            </li>
+                            <!-- Add 3 days-->
+                            <li>
+                                <strong>Before-Launch Quarantine Period:</strong><br>
+                                1st July, 2023
+                            </li>
+                            <!-- Add 1 day-->
+                            <li>
+                                <strong>Tour Timings:</strong><br>
+                                3:00PM CDT - 6:00PM CDT, 2nd July, 2023*
+                            </li>
+                            <!-- Add 1 day-->
+                            <li>
+                                <strong>After-Launch Quarantine Period:</strong><br>
+                                3rd July, 2023
+                            </li>
+                        </ul>
+                    </div>
+                    <!--Add 10 days to Registration Deadline-->
+                    <div class="p-2 flex-fill tour_date" id="border">
+                        <h3 class="text-center">12th July, 2023</h3>
+                        <ul class="text-center" style="list-style-type: none; margin-right: 10%;">
+                            <li>
+                                <strong>Registration Deadline:</strong><br>
+                                20th June, 2023
+                            </li>
+                            <!-- Add 18 days-->
+                            <li>
+                                <strong>Training/Health Checkup Deadline:</strong><br>
+                                8th July, 2023
+                            </li>
+                            <!-- Add 3 days-->
+                            <li>
+                                <strong>Before-Launch Quarantine Period:</strong><br>
+                                11th July, 2023
+                            </li>
+                            <!-- Add 1 day-->
+                            <li>
+                                <strong>Tour Timings:</strong><br>
+                                5:00PM CDT - 8:00PM CDT, 12th July, 2023*
+                            </li>
+                            <!-- Add 1 day-->
+                            <li>
+                                <strong>After-Launch Quarantine Period:</strong><br>
+                                13th July, 2023
+                            </li>
+                        </ul>
+                    </div>
+                     <!--Add 10 days to Registration Deadline-->
+                    <div class="p-2 flex-fill tour_date">
+                        <h3 class="text-center">22nd July, 2023</h3>
+                        <ul class="text-center" style="list-style-type: none; margin-right: 5%;">
+                            <li>
+                                <strong>Registration Deadline:</strong><br>
+                                30th June, 2023
+                            </li>
+                            <!-- Add 18 days-->
+                            <li>
+                                <strong>Training/Health Checkup Deadline:</strong><br>
+                                18th July, 2023
+                            </li>
+                            <!-- Add 3 days-->
+                            <li>
+                                <strong>Before-Launch Quarantine Period:</strong><br>
+                                21st July, 2023
+                            </li>
+                            <!-- Add 1 day-->
+                            <li>
+                                <strong>Tour Timings:</strong><br>
+                                2:00PM CDT - 5:00PM CDT, <br> 22nd July, 2023*
+                            </li>
+                            <!-- Add 1 day-->
+                            <li>
+                                <strong>After-Launch Quarantine Period:</strong><br>
+                                23rd July, 2023
+                            </li>
+                        </ul>
+                    </div>
+                    <br>
+                    <br style="clear: both">
+                    <br>
+                    <p class="text-center">*Exact timings may change based on weather and other factors out of our control.</p>
+                </div>
+            </div>
+            <div class="container py-3 px-3" id="tour_stats">
+                <h1 class="display-6 text-center">Statistics for the Around the World&#8482; tour:</h1> 
+                <div class="d-flex flex-row text-center mt-4" id="stats">
+                    <div class="pt-2 align-self-end bg_navix1" id="stat">
+                        <h1 class="display-6 fw-semibold fst-italic">3071</h1>
+                        <p class="lead fw-normal">flights of this<br>tour to space</p>
+                    </div>
+                    <div class="pt-2 align-self-stretch bg_navix2" id="stat">
+                        <h1 class="display-6 fw-semibold fst-italic align-self-center pt-4">67563</h1>
+                        <p class="lead fw-normal">Navixians<br>on this tour</p>
+                    </div>
+                    <div class="pt-2 align-self-end bg_navix3" id="stat">
+                        <h1 class="display-6 fw-semibold fst-italic">&#8764;10134</h1>
+                        <p class="lead fw-normal">hours of<br>flight time</p>
+                    </div>
+                </div>
+            </div>
+            <div class="container py-3 px-3" id="tour_register">
+                <p class="lead text-center">
+                    Why wait? Register now for the Around the Tour&#8482; tour!
+                </p>
+                <div class="mx-auto" id="button_holder_login_register" style="width: 200px;">
+                    <a style="text-decoration: none; float: left;" href="../accounts/signup.html" id="signup_tour_button"><button type="button" class="mb-4 btn fs-4">Register</button></a>
+                    <a style="text-decoration: none; float: right;" href="../accounts/login.html" id="login_tour_button"><button type="button" class="mb-4 btn fs-4">Login</button></a>
+                </div>
+                <a style="text-decoration: none;" href="../accounts/dashboard.html" id="dashboard_tour_button"><button type="button" class="mb-4 btn mx-auto fs-4">Go to Dashboard</button></a>
+                <h4 class="pb-3 text-center"><mark>Important information! Read carefully before registering!</mark></h4>
+                <ul class="mb-3">
+                    <li>
+                        You will get a full refund if you cancel your booking within 24 hours of registration; later, all refunds will be reduced to 50% of the tour's value. If you cannot attend the tour due to external circumstances beyond your control, contact Navix immediately with the proper documentation. After review, you can choose to have your tour date shifted into the future or receive a 75% refund.
+
+                    </li>
+                    <li>
+                        If there is anything about the mission parameters, training, or quarantine that you feel doubtful about, please view the appropriate pages on this website or reach out to us immediately before registering.
+
+                    </li>
+                    <li>
+                        Safety is our number one concern, and the quarantine and training aspects of the tour cannot be skipped. All people who do not complete the prerequisite training and quarantine will not be allowed on the tour. We also reserve the right to deny access to any person who compromises the safety of the tour, on any criteria that might be deemed appropriate.
+
+                    </li>
+                    <li>
+                        Please note that this tour involves at least 20 hours of dedicated training and requires 6-7 days of dedicated preparation and quarantine for the tour. You are asked to clear your schedule two weeks prior to the tour. Please do not register if you cannot make the time.
+
+                    </li>
+                    <li>
+                        Failure to stick to the deadlines and schedule after payment will result in a 25% refund, and the customer will be prohibited from the tour. The chosen tour date cannot be shifted in most circumstances. If you miss the tour while satisfying the prerequisite conditions, you will receive no refund.
+
+                    </li>
+                </ul>
+                <p class="fs-5 text-center mx-5 mt-0 mb-0 pb-0">
+                    This is just a summary of the conditions that apply to you as you undertake the Around the World™ tour. You can find these terms and other important legal information on the <a href="../terms&conditions.html" style="text-decoration: none; color: #ff6647;" target="_blank">terms and conditions</a> page.
+                </p>
+            </div>
+        </div>
         <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
             <symbol id="facebook" viewBox="0 0 16 16">
                 <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
