@@ -27,6 +27,7 @@ h1, h2, h3, h4, h5, h6{
 
 p,a {
     font-family: 'Karla', sans-serif;
+    
 }
 
 
@@ -170,7 +171,7 @@ nav {
     position: relative;
     top: 20%;
     left: 35%;
-  
+    
   }
 
   .on_top{
@@ -178,9 +179,50 @@ nav {
     font-weight: bold;
     display: block;
     margin-top: 30px;
-   
+    position: relative;
+    left:-11%;
   }
 
+  .fire{
+    font-family: 'Montserrat', sans-serif;
+   
+      color: transparent;
+      background: linear-gradient(to right, #FF5722, #FF6347,#FFC107);
+      background: -webkit-linear-gradient(to right, #00ad51, #39d98b, #20d4b9);
+      background: -moz-linear-gradient(to right, #00ad51, #39d98b, #20d4b9);
+      background: -ms-linear-gradient(to right, #00ad51, #39d98b, #20d4b9);
+      background: -o-linear-gradient(to right, #00ad51, #39d98b, #20d4b9);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -ms-background-clip: text;
+      -moz-background-clip: text;
+      -o-background-clip: text;
+  
+  }
+  .slanttitle{
+    width:1000px;
+    position: relative;
+    left:-27%;
+  }
+  /* Media query to hide the slanted container on smaller screens */
+    @media screen and (max-width: 768px) {
+        .slant-container {
+        display: none;
+        }
+    }
+/*slant container for smaller screens*/
+    .new-section{
+        display:none;
+        background-color: #357960;
+        color: white;
+    }
+
+@media screen and (max-width: 768px) {
+    .new-section {
+        display: block;
+    }
+}
+/*Buttons*/
   .button{
     border-radius:8px;
     background-color:#00AD51;
@@ -198,7 +240,8 @@ nav {
 ::selection{
     background: #00AD51;
     color: aliceblue;
-}* {
+}
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
