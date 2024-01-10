@@ -57,9 +57,9 @@
 }
 
 /* Adjust the margin for the "Blog" card */
-/*.col-2:nth-child(2) .card {
-  margin-top: -30px; /* You can adjust this value as needed 
-}*/
+.col-2:nth-child(2) .card {
+  margin-top: -30px; /* You can adjust this value as needed */
+}
 
 /* Adjust the margin for the "Tools" card */
 .col-3:last-child .card {
