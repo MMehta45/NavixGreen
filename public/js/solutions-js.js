@@ -1,0 +1,1 @@
+/*JS file for the default solutions page listing links to all other solutions*/

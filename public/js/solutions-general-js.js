@@ -1,0 +1,1 @@
+/*A General JS file for Solar, Wind, Microhydro & Geothermal*/
