@@ -4,26 +4,28 @@
   font-family: Bebas;
   src: url('../fonts/BebasKai-Regular.otf');
 }
-
+body{
+  overflow-x: hidden;
+}
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
-
-
+.on_top2{
+  font-size: 20px;
+  font-weight: bold;
+}
 
  /* Styles for the card */
- 
- .container {
-  margin-top: 100px;
-}
 
 .card {
   margin-bottom: 15px; /* Adjust the margin between cards */
   transition: transform 0.3s; /* Add a smooth transition for the hover effect */
   width: 100%; /* Set the card width to 100% within the column */
+  max-height: 200px;
+  min-height: 200px;
 }
 
  .card:hover  {
@@ -33,7 +35,7 @@
 }
 
 .icon {
-  margin-bottom: 20px;
+  padding-bottom: 30px;
   color: #00ac51; /* Set the initial icon color to green */
 }
 
@@ -46,24 +48,18 @@
   transition: opacity 1s ease-in-out;
   opacity: 0%;
   color: #fff; /* Set the icon color to white on hover */
+  margin-top: 0px;
 }
-
+.card a{
+  text-decoration: none;
+  color: black;
+}
 .card:hover .icon2 {
   display: inline-block;
 }
 
 .card:hover .card-body {
   color: #fff;
-}
-
-/* Adjust the margin for the "Blog" card */
-.col-2:nth-child(2) .card {
-  margin-top: -30px; /* You can adjust this value as needed */
-}
-
-/* Adjust the margin for the "Tools" card */
-.col-3:last-child .card {
-  margin-top: 6px; /* You can adjust this value as needed */
 }
 
 /* End of card styles */

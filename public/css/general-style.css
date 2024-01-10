@@ -226,7 +226,7 @@ nav {
     box-sizing: border-box;
     padding: 30px;
     color: azure;
-    margin-bottom: 200px;
+    margin-bottom: 100px;
     margin-top: 200px;
 }
 .slant-container:after{
@@ -252,7 +252,7 @@ nav {
     display: block;
     margin-top: 30px;
     position: relative;
-    left:-11%;
+   
   }
 
   .fire{
@@ -260,10 +260,10 @@ nav {
    
       color: transparent;
       background: linear-gradient(to right, #FF5722, #FF6347,#FFC107);
-      background: -webkit-linear-gradient(to right, #00ad51, #39d98b, #20d4b9);
-      background: -moz-linear-gradient(to right, #00ad51, #39d98b, #20d4b9);
-      background: -ms-linear-gradient(to right, #00ad51, #39d98b, #20d4b9);
-      background: -o-linear-gradient(to right, #00ad51, #39d98b, #20d4b9);
+      background: -webkit-linear-gradient(to right, #FF5722, #FF6347,#FFC107);
+      background: -moz-linear-gradient(to right, #FF5722, #FF6347,#FFC107);
+      background: -ms-linear-gradient(to right, #FF5722, #FF6347,#FFC107);
+      background: -o-linear-gradient(to right, #FF5722, #FF6347,#FFC107);
       background-clip: text;
       -webkit-background-clip: text;
       -ms-background-clip: text;
@@ -271,11 +271,16 @@ nav {
       -o-background-clip: text;
   
   }
+  .on_top{
+    position: relative;
+    left: -10%;
+  }
   .slanttitle{
     width:1000px;
     position: relative;
     left:-27%;
   }
+
   /* Media query to hide the slanted container on smaller screens */
     @media screen and (max-width: 768px) {
         .slant-container {
@@ -287,6 +292,7 @@ nav {
         display:none;
         background-color: #357960;
         color: white;
+        margin-bottom: 100px;
     }
 
 @media screen and (max-width: 768px) {
