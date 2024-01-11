@@ -9,6 +9,7 @@
 .value-card {
     text-align: center;
     border: none;
+   
 }
 .our-story-section{
     background-color:#00AD51;
@@ -25,4 +26,9 @@
     background-color: #00AD51;
     color: #ffffff;
     padding: 80px 0;
+}
+.hero-section {
+    background: url('img/about.jpg') center/cover no-repeat;
+    padding: 100px 0;
+    text-align: center;
 }

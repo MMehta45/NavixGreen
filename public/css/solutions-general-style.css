@@ -67,8 +67,3 @@ body {
 .link_disabled {
     pointer-events: none;
 }
-.hero-section {
-    background: url('your-hero-image.jpg') center/cover no-repeat;
-    padding: 100px 0;
-    text-align: center;
-}
