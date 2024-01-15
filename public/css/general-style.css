@@ -54,10 +54,6 @@ p,a {
     color: #20d4b9;
 }
 .text_logogradient {
-    color: transparent;
-    background: linear-gradient(to right, #00ad51, #39d98b, #20d4b9);
-    background: -webkit-linear-gradient(to right, #00ad51, #39d98b, #20d4b9);
-    background: -moz-linear-gradient(to right, #00ad51, #39d98b, #20d4b9);
     background: -ms-linear-gradient(to right, #00ad51, #39d98b, #20d4b9);
     background: -o-linear-gradient(to right, #00ad51, #39d98b, #20d4b9);
     background-clip: text;
@@ -315,6 +311,22 @@ nav {
 .button:hover{
     background-color:#357960;color:white
 }
+
+.custom-btn {
+    display: block;
+    padding: 10px 20px;
+    background-color: #00AD51;
+    text-decoration: none;
+    color: #fff;
+    transition: background-color 0.3s, color 0.3s;
+    font-size: 24px;
+  }
+  
+  .custom-btn:hover {
+    background-color: #357960;
+    color: #fff;
+  }
+  
 /*Highlight*/
 ::selection {
     background: #00AD51;
