@@ -26,7 +26,7 @@ SOME CODE MAY NOT BE RELEVENT BUT IS NEEDED FOR SUB NAV TO WORK
   color: white;
   
 }
-#works, #benifts, #providers, #faqs, #tax, #basics{
+#works, #benifts, #providers, #faqs, #tax, #basics, #works2 {
     padding: 80px 0px
     }
    #works{
@@ -51,26 +51,35 @@ SOME CODE MAY NOT BE RELEVENT BUT IS NEEDED FOR SUB NAV TO WORK
         grid-column: span 2;
       }
       /* For screens smaller than 768px */
-      @media (max-width: 768px) {
-       #benifts{
-        display: none;
-       }
-    }
-      
-      /* Bento Grid Text Styles*/
-      .center-text{
-        position: absolute;
-      top: 50%; /* Move the top edge to the center vertically */
-      left: 50%; /* Move the left edge to the center horizontally */
-      transform: translate(-50%, -50%); /* Center the text precisely */
+     /* Bento Grid Text Styles */
+     .center-text-wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 20px; /* Add padding for spacing within the container */
+  }
+  
+  .center-text {
+      color: antiquewhite;
+  }
+  
+  .centered-text-below {
+      color: antiquewhite;
+      margin-top: 20px;
+  }
+  
+  /* For screens smaller than 768px */
+  @media (max-width: 768px) {
+      #benifts {
+          display: none;
       }
-      .centered-text-below {
-        position: absolute;
-        top: calc(50% + 60px); /* Adjust the distance below the h1 */
-        left: 50%;
-        transform: translate(-50%, -50%);
-        color: antiquewhite;
-    }
+  
+   
+  }
+.card{
+  width: 400px;
+}
       .fire2{
         font-family: 'Montserrat', sans-serif;
         font-size: 5rem;
@@ -88,3 +97,27 @@ SOME CODE MAY NOT BE RELEVENT BUT IS NEEDED FOR SUB NAV TO WORK
       -o-background-clip: text;
   
       }
+
+      /*Providers Styles*/
+      .custom-btn2 {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #00AD51;
+        text-decoration: none;
+        color: #fff;
+        transition: background-color 0.3s, color 0.3s;
+        border-radius: 5px;
+      }
+  
+      .custom-btn2:hover {
+        background-color: #fff;
+        color: #00AD51;
+        border: 1px solid #00AD51;
+      }
+      
+      #providers img{
+        width: 100%;
+        height: auto;
+      }
+
+      
