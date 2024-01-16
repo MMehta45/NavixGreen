@@ -1,18 +1,15 @@
-/*A General JS file for Solar, Wind, Microhydro & Geothermal*/
-window.onscroll = function() {myFunction()};
+document.querySelectorAll('.accordion-item h2').forEach((accordionToggle) => { 
+  accordionToggle.addEventListener('click', () => { 
+  const accordionItem = accordionToggle.parentNode; 
+  const accordionContent = accordionToggle.nextElementSibling; 
 
-const main_navbar = document.getElementById("main_navbar");
-const sub_navbar = document.getElementById("sub_navbar");
-let sticky = window.innerHeight - 100;
-
-function myFunction() {
-  if (window.scrollY >= sticky) {
-    console.log("Running sticky!")
-    main_navbar.classList.add("first_sticky");
-    sub_navbar.classList.add("second_sticky");
-  } else {
-    console.log("Not running sticky!")
-    main_navbar.classList.remove("first_sticky");
-    sub_navbar.classList.remove("second_sticky");
-  }
-}
+        // If this accordion item is already open, close it.
+   if (accordionContent.style.maxHeight) { 
+       accordionContent.style.maxHeight = null; 
+       accordionItem.classList.remove('active'); 
+      } else {
+        accordionContent.style.maxHeight = accordionContent.scrollHeight + 'px'; 
+            accordionItem.classList.add('active'); 
+        }
+    });
+});
