@@ -107,6 +107,8 @@ SOME CODE MAY NOT BE RELEVENT BUT IS NEEDED FOR SUB NAV TO WORK
         color: #fff;
         transition: background-color 0.3s, color 0.3s;
         border-radius: 5px;
+        margin: 0 auto;
+        text-align: center;
       }
   
       .custom-btn2:hover {
@@ -119,6 +121,14 @@ SOME CODE MAY NOT BE RELEVENT BUT IS NEEDED FOR SUB NAV TO WORK
         width: 100%;
         height: auto;
       }
+      @media (max-width: 767px) {
+        .custom-card {
+          margin: auto;
+        }
+      }
+.custom-card{
+  width: 20rem;
+}      
 
 /*FAQS*/
 
