@@ -13,3 +13,4 @@ document.querySelectorAll('.accordion-item h2').forEach((accordionToggle) => {
         }
     });
 });
+
