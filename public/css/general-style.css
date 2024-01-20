@@ -34,7 +34,6 @@ h1, h2, h3, h4, h5, h6{
 }
 p,a {
     font-family: 'Karla', sans-serif;
-    
 }
 .bg_navix1 {
     background-color: #00ad51;
@@ -54,9 +53,13 @@ p,a {
 .text_navix3 {
     color: #20d4b9;
 }
-.text_logogradient {
-    background: -ms-linear-gradient(to right, #00ad51, #39d98b, #20d4b9);
-    background: -o-linear-gradient(to right, #00ad51, #39d98b, #20d4b9);
+.text_logo_gradient {
+    color: transparent;
+    background: linear-gradient(to right, #357960, #00AD51, #02ec88);
+    background: -webkit-linear-gradient(to right, #357960, #00AD51, #02ec88);
+    background: -moz-linear-gradient(to right, #357960, #00AD51, #02ec88);
+    background: -ms-linear-gradient(to right, #357960, #00AD51, #02ec88);
+    background: -o-linear-gradient(to right, #357960, #00AD51, #02ec88);
     background-clip: text;
     -webkit-background-clip: text;
     -ms-background-clip: text;
