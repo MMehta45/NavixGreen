@@ -3,26 +3,17 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <title>Wind Energy | Navix</title>
+        <title>Solar Energy | Navix</title>
         <!--Stylesheets! DO NOT DELETE-->
         <!--General Stylesheet--><link rel="stylesheet" href="../css/general-style.css">
         <!--General Solutions Stylesheet--><link rel="stylesheet" href="../css/solutions-general-style.css">
-        <!--Wind Energy Stylesheet--><link rel="stylesheet" href="../css/solutions-wind-style.css">
+        <!--Solar Energy Stylesheet--><link rel="stylesheet" href="../css/solutions-solar-style.css">
         <!--Bootstrap v5.3--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
         <!--Hover.css v2.3.1--><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover.css" integrity="sha512-Qg72y9f1a3aVc1FVnjq5YURLOOG8fDKQjMnhxYaZgBz4nIVjpVOBUtuMMMqkZPS1FlVrzzEBXq2sM6Qp1zen/Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <!--AOS v2.3.1--><link  rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
-        <style>
-            #sub_navbar .nav-pills  {
-                --bs-nav-pills-link-active-color: #ffffff;
-                --bs-nav-pills-link-active-bg: #1bbc64;
-            }
-            #sub_navbar .nav-item {
-                --bs-nav-link-color: #1bbc64;
-            }
-        </style>
     </head>
     <body class="light-theme">
-        <nav class="navbar navbar-expand-lg navbar-dark sticky-top main_pagetop_navbar_background" id="main_navbar">
+        <nav class="navbar navbar-expand-lg navbar-dark sticky-top main_pagetop_navbar_background">
             <div class="container-fluid">
                 <a class="navbar-brand" href="../index.html">
                     <!-- 
@@ -61,8 +52,8 @@
                                 Solutions
                             </a>
                             <div class="dropdown-menu dropdown-menu-dark" aria-labelledby="toursandpricing">
-                                <a class="dropdown-item text-white-50" href="solar.html">Solar Energy</a>
-                                <a class="dropdown-item text-white" href="wind.html">Wind Energy</a>
+                                <a class="dropdown-item text-white" href="solar.html">Solar Energy</a>
+                                <a class="dropdown-item text-white-50" href="wind.html">Wind Energy</a>
                                 <a class="dropdown-item text-white-50" href="micro-hydro.html">Microhydro Systems</a>
                                 <a class="dropdown-item text-white-50" href="geothermal.html">Geothermal Systems</a>
                                 <a class="dropdown-item text-white-50" href="pricing-calculator.html">Pricing Calculator</a>
@@ -87,129 +78,341 @@
                 </div>
             </div> 
         </nav>
-        <div class="text-center mx-auto" id="start_image">
-            <img src="../img/solutions/WindTurbines1.jpeg" class="img-fluid mx-auto" id="top_pic">
-            <h1 class=" carousel-caption display-3 text-center my-3 image_text" id="image_text1">Wind Energy</h1>
+       
+        <!-- Hero Section -->
+        <div class="container-fluid hero-container">
+            <div class="row">
+                <div class="col-12 p-0">
+                    <div class="hero-image" style="background-image: url('../img/rooftop_solar.jpg');">
+                        <div class="hero-text">
+                            <h1 class="display-1">Solar Roofs </h1>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
+       
+        <!--Basic Info-->
+        <section id="basics class=py-5" style="margin-top: 100px;">
+            <div class="container basics text-center">
+            <h1 class="display-3 text-center">Overview</h1>
+            <p class="lead">Solar roofs are among the most popular solution for homeowners looking to power their home on self made green energy. 
+                Solar roofs come in to main configuraitions: Traditional panels and solar shingles each with their own benifts, and use cases. 
+                Traditional panels mounted on roofs are a versitale option that work on a wide varity of architectural styles. 
+                Solar shingles on the other hand add a asthetic element to solar roofs  mimicking the appearance of conventional roofing materials and seamlessy blending in with the existing roof structure.
+                Both traditional panels and solar shingles share the technolgy and produce clean, renewable energy.
+            </p>
+            <div class="text-center"> 
+                <a href="solutions/solutions.html" class="custom-btn rounded hvr-grow lead">Let's See If Solar Is Right For You</a>
+            </div>
+            
+        </div>
+        </section>
         <!--How It Works-->
-        <section id="works" class="py-5">
-            <div class="container works">
+        <section id="works" class="py-5 d-none d-lg-block">
+            <div class="display-3 text-center">How It Works</div>
+            <div class="container works" style="margin-top: 50px;">
                 <div class="row">
                     <!-- Left-aligned Vertical Image -->
-                    <div class="col-md-6 mb-4">
-                        <img src="../img/solar2.jpg" alt="Left Aligned Image" class="img-fluid rounded-3" style="height: 550px; width: 100%;">
+                    <div class="col-md-12 col-lg-6 mb-4">
+                        <img src="../img/solar2.jpg" alt="Left Aligned Image" class="img-fluid rounded-3" style="height: 750px; width: 100%;" data-aos="fade-right">
                     </div>
                     <!-- Three Rows to the Right of the Image -->
-                    <div class="col-md-6">
-                        <!-- Row 1 - Title -->
-                        <div class="row mb-4">
-                            <div class="col-12">
-                                <h3>How It Works</h3>
-                            </div>
-                        </div>
+                    <div class="col-md-6" data-aos="fade-up" style="margin-top: 20px;">
                         <!-- Row 2 - Three Columns with Title and Text -->
-                        <div class="row mb-4">
-                            <div class="col-md-4">
-                                <h4>Title 1</h4>
-                                <p>Text 1</p>
+                        <div class="row mb-4" >
+                            <div class="col-md-12 col-lg-4">
+                                <h3>01 <br>Sunlight Absorption</h3>
+                                <p>Solar panels are made up of photovoltaic cells, which are designed to absorb sunlight. These cells contain semiconductor materials, usually made of silicon.</p>
                             </div>
-                            <div class="col-md-4">
-                                <h4>Title 2</h4>
-                                <p>Text 2</p>
+                            <div class="col-md-12 col-lg-4">
+                                <h3>02 <br>Electron Excitation</h3>
+                                <p>When sunlight hits the cells, it excites the electrons in the semiconductor material. This process generates energy in the form of direct current (DC).</p>
                             </div>
-                            <div class="col-md-4">
-                                <h4>Title 3</h4>
-                                <p>Text 3</p>
+                            <div class="col-md-12 col-lg-4">
+                                <h3>03 <br>Inverter Conversion</h3>
+                                <p>The DC electricity produced by the solar panels is then sent to an inverter, a device that converts it into alternating current (AC). Most homes use AC power.</p>
                             </div>
                         </div>
                         <!-- Row 3 - Three Columns with Title and Text -->
                         <div class="row">
-                            <div class="col-md-4">
-                                <h4>Title 4</h4>
-                                <p>Text 4</p>
+                            <div class="col-md-12 col-lg-4">
+                                <h3>04<br> Powering Your Home</h3>
+                                <p>The converted AC electricity is then used to power your home's electrical appliances and devices. If your solar system generates more power than you need, the excess can be fed back to the grid.</p>
                             </div>
-                            <div class="col-md-4">
-                                <h4>Title 5</h4>
-                                <p>Text 5</p>
+                            <div class="col-md-12 col-lg-4">
+                                <h3>05<br> Net <br>Metering</h3>
+                                <p>In some cases, excess energy generated can be credited back to you, meaning you may receive compensation or credits on your utility bill for the surplus electricity your solar panels produce.</p>
                             </div>
-                            <div class="col-md-4">
-                                <h4>Title 6</h4>
-                                <p>Text 6</p>
+                            <div class="col-md-12 col-lg-4">
+                                <h3>06 <br>Clean <br>Energy</h3>
+                                <p>By generating electricity from sunlight, solar panels reduce the need for traditional energy sources that contribute to pollution and greenhouse gas emissions, making them a clean and more sustainable option.</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+        
+        <section id="works2" class="py-5 d-sm-block d-md-block d-lg-none">
+            <div class="display-3 text-center">How It Works</div>
+            <div class="container works" style="margin-top: 50px;">
+                <!-- Vertical Image -->
+                <div class="row">
+                    <div class="col-12 mb-4">
+                        <img src="../img/rooftop_solar2.jpg" alt="Image" class="img-fluid rounded-3" style=" width: 100%;" data-aos="fade-right">
+                    </div>
+                </div>
+                <!-- Text Content -->
+                <div class="row" data-aos="fade-up" style="margin-top: 20px;">
+                    <!-- Step 1 -->
+                    <div class="col-12 mb-4">
+                        <h3>01: Sunlight Absorption</h3>
+                        <p class="lead">Solar panels are made up of photovoltaic cells, which are designed to absorb sunlight. These cells contain semiconductor materials, usually made of silicon.</p>
+                    </div>
+                    <!-- Step 2 -->
+                    <div class="col-12 mb-4">
+                        <h3>02: Electron Excitation</h3>
+                        <p class="lead">When sunlight hits the cells, it excites the electrons in the semiconductor material. This process generates energy in the form of direct current (DC).</p>
+                    </div>
+                    <!-- Step 3 -->
+                    <div class="col-12 mb-4">
+                        <h3>03: Inverter Conversion</h3>
+                        <p class="lead">The DC electricity produced by the solar panels is then sent to an inverter, a device that converts it into alternating current (AC). Most homes use AC power.</p>
+                    </div>
+                    <!-- Step 4 -->
+                    <div class="col-12 mb-4">
+                        <h3>04: Powering Your Home</h3>
+                        <p class="lead">The converted AC electricity is then used to power your home's electrical appliances and devices. If your solar system generates more power than you need, the excess can be fed back to the grid.</p>
+                    </div>
+                    <!-- Step 5 -->
+                    <div class="col-12 mb-4">
+                        <h3>05: Net Metering</h3>
+                        <p class="lead">In some cases, excess energy generated can be credited back to you, meaning you may receive compensation or credits on your utility bill for the surplus electricity your solar panels produce.</p>
+                    </div>
+                    <!-- Step 6 -->
+                    <div class="col-12 mb-4">
+                        <h3>06: Clean Energy</h3>
+                        <p class="lead">By generating electricity from sunlight, solar panels reduce the need for traditional energy sources that contribute to pollution and greenhouse gas emissions, making them a clean and more sustainable option.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
         <!--Benifts with Bento Style grid -->
         <section id="benifts">
             <div class="container">
-                <h2>Benefits</h2>
+                
                 <div class="containerbento">
-                    <div class="item item-3"></div>
-                    <div class="item item-4"></div>
-                    <div class="item item-5"></div>
-                    <div class="item item-6"></div>
+                    <div class="item item-3">
+                        <div class="center-text-wrapper">
+                            <h1 class="display-1 center-text">
+                                <span class="fire2">Solar Roof</span>
+                            </h1>
+                            <h3 class="centered-text-below">Benefits</h3>
+                        </div>
+                    </div>
+                    <div class="item item-4">
+                        <div class="center-text-wrapper">
+                            <h1 class="display-1 center-text text-center">
+                                <span class="fire2">6.3</span>
+                            </h1>
+                            <h5 class="centered-text-below text-center">Metric Tons Of CO2 Reduced Each Year</h5>
+                        </div>
+
+                    </div>
+                    <div class="item item-5">
+                        <div class="center-text-wrapper">
+                            <h1 class="display-1 center-text text-center">
+                                <span class="fire2">$115</span>
+                            </h1>
+                            <h5 class="centered-text-below text-center">Saved Per Month On Avgerage</h5>
+                        </div>
+                        
+                    </div>
+                    <div class="item item-6">
+                        <div class="center-text-wrapper">
+                            <h1 class="display-1 center-text text-center">
+                                <span class="fire2">2,000,000+</span>
+                            </h1>
+                            <h5 class="centered-text-below text-center">Solar Roof Systems In The U.S</h5>
+                        </div>
+                        
+                    </div>
                 </div>
             </div>
         </section>
         <!--Tax and Rebate Info-->
         <section id="tax">
             <div class="container">
-                <h2>Tax Talk</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non totam, obcaecati quis numquam perspiciatis officiis dicta repellat necessitatibus quod? Omnis dignissimos facilis sed. Vel aut fuga quisquam sed distinctio totam.</p>
+                <h2 class="display-3 text-center">Cost & Tax Info</h2>
+                <div>
+                    <h4 class="fw-bold">Cost: Solar Panels Vs Solar Shingles</h4>
+                    <p>
+                        
+                        The cost of both solar panels and solar shingles vary on a varity of factors including roof slope, type of solar panel/shingel, amount need, brand, among others.
+                        On average before federal tax credits it costs around <span class="fw-bold">$20,000</span> to install solar panels and fall in a range of <span>$4,500 to $36,000.</span>
+                        Solar shingles will cost on avgerage between <span class="fw-bold">$25,000 to $55,000</span> or around <span class="fw-bold">$20 to $30</span> per square foot.
+                    <!--Possible Graphic?-->
+                    </p> 
+                    <br>
+                    <h4 class="fw-bold">Federal Tax Credit</h4>
+                    <p>A tax credit is a financial incentive provided by the government to encourage specific behaviors, such as adopting renewable energy solutions like solar panels. The federal solar tax credit, also known as the Investment Tax Credit (ITC), is a crucial incentive for homeowners looking to make their homes more energy-efficient.
+                        <br>
+                        <br>
+                        The current credit rate is 30% for systems installed in 2022 to 2032, 26% for systems installed in 2033, and 22% for systems installed in 2034.  This means you claim 30% of the cost of your solar system on your federal income tax.There is no annual or lifetime limit on the amount of credit you can claim.
+                        It's important to note that tax credit rates may change, so staying updated on the latest regulations is advisable.
+                        <br>
+                        <br>
+                        To be eligible for the federal solar tax credit, you must meet certain criteria:
+                        <br>
+                        <br>
+                        <span class="fw-bold">Ownership:</span> You must own the solar panel system either through purchase or financing. Leased systems are not eligible for the tax credit.
+                        <br>
+                        <span class="fw-bold">Residence:</span> The solar panels must be installed on a residential property, and the property must be used as a residence.
+                        <br>
+                        <br>
+                        It's essential to understand that tax credits are applied to your federal tax liability, reducing the amount of taxes you owe. If the tax credit exceeds your tax liability, the excess can typically be carried forward to the following year.
+                        <br>
+                        <br> 
+                        To claim the federal solar tax credit, you'll need to complete IRS Form 5695 when filing your annual tax return. Consider consulting with a tax professional to ensure accurate documentation and to navigate any updates or changes to the tax credit program. Taking advantage of these incentives not only makes solar adoption financially viable but also supports the broader goals of environmental sustainability.
+                    </p>
+                    <p>*Your state may also have tax credits and benifts to incourage the installation of solar roofs.  You can view a complete list of solar benifts programs in your state here [<a href="https://www.dsireusa.org/" target="_blank">HERE</a>]</p>
+                    <!--Possible Graphic?-->
+                </div>
             </div>
         </section>
         <!--3 to 4 popular providers-->
-        <section id="providers">
+        <section id="providers" class="py-5">
             <div class="container">
-                <h2>Popular Providers</h2>
+              <h2 class="display-3 text-center mb-4">Popular Providers</h2>
+              <div class="row">
+                <div class="col-lg-4 col-md-12 mb-3">
+                  <div class="card custom-card h-100">
+                    <img class="card-img-top" src="../img/sun_power.png" alt="Card image">
+                    <div class="card-body">
+                      <h4 class="card-title">SunPower Solar</h4>
+                      <h6>Areas Served</h6>
+                      <p class="card-text">Sunpower Solar is available in all 50 states.</p>
+                      <a href="https://us.sunpower.com/" class="custom-btn2 mx-auto" style="margin-top: 27px;" target="_blank">Visit Site</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-12 mb-3">
+                  <div class="card custom-card h-100">
+                    <img class="card-img-top" src="../img/adt_solar.webp" alt="Card image">
+                    <div class="card-body">
+                      <h4 class="card-title">ADT Solar</h4>
+                      <h6>Areas Served</h6>
+                      <p class="card-text">California, Florida, Georgia, Illinois, Maryland, Missouri, Ohio, Texas, Virginia</p>
+                      <a href="https://www.adtsolar.com/" class="custom-btn2 mx-auto" target="_blank">Visit Site</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-12 mb-3">
+                  <div class="card custom-card h-100">
+                    <img class="card-img-top" src="../img/tesla_solar.webp" alt="Card image">
+                    <div class="card-body">
+                      <h4 class="card-title">Tesla Solar</h4>
+                      <h6>Areas Served</h6>
+                      <p class="card-text">Tesla Solar is available in all 50 states.</p>
+                      <a href="https://www.tesla.com/solarpanels" class="custom-btn2 mx-auto" style="margin-top:43px;" target="_blank">Visit Site</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-        </section>
+          </section>
+          
+          
+          
+          
         <!--FAQS (Borrow Styles from old accordion of u want)-->
         <section id="faqs">
+            <div class="container mt-5">
+                <h2 class="display-3 text-center">FAQS</h2>
+                <div class="accordion">
+                    <div class="accordion-item">
+                      <h2>What is HTML?</h2>
+                        <div class="accordion-content">
+                          <p>HTML, or Hypertext Markup Language, is the backbone of web development. It provides the structural foundation for creating web pages by defining the elements on a page such as headings, paragraphs, links, images, and more. HTML uses a system of tags to organize content and give it meaning.</p>
+                          
+                          <p>As the core language of the web, HTML allows developers to structure information in a way that browsers can understand, enabling the creation of visually appealing and interactive websites.</p>
+                  
+                        <a class="btn" href="https://developer.mozilla.org/en-US/docs/Web/HTML">Read more about HTML</a>
+                       </div>
+                     </div>
+                  
+                    <div class="accordion-item">
+                      <h2>What is CSS?</h2>
+                      <div class="accordion-content">
+                        <p>CSS, or Cascading Style Sheets, is the styling language that brings life and visual appeal to HTML content. While HTML defines the structure, CSS controls the presentation and layout of web pages. </p>
+                        <p>With CSS, developers can customize the colors, fonts, spacing, and overall design of a website, ensuring a consistent and aesthetically pleasing user experience across different devices. The "cascading" nature of CSS allows styles to be applied hierarchically, providing flexibility and ease of maintenance in the design process.</p>
+                         <p>You can read more about CSS on <a href="https://developer.mozilla.org/en-US/docs/Web/CSS">mdn web docs</a>.</p>
+                       </div>
+                    </div>
+                  
+                    <div class="accordion-item">
+                      <h2>What is JavaScript?</h2>
+                      <div class="accordion-content">
+                        <p>JavaScript is a powerful scripting language that adds interactivity and dynamic behavior to web pages. As a client-side programming language, it runs directly in the user's browser, enabling real-time updates and responses without the need to reload the entire page. </p>
+                                          
+                        <p>JavaScript allows developers to create interactive forms, validate user input, manipulate the Document Object Model (DOM), and communicate with servers, making it an essential tool for building modern, responsive, and engaging web applications. In combination with HTML and CSS, JavaScript completes the trio that forms the foundation of web development.</p>
+                       </div>
+                     </div>
+        </section>
+        <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+            <symbol id="facebook" viewBox="0 0 16 16">
+                <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+            </symbol>
+            <symbol id="instagram" viewBox="0 0 16 16">
+                <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+            </symbol>
+            <symbol id="twitter" viewBox="0 0 16 16">
+                <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+            </symbol>
+        </svg>
+        <footer class="bg-dark text-light py-5">
             <div class="container">
-                <h2>Faqs</h2>
-                <div class="accordion accordion-flush" id="accordionFlushExample">
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                                Accordion Item #1
-                            </button>
-                        </h2>
-                        <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body">
-                                Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.
-                            </div>
-                        </div>
+                <div class="row">
+                    <div class="col-md-3">
+                        <img src="../img/logo/NavixLogo_NoBG_WhiteText.png" alt="Your Logo" class="img-fluid mb-3" id="logo">
                     </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                                Accordion Item #2
-                            </button>
-                        </h2>
-                        <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body">
-                                Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.
-                            </div>
-                        </div>
+                    <div class="col-md-3">
+                        <h5 class="mb-3">Quick Links</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="../index.html">Home</a></li>
+                            <li><a href="../about.html">About</a></li>
+                            <li><a href="../history.html">History</a></li>
+                            <li><a href="../why-switch.html">Your Impact</a></li>
+                        </ul>
                     </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                                Accordion Item #3
-                            </button>
-                        </h2>
-                        <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body">
-                                Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.
-                            </div>
+                    <div class="col-md-3">
+                        <h5 class="mb-3">Solutions</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="solar.html">Solar Energy</a></li>
+                            <li><a href="wind.html">Wind Energy</a></li>
+                            <li><a href="micro-hydro.html">Microhydro Systems</a></li>
+                            <li><a href="geothermal.html">Geothermal Systems</a></li>
+                            <li><a href="pricing-calculator.html">Pricing Calculator</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <h5 class="mb-3">Resources</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="../blog.html">Blog</a></li>
+                            <li><a href="../energystar.html">Energy Star</a></li>
+                            <li><a href="../terms-conditions.html">Terms & Conditions</a></li>
+                        </ul>
+                    </div>
+                    <div class="row mt-4 ">
+                        <div class="col-md-12 text-center">
+                            <p>&copy; 2024 Navix All Rights Reserved.</p>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
         </footer>
         <!--Scripts! DO NOT DELETE-->
         <!--GSAP SCRIPTS-->
@@ -229,7 +432,7 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/CustomEase.min.js"></script>
         <!--General JS Script--><script src="../js/general-js.js"></script>
         <!--General Solutions JS Script--><script src="../js/solutions-general-js.js"></script>
-        <!--Wind Energy JS Script--><script src="../js/solutions-wind-js.js"></script>
+        <!--Solar Energy JS Script--><script src="../js/solutions-solar-js.js"></script>
         <!--Popper JS (required for Boostrap)--><script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
         <!--JQuery--> <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
         <!--Bootstrap JS--><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
@@ -261,3 +464,48 @@
         </script>
     </body>
 </html>
+
+<section id="works2" class="py-5 d-sm-block d-md-block d-lg-none">
+    <div class="display-3 text-center">How It Works</div>
+    <div class="container works" style="margin-top: 50px;">
+        <!-- Vertical Image -->
+        <div class="row">
+            <div class="col-12 mb-4">
+                <img src="../img/rooftop_solar2.jpg" alt="Image" class="img-fluid rounded-3" style=" width: 100%;" data-aos="fade-right">
+            </div>
+        </div>
+        <!-- Text Content -->
+        <div class="row" data-aos="fade-up" style="margin-top: 20px;">
+            <!-- Step 1 -->
+            <div class="col-12 mb-4">
+                <h3>01: Sunlight Absorption</h3>
+                <p class="lead">Solar panels are made up of photovoltaic cells, which are designed to absorb sunlight. These cells contain semiconductor materials, usually made of silicon.</p>
+            </div>
+            <!-- Step 2 -->
+            <div class="col-12 mb-4">
+                <h3>02: Electron Excitation</h3>
+                <p class="lead">When sunlight hits the cells, it excites the electrons in the semiconductor material. This process generates energy in the form of direct current (DC).</p>
+            </div>
+            <!-- Step 3 -->
+            <div class="col-12 mb-4">
+                <h3>03: Inverter Conversion</h3>
+                <p class="lead">The DC electricity produced by the solar panels is then sent to an inverter, a device that converts it into alternating current (AC). Most homes use AC power.</p>
+            </div>
+            <!-- Step 4 -->
+            <div class="col-12 mb-4">
+                <h3>04: Powering Your Home</h3>
+                <p class="lead">The converted AC electricity is then used to power your home's electrical appliances and devices. If your solar system generates more power than you need, the excess can be fed back to the grid.</p>
+            </div>
+            <!-- Step 5 -->
+            <div class="col-12 mb-4">
+                <h3>05: Net Metering</h3>
+                <p class="lead">In some cases, excess energy generated can be credited back to you, meaning you may receive compensation or credits on your utility bill for the surplus electricity your solar panels produce.</p>
+            </div>
+            <!-- Step 6 -->
+            <div class="col-12 mb-4">
+                <h3>06: Clean Energy</h3>
+                <p class="lead">By generating electricity from sunlight, solar panels reduce the need for traditional energy sources that contribute to pollution and greenhouse gas emissions, making them a clean and more sustainable option.</p>
+            </div>
+        </div>
+    </div>
+</section>

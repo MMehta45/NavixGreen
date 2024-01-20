@@ -77,15 +77,14 @@ SOME CODE MAY NOT BE RELEVENT BUT IS NEEDED FOR SUB NAV TO WORK
   
    
   }
-.card{
-  width: 400px;
-}
-      .fire2{
-        font-family: 'Montserrat', sans-serif;
+
+
+.fire3{
+  font-family: 'Montserrat', sans-serif;
         font-size: 5rem;
         font-weight:600;
-      color: transparent;
-      background: linear-gradient(to right, #FF5722, #FF6347,#FFC107);
+      color: transparent;     
+    background: linear-gradient(to right, #357960, #00AD51, #02ec88);
       background: -webkit-linear-gradient(to right, #FF5722, #FF6347,#FFC107);
       background: -moz-linear-gradient(to right, #FF5722, #FF6347,#FFC107);
       background: -ms-linear-gradient(to right, #FF5722, #FF6347,#FFC107);
@@ -95,10 +94,18 @@ SOME CODE MAY NOT BE RELEVENT BUT IS NEEDED FOR SUB NAV TO WORK
       -ms-background-clip: text;
       -moz-background-clip: text;
       -o-background-clip: text;
-  
-      }
+}
+     
 
       /*Providers Styles*/
+
+      .card{
+        width: 400px;
+        box-shadow: 25px 20px #357960;
+      }
+      .custom-card{
+        width: 20rem;
+      } 
       .custom-btn2 {
         display: inline-block;
         padding: 10px 20px;
@@ -126,9 +133,7 @@ SOME CODE MAY NOT BE RELEVENT BUT IS NEEDED FOR SUB NAV TO WORK
           margin: auto;
         }
       }
-.custom-card{
-  width: 20rem;
-}      
+     
 
 /*FAQS*/
 
