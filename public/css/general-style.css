@@ -19,6 +19,7 @@ Important Points:
 body {
     color: #ffffff;
     background-color: #292b2c;
+    overflow-x: hidden;
 }
 .light-theme{
     background-color: whitesmoke;
