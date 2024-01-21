@@ -54,7 +54,7 @@ p,a {
     color: #20d4b9;
 }
 .text_logo_gradient {
-    color: transparent;
+    color: transparent !important;
     background: linear-gradient(to right, #357960, #00AD51, #02ec88);
     background: -webkit-linear-gradient(to right, #357960, #00AD51, #02ec88);
     background: -moz-linear-gradient(to right, #357960, #00AD51, #02ec88);

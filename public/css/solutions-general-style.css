@@ -1,31 +1,61 @@
-/*A General CSS file for Solar, Wind, Microhydro & Geothermal
-SOME CODE MAY NOT BE RELEVENT BUT IS NEEDED FOR SUB NAV TO WORK
-*/
-.hero-image {
-    height: 70vh;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+/*A General CSS file for Solar, Wind, Microhydro & Geothermal*/
+body {
+    position: relative !important;
+    overflow-y: scroll !important;
+}
+#top_pic {
+    display: block;
+    width: 100%;
+    height: 85vh;
+    object-fit: cover;
+}
+.image_text {
+    display: block;
+    font-size: 15vh !important;
+    top: 55%;
+    transform: translateY(-60%);
+}
+#start_image {
     position: relative;
 }
-.hero-image::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
+#scrollspy {
+    position: relative !important;
+    height: auto !important;
+    overflow-y: scroll !important;
+}
+#overview {
+    min-height: 320px;
+    border-bottom: 2px solid #999999;
+}
+#how_it_works {
+    height: auto;
+}
+#benefits {
+    height: auto;
+}
+#pricing_and_tax {
+    height: auto;
+}
+#providers {
+    height: auto;
+}
+#faqs {
+    height: auto;
+}
+.sub_navbar_background {
+    background-color: #414a4c;
+}
+.sub_sticky {
+    position: sticky !important;
+    position: -webkit-sticky;
+    top: 50px;
     width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.3);
 }
-.hero-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
+#border {
+    border-right: 2px solid #999999;
 }
-#works, #benifts, #providers, #faqs, #tax, #basics, #works2 {
-    padding: 80px 0px
+.link_disabled {
+    pointer-events: none;
 }
 #works{
     text-align: start;
@@ -89,6 +119,7 @@ SOME CODE MAY NOT BE RELEVENT BUT IS NEEDED FOR SUB NAV TO WORK
 }
 .custom-card{
     width: 20rem;
+    max-width: 95%
 } 
 .custom-btn2 {
     display: inline-block;
