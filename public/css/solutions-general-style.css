@@ -70,6 +70,7 @@ body {
 .item {
     position: relative;
     border-radius: 10px;
+    background-color: #414a4c;
 }
 .item-3, .item-6 {
     grid-column: span 2;
