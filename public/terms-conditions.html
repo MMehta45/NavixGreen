@@ -13,73 +13,118 @@
         <!--Bootstrap v5.3--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
         <!--Hover.css v2.3.1--><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover.css" integrity="sha512-Qg72y9f1a3aVc1FVnjq5YURLOOG8fDKQjMnhxYaZgBz4nIVjpVOBUtuMMMqkZPS1FlVrzzEBXq2sM6Qp1zen/Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <!--AOS v2.3.1--><link  rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
-       
     </head>
     <body>
-        <!--
         <nav class="navbar navbar-expand-lg navbar-dark sticky-top main_pagetop_navbar_background">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="index.html">
-                        Need to edit these images!
-                        <img src="img/logo.png" class="d-inline-block" id="logo">
-                        <img src="img/NavixInWhite.png" class="d-inline-block" id="name">
-                        logo.png -- just the logo
-                        NavixInWhite.png -- the text in white
-                        NavixInBlack.png -- the text in black
-                </a>
-                <div class="d-none d-lg-block toggle-container" style="position: relative; top: 3.5px;">
-                    <div class="toggle">
-                        <input type="checkbox" id="toggle-switch">
-                        <label for="toggle-switch"></label>
+            <a class="navbar-brand">
+                <img src="img/logo/TermsConditionsTopLogo.png" class="d-inline-block" id="termsandconditions_toppic">
+            </a>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item" id="seperator">
+                        <a class="nav-link" aria-current="page" href="index.html">Back to Home</a>
+                    </li>
+                    <div class="toggle-container">
+                        <div class="toggle">
+                            <input type="checkbox" id="toggle-switch">
+                            <label for="toggle-switch"></label>
+                        </div>
+                        <span class="toggle-text"></span>
                     </div>
-                    <span class="toggle-text"></span>
-                </div>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="d-lg-none toggle-container" style="position: absolute; top: 10px; right: 70px">
-                    <div class="toggle">
-                        <input type="checkbox" id="toggle-switch">
-                        <label for="toggle-switch"></label>
-                    </div>
-                    <span class="toggle-text"></span>
-                </div>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item" id="seperator">
-                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                </ul>
+            </div>
+        </div>
+    </nav>
+        <div class="container">
+            <br>
+            <p class="lead text-center fs-4"> 
+                These terms and conditions ("the agreement") apply to your use of <a href="index.html" class="text_logo_gradient" 
+                style="text-decoration: none;">our website</a> ("the website"), and you are bound to these terms. If you do not 
+                agree to these terms and conditions, please do not use the website. This document is void where prohibited and
+                the website is void where prohibited.
+            </p>
+            <br>
+            <article>
+                <h4>Description of Services ("the services")</h4>
+                <p>
+                    Navix offers information and services to individuals, communities and businesses to enable them to make
+                    informed decisions about their use of renewable energy sources for energy consumption. We also offer a 
+                    <a href="blog.html" class="text_logo_gradient" style="text-decoration: none;">blog</a> to promote
+                    everyday sustainable practices. Please refer to the <a href="solutions/solutions.html" class="text_logo_gradient" 
+                    style="text-decoration: none;">solution descriptions</a> on our website for more information as to renewable energy sources.
+                </p>
+            </article>
+            <br>
+            <article>
+                <h4>Eligibility</h4>
+                <p>
+                    To use our website, you satisfy the following conditions:
+                    <ul>
+                        <li>
+                            You must be at least 6 years old and have the legal capacity to enter into contracts.
                         </li>
-                        <li class="nav-item dropdown" id="seperator">
-                            <a class="nav-link dropdown-toggle" href="solutions/solutions.html" id="toursandpricing" aria-haspopup="true" aria-expanded="false">
-                                Solutions
-                            </a>
-                            <div class="dropdown-menu dropdown-menu-dark" aria-labelledby="toursandpricing">
-                                <a class="dropdown-item text-white-50" href="solutions/solar.html">Solar Energy</a>
-                                <a class="dropdown-item text-white-50" href="solutions/wind.html">Wind Energy</a>
-                                <a class="dropdown-item text-white-50" href="solutions/micro-hydro.html">Microhydro Systems</a>
-                                <a class="dropdown-item text-white-50" href="solutions/geothermal.html">Geothermal Systems</a>
-                            </div>
+                        <li>
+                            If you are under 6 years old, you may use our services only with the involvement and consent of a parent or legal guardian.
                         </li>
-                        <li class="nav-item" id="seperator">
-                            <a class="nav-link" href="blog.html">Blog</a>
-                        </li>
-                        <li class="nav-item" id="seperator">
-                            <a class="nav-link"  href="history.html">History</a>
-                        </li>
-                        <li class="nav-item" id="seperator">
-                            <a class="nav-link" href="why-switch.html">Why Switch?</a>
-                        </li>
-                        <li class="nav-item" id="seperator">
-                            <a class="nav-link" href="energystar.html">Energy Star</a>
-                        </li>
-                        <li class="nav-item last">
-                            <a class="nav-link" href="about.html">About</a>
+                        <li>
+                            Regardless of age, you must be clear of all intent for any harmdoing to the website or the people who main it.
                         </li>
                     </ul>
-                </div>
-            </div> 
-        </nav>
-        -->
+                    In addtion to the above, we also reserve the right to deny access to the website any person who we deem is a threat
+                    to user safety and website functioning by blocking their IP addresses from accessing this site.<br> 
+                    A decision of ineligibility can be appealed at personal expense in private arbitration.
+                </p>
+            </article>
+            <br>
+            <article>
+                <h4>Changes to Services</h4>
+                <p>
+                    We reserve the right to modify, suspend, or discontinue our services, in any form or part, at any time and 
+                    without notice. We will not be liable to you or any third party for any modification, suspension, or 
+                    discontinuance of the services.
+                </p>
+            </article>
+            <br>
+            <article>
+                <h4>Limitation of Liability</h4>
+                <p>
+                    Our liability to you for any damages arising out of or related to this agreement or the services shall be 
+                    limited to the amount you paid for the services. We will not be liable for any indirect, special, incidental,
+                    consequential, or punitive damages, whether based on contract, tort (including negligence), or any other 
+                    legal theory, even if you have been advised of the possibility of such damages.
+                </p>
+            </article>
+            <br>
+            <article>
+                <h4>Indemnification</h4>
+                <p>
+                    You agree to indemnify, defend, and hold us and our affiliates, officers, directors, employees, agents, and 
+                    licensors harmless from any claim, demand, liability, or expense, including reasonable attorneys' fees, 
+                    arising out of or related to your use of the services, your violation of this agreement, or your violation 
+                    of any rights of another human and entity. You will accept full responsibility for the same in a court of law.
+                </p>
+            </article>
+            <br>
+            <article>
+                <h4>Intellectual Property</h4>
+                <p>
+                    Our website and our service, including all content and intellectual property rights, are owned by Navix or 
+                    our licensors. You may not use our website or the services for any commercial purpose without our express 
+                    written consent.
+                </p>
+            </article>
+            <br>
+            <article>
+                <h4>Governing Law and Dispute Resolution</h4>
+                <p>
+                    This agreement shall be governed by and construed in accordance with the laws of the United States and the 
+                    State of Texas. Any dispute arising out of or related to this agreement or the services shall be resolved 
+                    through binding arbitration in accordance with the Commercial Arbitration Rules of the American Arbitration 
+                    Association.
+                </p>
+            </article>
+            <br>
+        </div>
         <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
             <symbol id="facebook" viewBox="0 0 16 16">
                 <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>

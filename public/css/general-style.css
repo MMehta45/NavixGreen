@@ -97,12 +97,10 @@ nav {
         max-height: 40px;
         max-width: 50px;
     }
-    /*
     #termsandconditions_toppic {
         min-height: 24px;
         max-height: 45px;
     }
-    */
 }
 /*The following line emphasizes that the styles are applied only when the screen size is lesser than that of a small laptop.*/
 @media only screen and (max-width: 992px) {
@@ -110,11 +108,9 @@ nav {
         max-height: 30px;
         max-width: 37.5px;
     }
-    /*
     #termsandconditions_toppic {
         height: 24px;
     }
-    */
     .last {
         background-color: var(--bg-dark);
     }
