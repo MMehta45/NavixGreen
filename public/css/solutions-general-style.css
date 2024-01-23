@@ -87,17 +87,20 @@ body {
     max-width: 95%
 } 
 .custom-btn2 {
-    display: inline-block;
+    display: block;
+    width: 50%;
     padding: 10px 20px;
     background-color: #00AD51;
     text-decoration: none;
     color: #fff;
     transition: background-color 0.3s, color 0.3s;
     border-radius: 5px;
-    margin: 0 auto;
+    margin: auto !important;
     text-align: center;
 }
-  
+.card-footer{
+    height: 13%;
+}
 .custom-btn2:hover {
     background-color: #fff;
     color: #00AD51;
