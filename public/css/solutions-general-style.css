@@ -52,7 +52,7 @@ body {
 .sub_sticky {
     position: sticky !important;
     position: -webkit-sticky;
-    top: 50px;
+    top: 60px;
     width: 100%;
 }
 .link_disabled {
