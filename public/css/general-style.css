@@ -275,9 +275,9 @@ nav {
     left: -10%;
   }
   .slanttitle{
-    width:71.5vw;
+    width: 71.5vw;
     position: relative;
-    left:-27%;
+    left:-30%;
   }
 @media screen and (max-width: 768px) {
     .slant-container {
