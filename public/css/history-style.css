@@ -16,8 +16,8 @@ body {
 .tl-item {
     transform: translate3d(0, 0, 0);
     position: relative;
-    width: 10%;
-    height: 100vh;
+    width: 12%;
+    height: 80vh;
     min-height: 600px;
     color: #fff;
     overflow: hidden;
@@ -56,6 +56,11 @@ body {
             transform: translateY(0);
             transition: all 0.75s ease 0.5s;
         }
+        .tl-picture {
+            opacity: 1;
+            transform: translateY(0);
+            transition: all 0.75s ease 0.5s;
+        }
         .tl-bg {
             filter: grayscale(0);
         }
@@ -67,19 +72,27 @@ body {
     z-index: 1;
     text-align: center;
     margin: 0 1.618em;
-    top: 55%;
+    top: 20%;
     opacity: 0;
-    img {
-        width: 100%;
-        height: 50%;
-        object-fit: cover;
-    }
     h1 {
-        font-family: 'Pathway Gothic One', Helvetica, Arial,sans-serif;
-        text-transform: uppercase;
-        color: #122e05;
+        color: #ffffff;
         font-size: 1.44rem;
         font-weight: normal;
+    }
+}
+.tl-picture {
+    transform: translate3d(0, 0, 0) translateY(25px);
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    margin: 0 1.618em;
+    top: 5%;
+    opacity: 0;
+    img {
+        border-radius: 3%;
+        width: 100%;
+        height: 40%;
+        object-fit: cover;
     }
 }
 .tl-year {
@@ -90,7 +103,7 @@ body {
     z-index: 1;
     border-bottom: 3px solid #fff;
     p {
-        font-family: 'Pathway Gothic One',Helvetica Neue,Helvetica,Arial,sans-serif;
+        font-family: 'Pathway Gothic One', Helvetica, Arial, sans-serif;
         font-size: 1.728rem;
         line-height: 0;
     }
