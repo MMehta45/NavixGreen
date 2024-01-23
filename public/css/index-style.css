@@ -1,157 +1,104 @@
+/*
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
 
 @font-face {
   font-family: Bebas;
   src: url('../fonts/BebasKai-Regular.otf');
 }
-
-.on_top2{
-  font-size: 20px;
-  font-weight: bold;
-}
-
- /* Styles for the card */
-
-.card {
-  margin-bottom: 15px; /* Adjust the margin between cards */
-  transition: transform 0.3s; /* Add a smooth transition for the hover effect */
-  width: 100%; /* Set the card width to 100% within the column */
-  max-height: 200px;
-  min-height: 200px;
-}
-
- .card:hover  {
-  background-color: #00ac51;
-  border-color: #00ac51;
-  transform: scale(1.05); /* Increase the size on hover */
-}
-
-.icon {
-  padding-bottom: 30px;
-  color: #00ac51; /* Set the initial icon color to green */
-}
-
-.icon2 {
-  display: none;
-  width: 100%;
-}
-
-.card:hover .icon {
-  transition: opacity 1s ease-in-out;
-  opacity: 0%;
-  color: #fff; /* Set the icon color to white on hover */
-  margin-top: 0px;
-}
-.card a{
-  text-decoration: none;
-  color: black;
-}
-.card:hover .icon2 {
-  display: inline-block;
-}
-
-.card:hover .card-body {
-  color: #fff;
-}
-
-/* End of card styles */
-
-#section_2{
-  background-color:#357960;
-  padding: 50px;
-}
-.title_area{
-  padding-top:25px;
-  
-}
-.section_2_container{
-  padding-bottom:40px;
-}
-.wrap{
-  margin-top: 50vh;
-  display: flex;
-}
-.highlightdiv{
-  position: relative;
-  font-family: sans-serif;
-  font-size: 36px;
-  font-weight: 600;
-}
-
-.highlightdiv {
-  display: inline-block;
-}
-.higlightspan{
-  position: absolute;
-  width: 0;
-  height: 100%;
-  color: #0fd10f;
-  left: 0;
-  overflow:hidden;
-
-}
+*/
 #numbers{
-  max-width:500px;
+    max-width:500px;
 }
-
-.badge-with-image {
-  display: block;
-  background-size: cover;
-  width: 100%;
-  padding: 5px 10px;
+/* New Styles */
+.carousel .carousel-item {
+    height: 92vh;
 }
-
-.badge2{
- border-bottom-right-radius: 80px;
- border-bottom-left-radius: 80px;
- border-top-left-radius: 80px;
+.carousel_image {
+    width: 100% !important;
 }
-.badge3{
-border-bottom-right-radius: 70px;
- border-bottom-left-radius: 70px;
- border-top-right-radius: 70px;
- }
- 
-
-.hero-image {
-  height: 90vh;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
+@media only screen and (min-width: 992px) {
+    #carouselslide {
+        top: 57%;
+        transform: translateY(-50%);
+    }
 }
-.hero-image::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
- 
+@media only screen and (max-width: 992px) {
+    .carousel img{
+        position: static;
+    }
+    .carousel .carousel-item{
+        height: 40%;
+    }
+    #carouselslide {
+        top: 53%;
+        transform: translateY(-50%);
+    }
 }
-
-.hero-text {
-  position: absolute;
-  top: 50%;
-  left:50%;
-  transform: translate(-86%, -50%);
-  color: white;
+#quote {
+    border-top: 1px solid #999999;
+    border-bottom: 1px solid #999999;
+    margin: 2.5% 7.5% 2.5% 7.5%;
+    padding: 2%;
+    display: block;
 }
-.hero-text h1{
-  font-size: 4rem;
-  font-weight:bolder;
+#quote_text {
+    font-size: 25px;
 }
-.custom-btn {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: #00AD51;
-  text-decoration: none;
-  color: #fff;
-  transition: background-color 0.3s, color 0.3s;
+#quote_person {
+    font-size: 20px;
 }
-
-.custom-btn:hover {
-  background-color: #357960;
-  color: #fff;
+#index_block1 {
+    height: 320px;
+    margin: 2.5% 0% 2.5% 0%;
+}
+#index_block2 {
+    height: 320px;
+    margin: 2.5% 0% 2.5% 0%;
+}
+#border {
+    border-bottom: 1px solid #999999;
+}
+#cards {
+    padding-top: 2%;
+    border-top: 1px solid #999999;
+}
+.card-img-top {
+    border-radius: 0 !important;
+}
+.card{
+    width: 400px;
+    box-shadow: 25px 20px #357960;
+}
+.custom-card{
+    width: 20rem;
+    max-width: 95%
+} 
+.card-footer {
+    min-height: 15%;
+}
+#helpful_link_1 {
+    border: 5px solid #00ad51 !important;
+}
+#helpful_link_2 {
+    border: 5px solid #39d98b !important;
+}
+#helpful_link_3 {
+    border: 5px solid #20d4b9 !important;
+}
+.custom-btn2 {
+    display: block;
+    width: 60%;
+    padding: 10px 20px;
+    background-color: #00AD51;
+    text-decoration: none;
+    color: #fff;
+    transition: background-color 0.3s, color 0.3s;
+    border-radius: 5px;
+    margin: auto !important;
+    text-align: center;
+}
+.custom-btn2:hover {
+    background-color: #fff;
+    color: #00AD51;
+    border: 1px solid #00AD51;
 }

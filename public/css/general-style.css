@@ -107,8 +107,8 @@ nav {
 /*The following line emphasizes that the styles are applied only when the screen size is lesser than that of a small laptop.*/
 @media only screen and (max-width: 992px) {
     #logo {
-        min-height: 30px;
-        min-width: 37.5px;
+        max-height: 30px;
+        max-width: 37.5px;
     }
     /*
     #termsandconditions_toppic {
@@ -226,7 +226,6 @@ nav {
     box-sizing: border-box;
     padding: 30px;
     color: azure;
-    margin-bottom: 100px;
     margin-top: 200px;
 }
 .slant-container:after{
@@ -276,25 +275,21 @@ nav {
     left: -10%;
   }
   .slanttitle{
-    width:1000px;
+    width:71.5vw;
     position: relative;
     left:-27%;
   }
-
-  /* Media query to hide the slanted container on smaller screens */
-    @media screen and (max-width: 768px) {
-        .slant-container {
+@media screen and (max-width: 768px) {
+    .slant-container {
         display: none;
-        }
     }
-/*slant container for smaller screens*/
-    .new-section{
-        display:none;
-        background-color: #357960;
-        color: white;
-        margin-bottom: 100px;
-    }
-
+}
+.new-section{
+    display:none;
+    background-color: #357960;
+    color: white;
+    margin-bottom: 100px;
+}
 @media screen and (max-width: 768px) {
     .new-section {
         display: block;
@@ -315,7 +310,6 @@ nav {
 .button:hover{
     background-color:#357960;color:white
 }
-
 .custom-btn {
     display: block;
     padding: 10px 20px;
@@ -324,25 +318,22 @@ nav {
     color: #fff;
     transition: background-color 0.3s, color 0.3s;
     font-size: 24px;
-  }
-  
-  .custom-btn:hover {
+}
+.custom-btn:hover {
     background-color: #357960;
     color: #fff;
-  }
-  
+}
 /*Highlight*/
 ::selection {
     background: #00AD51;
     color: aliceblue;
 }
- * {
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
 }
-  
 #progress {
     position: fixed;
     bottom: 20px;
