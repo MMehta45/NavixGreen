@@ -17,12 +17,8 @@ a{
     padding: 40px;
 }
 #section1, #section2, #section3, #section4, #section5, #section6, #section7{
-    padding-top: 55px;
+    padding-top: 30px;
    
-}
-.read_more{
-    padding-top: 55px;
-    margin-bottom: 40px;
 }
 .read_more .card{
     margin-bottom: 10px;
