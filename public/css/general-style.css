@@ -370,7 +370,9 @@ footer a{
     font-weight: bold;
     text-decoration: none;
 }
-
+footer {
+    background-color: #414a4c !important;
+}
 /*
   .wrapper{
     box-sizing: content-box;
