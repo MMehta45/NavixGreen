@@ -2,10 +2,6 @@
 .rowtext{
     margin: 25px;
 }
-.newsletter{
-    padding: 10px;
-    
-}
 img{
     max-height: 220px;
 }
@@ -16,9 +12,6 @@ img{
     border: 1px black solid; 
     
 }
-
-
-
 .badge{
     background-color:#F4F4F5;
 }
@@ -49,8 +42,9 @@ img{
     
   }
 .newsletter{
-    box-shadow:5px 10px;
+    box-shadow: 25px 20px ;
     background-color: white;
+    padding: 10px;
 }
 @media only screen and (min-width: 992px){ 
     #logo2 { 
