@@ -1,22 +1,44 @@
+gsap.registerPlugin(ScrollTrigger);
 
-    function startCounting(targetId, targetValue, duration) {
-        let element = document.getElementById(targetId);
-        let start = 0;
-        let increment = targetValue / duration;
+// Function to animate the count-up
+function startCounting(target, duration) {
+  var countTo = target.attr('data-count');
 
-        let counter = setInterval(function () {
-            start += increment;
-            element.innerText = Math.floor(start);
-
-            if (start >= targetValue) {
-                clearInterval(counter);
-                element.innerText = targetValue;
-            }
-        }, 1000);
+  $({ countNum: target.text() }).animate(
+    {
+      countNum: countTo,
+    },
+    {
+      duration: duration,
+      easing: 'linear',
+      step: function () {
+        target.text(Math.floor(this.countNum));
+      },
+      complete: function () {
+        target.text(this.countNum);
+        console.log('Counting completed for target:', target); // Log when counting is completed
+        // Add any additional completion logic here
+      },
     }
+  );
+}
 
-    // Call the function for each counter
-    startCounting('count1', 373, 5); // Replace 5 with the desired duration in seconds
-    startCounting('count2', 2.66, 5); // Replace 5 with the desired duration in seconds
-    startCounting('count3', 100, 5); // Replace 5 with the desired duration in seconds
-
+// Fade-in and count-up animation for the row
+gsap.from('.slant-row', {
+  opacity: 0,
+  y: 50,
+  duration: .5,
+  scrollTrigger: {
+    trigger: '.slant-row',
+    start: 'top 80%',
+    end: 'bottom 20%',
+  },
+  onComplete: () => {
+    console.log('Fade-in animation completed'); // Log when fade-in animation is completed
+    // Call the count-up function for each counter in the row
+    $('.counter').each(function () {
+      console.log('Starting counting for target:', $(this)); // Log when counting starts
+        startCounting($(this), 1500);
+    });
+  },
+});
