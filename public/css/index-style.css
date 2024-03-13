@@ -62,9 +62,6 @@
     padding-top: 2%;
     border-top: 1px solid #999999;
 }
-.card-img-top {
-    border-radius: 0 !important;
-}
 .card{
     width: 400px;
     box-shadow: 25px 20px #357960;
