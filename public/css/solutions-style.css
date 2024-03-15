@@ -41,3 +41,28 @@
     background-color: #26d6ab;
     border: 2px solid #26d6ab;
 }
+/*Option container for small screens*/
+#option_container_small {
+    display: none;
+}
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    /*background: linear-gradient(to right, rgba(53, 121, 96, 0.7), rgba(0, 173, 81, 0.7), rgba(2, 236, 136, 0.7));*/
+    background: radial-gradient(circle, rgba(53, 121, 96, 0.7), rgba(0, 173, 81, 0.7), rgba(2, 236, 136, 0.7));
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+/*Media queries for the solutions page*/
+@media screen and (max-width: 992px) {
+    #option_container {
+        display: none;
+    }
+    #option_container_small {
+        display: block;
+    }
+}
