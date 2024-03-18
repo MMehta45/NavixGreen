@@ -1,0 +1,90 @@
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.bento-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+
+.bento-item {
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 15px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.icon {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.text {
+    font-size: 16px;
+}
+
+.quick-actions {
+    background-color: #f0f0f0;
+}
+
+.icon-circle {
+    background: linear-gradient(to right, #357960, #00AD51, #02ec88);
+    background: -webkit-linear-gradient(to right, #357960, #00AD51, #02ec88);
+    background: -moz-linear-gradient(to right, #357960, #00AD51, #02ec88);
+    background: -ms-linear-gradient(to right, #357960, #00AD51, #02ec88);
+    background: -o-linear-gradient(to right, #357960, #00AD51, #02ec88);
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 10px;
+}
+
+/*Contact Form*/
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.col-md-6 {
+    width: 50%;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}

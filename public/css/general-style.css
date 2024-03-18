@@ -16,10 +16,11 @@ Important Points:
 */
 
 /* General Elements*/
-body {
+
+html,body {
     color: #ffffff;
     background-color: #292b2c;
-    overflow-x: hidden;
+    overflow-x: hidden; 
 }
 .light-theme{
     background-color: whitesmoke;
@@ -304,7 +305,7 @@ nav {
 
 .button{
     border-radius:8px;
-    background-color:#00AD51;
+    background-color:  #00ad51 !important;;
     text-align: center;
     text-decoration: none;
     border: none;
