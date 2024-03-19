@@ -17,10 +17,11 @@ Important Points:
 
 /* General Elements*/
 
-html,body {
+body {
     color: #ffffff;
     background-color: #292b2c;
-    overflow-x: hidden; 
+    overflow-x: hidden;
+    
 }
 .light-theme{
     background-color: whitesmoke;
@@ -304,14 +305,14 @@ nav {
 /*Buttons*/
 
 .button{
-    border-radius:8px;
+    border-radius:40px;
     background-color:  #00ad51 !important;;
     text-align: center;
     text-decoration: none;
     border: none;
     color: white;
     display: inline-block;
-    padding:5px;
+    padding:15px;
 } 
 .button:hover{
     background-color:#357960;color:white
