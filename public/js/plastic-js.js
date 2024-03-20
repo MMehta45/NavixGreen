@@ -77,10 +77,10 @@ document.getElementById("submit").addEventListener("click", function() {
     if (name_filled && email_filled && comment_filled) {
         document.getElementById("fields_required").innerHTML = "";
         updateDoc(doc(db, "blog", "plastic"), {
-            ["comments.${differentiated_time}"]: comment,
-            ["names.${differentiated_time}"]: name, 
-            ["emails.${differentiated_time}"]: email,
-            ["times.${differentiated_time}"]: time
+            "comments.${differentiated_time}": comment,
+            "names.${differentiated_time}": name, 
+            "emails.${differentiated_time}": email,
+            "times.${differentiated_time}": time
             /*comments: arrayUnion(comment),
             names: arrayUnion(name),
             emails: arrayUnion(email),
