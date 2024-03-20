@@ -32,6 +32,12 @@ window.addEventListener("onopen", function() {
             localStorage.setItem("pulled_comments",JSON.stringify(comment_data.comments.values()))
             localStorage.setItem("pulled_commentnames",JSON.stringify(comment_data.names.values()))
             localStorage.setItem("pulled_commenttimes",JSON.stringify(comment_data.times.values()))
+            console.log(comment_data.comments)
+            console.log(comment_data.comments.values())
+            console.log(comment_data.times)
+            console.log(comment_data.times.values())
+            console.log(comment_data.names)
+            console.log(comment_data.names.values())
         }
         else {
             //pass
@@ -75,7 +81,8 @@ document.getElementById("submit").addEventListener("click", function() {
     };
 
     if (name_filled && email_filled && comment_filled) {
-        document.getElementById("fields_required").innerHTML = "";
+        document.getElementById("fields_required").style.color = "#489CF0";
+        document.getElementById("fields_required").innerHTML = "Submitting comment...";
         updateDoc(doc(db, "blog", "plastic"), {
             "comments.${differentiated_time}": comment,
             "names.${differentiated_time}": name, 
@@ -89,7 +96,7 @@ document.getElementById("submit").addEventListener("click", function() {
         localStorage.removeItem("pulled_comments")
         localStorage.removeItem("pulled_commentnames")
         localStorage.removeItem("pulled_commenttimes")
-        setTimeout(function() {window.location.reload()},2000)
+        setTimeout(function() {window.location.reload()},1000)
     } else {
         document.getElementById("fields_required").innerHTML = "You must fill out all fields to continue.<br>"
     }
