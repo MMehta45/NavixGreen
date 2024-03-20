@@ -39,7 +39,7 @@ window.addEventListener("load", function() {
     });
 });
 
-document.getElementById("add").addEventListener("click", function() {
+document.getElementById("new_comment").addEventListener("click", function() {
     document.getElementById("new_comment").style.display = "none";
     document.getElementById("comment_form").style.display = "block";
 });
@@ -49,12 +49,34 @@ document.getElementById("submit").addEventListener("click", function() {
     const email = document.getElementById('emailField').value;
     const name = document.getElementById('nameField').value;
     const date_today = new Date();
-    const time = toString(date_today.getMonth())+"/"+toString(date_today.getDay())+"/"+toString(date_today.getFullYear())+" at "+toString(date_today.getHours())+":"+toString(date_today.getMinutes())
-    updateDoc(doc(db, "blog", "plastic"), {
-        comments: arrayUnion(comment),
-        names: arrayUnion(name),
-        emails: arrayUnion(email),
-        times: arrayUnion(time)
-    })
-    window.location.reload()
+    const time = date_today.getMonth()+"/"+date_today.getDay()+"/"+date_today.getFullYear()+" at "+date_today.getHours()+":"+date_today.getMinutes()
+    console.log(time)
+    let name_filled = false;
+    let email_filled = false;
+    let comment_filled = false;
+    
+    if (name != "") {
+        name_filled = true;
+    };
+    if (email != "") {
+        email_filled = true;
+    };
+    if (comment != "") {
+        comment_filled = true;
+    };
+
+    if (name_filled && email_filled && comment_filled) {
+        updateDoc(doc(db, "blog", "plastic"), {
+            comments: arrayUnion(comment),
+            names: arrayUnion(name),
+            emails: arrayUnion(email),
+            times: arrayUnion(time)
+        })
+        localStorage.removeItem("pulled_comments")
+        localStorage.removeItem("pulled_commentnames")
+        localStorage.removeItem("pulled_commenttimes")
+        setTimeout(function() {window.location.reload},2000)
+    } else {
+        document.getElementById("fields_required").innerHTML = "You must fill out all fields to continue.<br>"
+    }
 });
