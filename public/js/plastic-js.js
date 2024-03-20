@@ -22,7 +22,7 @@ const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
 
 //Pull comments, pass into local variables
-window.addEventListener("loadedmetadata", function() {
+window.addEventListener("onopen", function() {
     getDoc(doc(db, "blog", "plastic")).then(docSnap => {
         if (docSnap.exists()) {
             const comment_data = docSnap.data();
