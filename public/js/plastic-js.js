@@ -49,7 +49,16 @@ document.getElementById("submit").addEventListener("click", function() {
     const email = document.getElementById('emailField').value;
     const name = document.getElementById('nameField').value;
     const date_today = new Date();
-    const time = date_today.getMonth()+"/"+date_today.getDay()+"/"+date_today.getFullYear()+" at "+date_today.getHours()+":"+date_today.getMinutes()
+    const differentiated_time = date_today.toUTCString()
+    const time = date_today.toLocaleString("en-US", {
+        day: "numeric",
+        month: "long",
+        year: "numeric",
+        hour: "numeric",
+        hour12: true,
+        minute: "2-digit",
+        dayPeriod: "short"
+    });
     console.log(time)
     let name_filled = false;
     let email_filled = false;
