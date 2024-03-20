@@ -29,9 +29,9 @@ window.addEventListener("loadedmetadata", function() {
             localStorage.removeItem("pulled_comments")
             localStorage.removeItem("pulled_commentnames")
             localStorage.removeItem("pulled_commenttimes")
-            localStorage.setItem("pulled_comments",JSON.stringify(comment_data.comments))
-            localStorage.setItem("pulled_commentnames",JSON.stringify(comment_data.names))
-            localStorage.setItem("pulled_commenttimes",JSON.stringify(comment_data.times))
+            localStorage.setItem("pulled_comments",JSON.stringify(comment_data.comments.values()))
+            localStorage.setItem("pulled_commentnames",JSON.stringify(comment_data.names.values()))
+            localStorage.setItem("pulled_commenttimes",JSON.stringify(comment_data.times.values()))
         }
         else {
             //pass
@@ -59,7 +59,7 @@ document.getElementById("submit").addEventListener("click", function() {
         minute: "2-digit",
         dayPeriod: "short"
     });
-    console.log(time)
+    
     let name_filled = false;
     let email_filled = false;
     let comment_filled = false;
@@ -77,10 +77,14 @@ document.getElementById("submit").addEventListener("click", function() {
     if (name_filled && email_filled && comment_filled) {
         document.getElementById("fields_required").innerHTML = "";
         updateDoc(doc(db, "blog", "plastic"), {
-            comments: arrayUnion(comment),
+            ["comments.${differentiated_time}"]: comment,
+            ["names.${differentiated_time}"]: name, 
+            ["emails.${differentiated_time}"]: email,
+            ["times.${differentiated_time}"]: time
+            /*comments: arrayUnion(comment),
             names: arrayUnion(name),
             emails: arrayUnion(email),
-            times: arrayUnion(time)
+            times: arrayUnion(time)*/
         })
         localStorage.removeItem("pulled_comments")
         localStorage.removeItem("pulled_commentnames")
