@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
     <head>
@@ -8,7 +7,7 @@
         <link rel="icon" href="../img/logo/NavixLogoWindmills_Icon.png" type="image/x-icon"> 
         <!--Stylesheets! DO NOT DELETE-->
         <!--General Stylesheet--><link rel="stylesheet" href="../css/general-style.css">
-        <!--History Stylesheet--><link rel="stylesheet" href="../css/dashboard-style.css">
+        <!--Contact Stylesheet--><link rel="stylesheet" href="../css/contact-style.css">
         <!--Bootstrap v5.3--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
         <!--Hover.css v2.3.1--><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover.css" integrity="sha512-Qg72y9f1a3aVc1FVnjq5YURLOOG8fDKQjMnhxYaZgBz4nIVjpVOBUtuMMMqkZPS1FlVrzzEBXq2sM6Qp1zen/Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <!--AOS v2.3.1--><link  rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
@@ -40,30 +39,30 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item" id="seperator">
-                            <a class="nav-link" href="index.html">Home</a>
+                            <a class="nav-link" href="../index.html">Home</a>
                         </li>
                         <li class="nav-item dropdown" id="seperator">
-                            <a class="nav-link dropdown-toggle" href="solutions/solutions.html" id="toursandpricing" aria-haspopup="true" aria-expanded="false">
+                            <a class="nav-link dropdown-toggle" href="../solutions/solutions.html" id="toursandpricing" aria-haspopup="true" aria-expanded="false">
                                 Solutions
                             </a>
                             <div class="dropdown-menu dropdown-menu-dark" aria-labelledby="toursandpricing">
-                                <a class="dropdown-item text-white-50" href="solutions/solar.html">Solar Energy</a>
-                                <a class="dropdown-item text-white-50" href="solutions/wind.html">Wind Energy</a>
-                                <a class="dropdown-item text-white-50" href="solutions/micro-hydro.html">Microhydro Systems</a>
-                                <a class="dropdown-item text-white-50" href="solutions/geothermal.html">Geothermal Systems</a>
+                                <a class="dropdown-item text-white-50" href="../solutions/solar.html">Solar Energy</a>
+                                <a class="dropdown-item text-white-50" href="../solutions/wind.html">Wind Energy</a>
+                                <a class="dropdown-item text-white-50" href="../solutions/micro-hydro.html">Microhydro Systems</a>
+                                <a class="dropdown-item text-white-50" href="../solutions/geothermal.html">Geothermal Systems</a>
                             </div>
                         </li>
                         <li class="nav-item" id="seperator">
-                            <a class="nav-link" href="blog.html">Blog</a>
+                            <a class="nav-link" href="../blog.html">Blog</a>
                         </li>
                         <li class="nav-item" id="seperator">
-                            <a class="nav-link active" aria-current="page" href="history.html">History</a>
+                            <a class="nav-link" aria-current="page" href="history.html">History</a>
                         </li>
                         <li class="nav-item" id="seperator">
-                            <a class="nav-link" href="why-switch.html">Why Switch?</a>
+                            <a class="nav-link" href="../why-switch.html">Why Switch?</a>
                         </li>
                         <li class="nav-item last">
-                            <a class="nav-link" href="about.html">About</a>
+                            <a class="nav-link" href="../about.html">About</a>
                         </li>
                     </ul>
                 </div>
@@ -72,37 +71,42 @@
         <div id="progress">
             <span id="progress-value"><i class="fa-solid fa-arrow-up"></i></span>
         </div>
-        <div class="container dashboard ">
-            <h1 class="display-1 text-center">Welcome Back</h1>
-        </div>
-        
+          
 <!--Contact Us-->
-<section class="contact_us">
-</button>
-<div class="container">
-  <div class="row">
-    <div class="col-md-6 mx-auto">
-      <h2 class="display-1 text-center text_logo_gradient">Contact Us</h2>
-      <form>
-        <div class="form-group">
-          <label for="name">Name</label>
-          <input type="text" class="form-control" id="name" placeholder="Enter your name">
+<section class="contact-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+                <h2 class="section-title text-center text_logo_gradient display-1">Get in Touch</h2>
+                <div class="contact-form">
+                    <form>
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" class="form-control" id="nm" placeholder="Enter your name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Your Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" class="form-control" id="subject" placeholder="Enter subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea class="form-control" id="message" rows="5" placeholder="Enter your message" required></textarea>
+                        </div>
+                        <div class="form-group form-check">
+                            <input type="checkbox" class="form-check-input" id="agree" required>
+                            <label class="form-check-label" for="agree" id="tm">I agree to the <a  id="tm" href="../terms-conditions.html">Terms and Conditions</a></label>
+                        </div>
+                        <button type="submit" class="contact-button" aria-required="true">Send Message</button>
+                    </form>
+                </div>
+            </div>
         </div>
-        <div class="form-group">
-          <label for="email">Email</label>
-          <input type="email" class="form-control" id="email" placeholder="Enter your email">
-        </div>
-        <div class="form-group">
-          <label for="message">Message</label>
-          <textarea class="form-control" id="message" rows="5" placeholder="Enter your message"></textarea>
-        </div>
-        <button type="submit" class="button">Submit</button>
-      </form>
     </div>
-  </div>
-</div>
 </section>
-
 
     
 </section>

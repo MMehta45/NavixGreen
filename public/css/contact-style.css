@@ -1,0 +1,53 @@
+.contact-section {
+    padding: 80px 0;
+}
+
+.section-title {
+    margin-bottom: 40px;
+}
+
+.form-group {
+    margin-bottom: 25px;
+}
+
+.form-control {
+    height: 50px;
+    font-size: 16px;
+}
+
+.form-button {
+    font-size: 18px;
+    font-weight: bold;
+}
+#nm{
+    width: 100%;
+}
+.contact-form {
+    border: 2px solid #357960; /* Add border */
+    border-radius: 10px; /* Add border radius */
+    padding: 20px; /* Reduce padding */
+    box-shadow: 15px 10px}
+
+.contact-form .form-group {
+    margin-bottom: 20px; /* Adjust margin */
+}
+
+.form-control {
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Add border radius to form inputs */
+    box-shadow: none; /* Remove existing box shadow */
+}
+#tm{
+    color: #00AD51;
+}
+
+.contact-button{
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background-color: #00AD51;
+    border: none;
+    border-radius: 25px;
+    padding: 10px;
+
+}

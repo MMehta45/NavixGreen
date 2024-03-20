@@ -45,10 +45,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0 auto 10px;
+    margin: 0 auto 0px;
 }
 
-/*Contact Form*/
 .row {
     display: flex;
     justify-content: center;
@@ -58,33 +57,10 @@
 .col-md-6 {
     width: 50%;
 }
-
-.form-group {
-    margin-bottom: 20px;
+.text{
+    font-size: 2rem;
 }
-
-label {
-    font-weight: bold;
-}
-
-input[type="text"],
-input[type="email"],
-textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-button[type="submit"] {
-    background-color: #007bff;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-button[type="submit"]:hover {
-    background-color: #0056b3;
+.dashboard_link{
+    text-decoration: none;
+   
 }
