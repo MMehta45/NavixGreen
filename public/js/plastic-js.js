@@ -49,7 +49,7 @@ document.getElementById("submit").addEventListener("click", function() {
     const email = document.getElementById('emailField').value;
     const name = document.getElementById('nameField').value;
     const date_today = new Date();
-    const differentiated_time = date_today.toUTCString()
+    const differentiated_time = Date.now()
     const time = date_today.toLocaleString("en-US", {
         day: "numeric",
         month: "long",
