@@ -3,7 +3,7 @@
 }
 
 .section-title {
-    margin-bottom: 40px;
+  margin-top: 40px;
 }
 
 .form-group {
@@ -26,7 +26,8 @@
     border: 2px solid #357960; /* Add border */
     border-radius: 10px; /* Add border radius */
     padding: 20px; /* Reduce padding */
-    box-shadow: 15px 10px}
+    
+}
 
 .contact-form .form-group {
     margin-bottom: 20px; /* Adjust margin */
@@ -48,6 +49,15 @@
     background-color: #00AD51;
     border: none;
     border-radius: 25px;
-    padding: 10px;
-
+    padding-right: 25px;
+    padding-left: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+#message{
+    height: 200px;
+}
+label{
+    font-size: 18px;
+    margin-right: 10px;
 }
