@@ -22,7 +22,7 @@ const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
 
 //Pull comments, pass into local variables
-window.addEventListener("load", function() {
+window.addEventListener("loadedmetadata", function() {
     getDoc(doc(db, "blog", "plastic")).then(docSnap => {
         if (docSnap.exists()) {
             const comment_data = docSnap.data();
@@ -66,6 +66,7 @@ document.getElementById("submit").addEventListener("click", function() {
     };
 
     if (name_filled && email_filled && comment_filled) {
+        document.getElementById("fields_required").innerHTML = "";
         updateDoc(doc(db, "blog", "plastic"), {
             comments: arrayUnion(comment),
             names: arrayUnion(name),
@@ -75,7 +76,7 @@ document.getElementById("submit").addEventListener("click", function() {
         localStorage.removeItem("pulled_comments")
         localStorage.removeItem("pulled_commentnames")
         localStorage.removeItem("pulled_commenttimes")
-        setTimeout(function() {window.location.reload},2000)
+        setTimeout(function() {window.location.reload()},2000)
     } else {
         document.getElementById("fields_required").innerHTML = "You must fill out all fields to continue.<br>"
     }
