@@ -13,6 +13,7 @@
         <!--AOS v2.3.1--><link  rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
     </head>
     <body class="light-theme">
+        <script type="module" src="js/plastic-js.js"></script>
         <nav class="navbar navbar-expand-lg navbar-dark sticky-top main_pagetop_navbar_background">
             <div class="container-fluid">
                 <a class="navbar-brand" href="index.html">
@@ -183,12 +184,9 @@
                 -->
                 <script>
                     function fill_comments() {
-                        let pulled_comments = JSON.parse(localStorage.getItem("pulled_comments"));
-                        let pulled_commentnames = JSON.parse(localStorage.getItem("pulled_commentnames"));
-                        let pulled_commenttimes = JSON.parse(localStorage.getItem("pulled_commenttimes"));
-                        localStorage.removeItem("pulled_comments");
-                        localStorage.removeItem("pulled_commentnames");
-                        localStorage.removeItem("pulled_commenttimes");
+                        const pulled_comments = JSON.parse(localStorage.getItem("pulled_comments"));
+                        const pulled_commentnames = JSON.parse(localStorage.getItem("pulled_commentnames"));
+                        const pulled_commenttimes = JSON.parse(localStorage.getItem("pulled_commenttimes"));
                         for (let i = 0; i < pulled_comments.length; i++) {
                             document.write("<div>")
                             document.write("<div class='row'>")
@@ -200,7 +198,7 @@
                             document.write("</p>")
                             document.write("</div>")
                             document.write("<div class='row'>")
-                            document.write("<p class='d-block col-4' style='font-weight: lighter; font-size: 18px;'>")
+                            document.write("<p class='d-block col-12' style='font-weight: lighter; font-size: 18px;'>")
                             document.write(pulled_comments[i])
                             document.write("</p>")
                             document.write("</div>")
@@ -211,7 +209,7 @@
                     fill_comments()
                 </script>
             </div>
-
+            <span id="new_comment" style="display: block"></span>
             <hr>
         </section>
         <section class="read_more container">
@@ -310,7 +308,6 @@
             </div>
         </footer>
         <!--Scripts! DO NOT DELETE-->
-        <script type="module" src="js/plastic-js.js"></script>
         <!--GSAP SCRIPTS-->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/gsap.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/gsap.min.js"></script>

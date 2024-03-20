@@ -30,7 +30,7 @@ window.addEventListener("load", function() {
             localStorage.removeItem("pulled_commentnames")
             localStorage.removeItem("pulled_commenttimes")
             localStorage.setItem("pulled_comments",JSON.stringify(comment_data.comments))
-            localStorage.setItem("pulled_commentdislikes",JSON.stringify(comment_data.dislikes))
+            localStorage.setItem("pulled_commentnames",JSON.stringify(comment_data.names))
             localStorage.setItem("pulled_commenttimes",JSON.stringify(comment_data.times))
         }
         else {
@@ -40,6 +40,7 @@ window.addEventListener("load", function() {
 });
 
 document.getElementById("add").addEventListener("click", function() {
+    document.getElementById("new_comment").style.display = "none";
     document.getElementById("comment_form").style.display = "block";
 });
 
