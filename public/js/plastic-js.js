@@ -84,10 +84,10 @@ document.getElementById("submit").addEventListener("click", function() {
         document.getElementById("fields_required").style.color = "#489CF0";
         document.getElementById("fields_required").innerHTML = "Submitting comment...";
         updateDoc(doc(db, "blog", "plastic"), {
-            ["comments.${differentiated_time}"]: comment,
-            ["names.${differentiated_time}"]: name, 
-            ["emails.${differentiated_time}"]: email,
-            ["times.${differentiated_time}"]: time
+            [`comments.${differentiated_time}`]: comment,
+            [`names.${differentiated_time}`]: name, 
+            [`emails.${differentiated_time}`]: email,
+            [`times.${differentiated_time}`]: time
         })
         localStorage.removeItem("pulled_comments")
         localStorage.removeItem("pulled_commentnames")
