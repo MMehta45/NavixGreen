@@ -22,19 +22,20 @@ const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
 
 //Pull comments, pass into local variables
-window.addEventListener("loadedmetadata", function() {
+window.addEventListener("load", function() {
     getDoc(doc(db, "blog", "plastic")).then(docSnap => {
         if (docSnap.exists()) {
             const comment_data = docSnap.data();
-            localStorage.removeItem("pulled_comments")
-            localStorage.removeItem("pulled_commentnames")
-            localStorage.removeItem("pulled_commenttimes")
-            localStorage.setItem("pulled_comments",JSON.stringify(comment_data.comments))
-            localStorage.setItem("pulled_commentnames",JSON.stringify(comment_data.names))
-            localStorage.setItem("pulled_commenttimes",JSON.stringify(comment_data.times))
+            localStorage.removeItem("pulled_commentsplastic")
+            localStorage.removeItem("pulled_commentnamesplastic")
+            localStorage.removeItem("pulled_commenttimesplastic")
+            localStorage.setItem("pulled_commentsplastic",JSON.stringify(comment_data.comments))
+            localStorage.setItem("pulled_commentnamesplastic",JSON.stringify(comment_data.names))
+            localStorage.setItem("pulled_commenttimesplastic",JSON.stringify(comment_data.times))
+            console.log("Pulled data!!!!")
         }
         else {
-            //pass
+            console.log("NO DATA")
         }
     });
 });
@@ -82,9 +83,6 @@ document.getElementById("submit").addEventListener("click", function() {
             [`emails.${differentiated_time}`]: email,
             [`times.${differentiated_time}`]: time
         })
-        localStorage.removeItem("pulled_comments")
-        localStorage.removeItem("pulled_commentnames")
-        localStorage.removeItem("pulled_commenttimes")
     } else {
         document.getElementById("fields_required").innerHTML = "You must fill out all fields to continue.<br>"
     }

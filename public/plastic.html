@@ -184,29 +184,34 @@
                 -->
                 <script>
                     function fill_comments() {
-                        const pulled_comments = JSON.parse(localStorage.getItem("pulled_comments"));
-                        const pulled_commentnames = JSON.parse(localStorage.getItem("pulled_commentnames"));
-                        const pulled_commenttimes = JSON.parse(localStorage.getItem("pulled_commenttimes"));
-                        for (let key in pulled_comments) {
+                        const pulled_commentsplastic = JSON.parse(localStorage.getItem("pulled_commentsplastic"));
+                        const pulled_commentnamesplastic = JSON.parse(localStorage.getItem("pulled_commentnamesplastic"));
+                        const pulled_commenttimesplastic = JSON.parse(localStorage.getItem("pulled_commenttimesplastic"));
+                        console.log(pulled_commentsplastic)
+                        console.log(pulled_commentnamesplastic)
+                        console.log(pulled_commenttimesplastic)
+                        for (let key in pulled_commentsplastic) {
                             document.write("<div>")
                             document.write("<div class='row'>")
                             document.write("<p class='d-block col-4' style='font-weight: 600; font-size: 24px;'>")
-                            document.write(pulled_commentnames[key])
+                            document.write(pulled_commentnamesplastic[key])
                             document.write("</p>")
                             document.write("<p class='d-block col-8' style='font-weight: lighter; font-size: 24px; text-align: right;'>")
-                            document.write(pulled_commenttimes[key])
+                            document.write(pulled_commenttimesplastic[key])
                             document.write("</p>")
                             document.write("</div>")
                             document.write("<div class='row'>")
                             document.write("<p class='d-block col-12' style='font-weight: lighter; font-size: 18px;'>")
-                            document.write(pulled_comments[key])
+                            document.write(pulled_commentsplastic[key])
                             document.write("</p>")
                             document.write("</div>")
                             document.write("</div>")
                             document.write("<hr>")
+                            console.log("commented!")
                         };
                     };
                     fill_comments()
+                    console.log("SOMETHING HAPPEDEND")
                 </script>
             </div>
             <span id="new_comment" class="text_logo_gradient mb-5" style="display: block; text-align: center; font-weight: 550; font-size: 24px; cursor: pointer;">Click here to add a comment...</span>
