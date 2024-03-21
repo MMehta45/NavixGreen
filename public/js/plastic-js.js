@@ -23,6 +23,7 @@ const db = getFirestore(app);
 
 //Pull comments, pass into local variables
 window.addEventListener("onopen", function() {
+    console.log("EVENTLISTENER RUNNING!!!")
     getDoc(doc(db, "blog", "plastic")).then(docSnap => {
         if (docSnap.exists()) {
             const comment_data = docSnap.data();
@@ -38,6 +39,7 @@ window.addEventListener("onopen", function() {
             console.log(comment_data.times.values())
             console.log(comment_data.names)
             console.log(comment_data.names.values())
+            console.log("THIS IS PULLING DATA!!!")
         }
         else {
             //pass
@@ -82,7 +84,7 @@ document.getElementById("submit").addEventListener("click", function() {
 
     if (name_filled && email_filled && comment_filled) {
         document.getElementById("fields_required").style.color = "#489CF0";
-        document.getElementById("fields_required").innerHTML = "Submitting comment...";
+        document.getElementById("fields_required").innerHTML = "Submitting comment...<br>";
         updateDoc(doc(db, "blog", "plastic"), {
             [`comments.${differentiated_time}`]: comment,
             [`names.${differentiated_time}`]: name, 
@@ -92,7 +94,9 @@ document.getElementById("submit").addEventListener("click", function() {
         localStorage.removeItem("pulled_comments")
         localStorage.removeItem("pulled_commentnames")
         localStorage.removeItem("pulled_commenttimes")
+        console.log("PUSHED DATA!!!")
         setTimeout(function() {window.location.reload()},1000)
+        
     } else {
         document.getElementById("fields_required").innerHTML = "You must fill out all fields to continue.<br>"
     }
