@@ -22,7 +22,7 @@ const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
 
 //Pull comments, pass into local variables
-window.addEventListener("onopen", function() {
+window.addEventListener("onpageshow", function() {
     console.log("EVENTLISTENER RUNNING!!!")
     getDoc(doc(db, "blog", "plastic")).then(docSnap => {
         if (docSnap.exists()) {
@@ -63,9 +63,7 @@ document.getElementById("submit").addEventListener("click", function() {
         month: "long",
         year: "numeric",
         hour: "numeric",
-        hour12: true,
-        minute: "2-digit",
-        dayPeriod: "short"
+        minute: "2-digit"
     });
     
     let name_filled = false;
