@@ -163,7 +163,42 @@
             </p>
     </article>
 </section>
-
+<section class="mx-5 px-5">
+    <hr>
+    <h2 class="display-4 text-center text_logo_gradient mb-4">Comments</h2>
+    <div class="mx-5 px-5" id="comment_holder"></div>
+    <span id="new_comment" class="text_logo_gradient mb-5" style="display: block; text-align: center; font-weight: 550; font-size: 24px; cursor: pointer;">Click here to add a comment...</span>
+    <div id="comment_form" class="mb-5 mx-5 px-5" style="display: none;">
+        <h2 class="display-6 text-center text_logo_gradient mb-4">Enter your comment:</h2>
+        <div class="row">
+            <div class="mb-3 form_field col-5">
+                <label for="nameField" class="lead">
+                    <span id="name_required" style="color: red;">*</span>Name:
+                </label>
+                <input type="text" class="form-control" id="nameField" aria-describedby="nameHelp">
+            </div>
+            <div class="mb-3 form_field col-7">
+                <label for="emailField" class="lead">
+                    <span id="email_required" style="color: red;">*</span>Email:
+                </label>
+                <input type="text" class="form-control" id="emailField" aria-describedby="emailHelp">
+            </div>
+        </div>
+        <div class="row">
+            <div class="mb-3 form_field">
+                <label for="commentField" class="lead">
+                    <span id="comment_required" style="color: red;">*</span>Comment:
+                </label>
+                <textarea type="textarea" class="form-control" id="commentField" aria-describedby="commentHelp"></textarea>
+            </div>
+        </div>
+        <div class="text-center">
+            <span id="fields_required" style="color: red;"></span>
+            <button onclick="write_comment()" id="submit" type="button" class="btn" style="background-color: #00ad51 !important; color: #ffffff !important; text-align: center !important">&nbsp;&nbsp; Submit Comment&nbsp;&nbsp;</button></span>
+        </div>
+    </div>
+    <hr>
+</section>
 <section class="read_more container">
     <h2 class="display-4 text-center text_logo_gradient mb-4">Recommended Articles</h2>
     <div class="row mb-5">
