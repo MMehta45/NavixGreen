@@ -40,7 +40,7 @@ getDoc(doc(db, "blog", "garden")).then(docSnap => {
             nametext.classList.add("col-4")
             nametext.style.fontWeight = "600"
             nametext.style.fontSize = "24px"
-            nametext.innerHTML = pulled_comments[key]
+            nametext.innerHTML = pulled_commentnames[key]
             const timetext = document.createElement("p")
             timetext.classList.add("d-block")
             timetext.classList.add("col-8")
@@ -53,7 +53,7 @@ getDoc(doc(db, "blog", "garden")).then(docSnap => {
             commenttext.classList.add("col-12")
             commenttext.style.fontWeight = "light"
             commenttext.style.fontSize = "18px"
-            commenttext.innerHTML = pulled_commentnames[key]
+            commenttext.innerHTML = pulled_comments[key]
             comment_nametime.appendChild(nametext)
             comment_nametime.appendChild(timetext)
             comment_comment.appendChild(commenttext)
