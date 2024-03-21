@@ -37,7 +37,6 @@ window.addEventListener("load", function() {
             //pass
         }
     });
-    console.log("PULLED DATA")
 });
 
 document.getElementById("new_comment").addEventListener("click", function() {
@@ -74,8 +73,9 @@ document.getElementById("submit").addEventListener("click", function() {
     };
 
     if (name_filled && email_filled && comment_filled) {
-        document.getElementById("fields_required").style.color = "#489CF0";
-        document.getElementById("fields_required").innerHTML = "Submitting comment...<br>";
+        document.getElementById("fields_required").innerHTML = "";
+        document.getElementById("new_comment").style.display = "block";
+        document.getElementById("comment_form").style.display = "none";
         updateDoc(doc(db, "blog", "plastic"), {
             [`comments.${differentiated_time}`]: comment,
             [`names.${differentiated_time}`]: name, 
@@ -85,7 +85,6 @@ document.getElementById("submit").addEventListener("click", function() {
         localStorage.removeItem("pulled_comments")
         localStorage.removeItem("pulled_commentnames")
         localStorage.removeItem("pulled_commenttimes")
-        setTimeout(function() {window.location.reload()},1000)
     } else {
         document.getElementById("fields_required").innerHTML = "You must fill out all fields to continue.<br>"
     }

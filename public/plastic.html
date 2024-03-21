@@ -164,50 +164,6 @@
         <section class="mx-5 px-5">
             <hr>
             <h2 class="display-4 text-center text_logo_gradient mb-4">Comments</h2>
-            <div class="mx-5 px-5">
-                <!--
-                <div>
-                    <div class="row">
-                        <p class="d-block col-4" style="font-weight: 600; font-size: 24px;">
-                            Hrutvik Palutla
-                        </p>
-                        <p class="d-block col-8" style="font-weight: lighter; font-size: 24px; text-align: right;">
-                            January 13th, 2024 at 5:37 PM
-                        </p>
-                    </div>
-                    <div class="row">
-                        <p class='d-block col-4' style='font-weight: lighter; font-size: 18px;'>
-                            dfjnasdflkgjdafskgjdsf,hv,sadf
-                        </p>
-                    </div>
-                </div>
-                -->
-                <script>
-                    function fill_comments() {
-                        const pulled_comments = JSON.parse(localStorage.getItem("pulled_comments"));
-                        const pulled_commentnames = JSON.parse(localStorage.getItem("pulled_commentnames"));
-                        const pulled_commenttimes = JSON.parse(localStorage.getItem("pulled_commenttimes"));
-                        for (let key in pulled_comments) {
-                            document.write("<div>")
-                            document.write("<div class='row'>")
-                            document.write("<p class='d-block col-4' style='font-weight: 600; font-size: 24px;'>")
-                            document.write(pulled_commentnames[key])
-                            document.write("</p>")
-                            document.write("<p class='d-block col-8' style='font-weight: lighter; font-size: 24px; text-align: right;'>")
-                            document.write(pulled_commenttimes[key])
-                            document.write("</p>")
-                            document.write("</div>")
-                            document.write("<div class='row'>")
-                            document.write("<p class='d-block col-12' style='font-weight: lighter; font-size: 18px;'>")
-                            document.write(pulled_comments[key])
-                            document.write("</p>")
-                            document.write("</div>")
-                            document.write("</div>")
-                            document.write("<hr>")
-                        };
-                    };
-                </script>
-            </div>
             <span id="new_comment" class="text_logo_gradient mb-4" style="display: block; text-align: center; font-weight: 550; font-size: 24px; cursor: pointer;">Click here to add a comment...</span>
             <div id="comment_form" class="mb-4 mx-5 px-5" style="display: none;">
                 <h2 class="display-6 text-center text_logo_gradient mb-4">Enter your comment:</h2>
@@ -237,6 +193,97 @@
                     <span id="fields_required" style="color: red;"></span>
                     <button id="submit" type="button" class="btn" style="background-color: #00ad51 !important; color: #ffffff !important; text-align: center !important">&nbsp;&nbsp; Submit Comment&nbsp;&nbsp;</button></span>
                 </div>
+            </div>
+            <div class="mx-5 px-5 pb-4">
+                <!--
+                <div>
+                    <div class="row">
+                        <p class="d-block col-4" style="font-weight: 600; font-size: 24px;">
+                            Hrutvik Palutla
+                        </p>
+                        <p class="d-block col-8" style="font-weight: lighter; font-size: 24px; text-align: right;">
+                            January 13th, 2024 at 5:37 PM
+                        </p>
+                    </div>
+                    <div class="row">
+                        <p class='d-block col-4' style='font-weight: lighter; font-size: 18px;'>
+                            dfjnasdflkgjdafskgjdsf,hv,sadf
+                        </p>
+                    </div>
+                </div>
+                -->
+                <script>
+                    function fill_comments() {
+                        const pulled_comments = JSON.parse(localStorage.getItem("pulled_comments"));
+                        const pulled_commentnames = JSON.parse(localStorage.getItem("pulled_commentnames"));
+                        const pulled_commenttimes = JSON.parse(localStorage.getItem("pulled_commenttimes"));
+                        for (let key in pulled_comments) {
+                            document.write("<hr>")
+                            document.write("<div>")
+                            document.write("<div class='row'>")
+                            document.write("<p class='d-block col-4' style='font-weight: 600; font-size: 24px;'>")
+                            document.write(pulled_commentnames[key])
+                            document.write("</p>")
+                            document.write("<p class='d-block col-8' style='font-weight: lighter; font-size: 24px; text-align: right;'>")
+                            document.write(pulled_commenttimes[key])
+                            document.write("</p>")
+                            document.write("</div>")
+                            document.write("<div class='row'>")
+                            document.write("<p class='d-block col-12' style='font-weight: lighter; font-size: 18px;'>")
+                            document.write(pulled_comments[key])
+                            document.write("</p>")
+                            document.write("</div>")
+                            document.write("</div>")
+                        };
+                    };
+                    fill_comments()
+                    document.getElementById("submit").addEventListener("click", function() {
+                        const comment = document.getElementById('commentField').value;
+                        const name = document.getElementById('nameField').value;
+                        const date_today = new Date();
+                        const time = date_today.toLocaleString("en-US", {
+                            day: "numeric",
+                            month: "long",
+                            year: "numeric",
+                            hour: "numeric",
+                            minute: "2-digit"
+                        });
+                        
+                        let name_filled = false;
+                        let email_filled = false;
+                        let comment_filled = false;
+                        
+                        if (name != "") {
+                            name_filled = true;
+                        };
+                        if (email != "") {
+                            email_filled = true;
+                        };
+                        if (comment != "") {
+                            comment_filled = true;
+                        };
+
+                        if (name_filled && email_filled && comment_filled) {
+                            document.write("<hr>")
+                            document.write("<div>")
+                            document.write("<div class='row'>")
+                            document.write("<p class='d-block col-4' style='font-weight: 600; font-size: 24px;'>")
+                            document.write(name)
+                            document.write("</p>")
+                            document.write("<p class='d-block col-8' style='font-weight: lighter; font-size: 24px; text-align: right;'>")
+                            document.write(time)
+                            document.write("</p>")
+                            document.write("</div>")
+                            document.write("<div class='row'>")
+                            document.write("<p class='d-block col-12' style='font-weight: lighter; font-size: 18px;'>")
+                            document.write(comment)
+                            document.write("</p>")
+                            document.write("</div>")
+                            document.write("</div>")
+                            console.log("WRITING COMMENT!")
+                        }
+                    });
+                </script>
             </div>
             <hr>
         </section>
