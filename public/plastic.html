@@ -187,26 +187,25 @@
                         const pulled_comments = JSON.parse(localStorage.getItem("pulled_comments"));
                         const pulled_commentnames = JSON.parse(localStorage.getItem("pulled_commentnames"));
                         const pulled_commenttimes = JSON.parse(localStorage.getItem("pulled_commenttimes"));
-                        for (let i = 0; i < pulled_comments.length; i++) {
+                        for (let key in pulled_comments) {
                             document.write("<div>")
                             document.write("<div class='row'>")
                             document.write("<p class='d-block col-4' style='font-weight: 600; font-size: 24px;'>")
-                            document.write(pulled_commentnames[i])
+                            document.write(pulled_commentnames[key])
                             document.write("</p>")
                             document.write("<p class='d-block col-8' style='font-weight: lighter; font-size: 24px; text-align: right;'>")
-                            document.write(pulled_commenttimes[i])
+                            document.write(pulled_commenttimes[key])
                             document.write("</p>")
                             document.write("</div>")
                             document.write("<div class='row'>")
                             document.write("<p class='d-block col-12' style='font-weight: lighter; font-size: 18px;'>")
-                            document.write(pulled_comments[i])
+                            document.write(pulled_comments[key])
                             document.write("</p>")
                             document.write("</div>")
                             document.write("</div>")
                             document.write("<hr>")
                         };
                     };
-                    fill_comments()
                 </script>
             </div>
             <span id="new_comment" class="text_logo_gradient mb-4" style="display: block; text-align: center; font-weight: 550; font-size: 24px; cursor: pointer;">Click here to add a comment...</span>

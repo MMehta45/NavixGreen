@@ -22,29 +22,22 @@ const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
 
 //Pull comments, pass into local variables
-window.addEventListener("onpageshow", function() {
-    console.log("EVENTLISTENER RUNNING!!!")
+window.addEventListener("load", function() {
     getDoc(doc(db, "blog", "plastic")).then(docSnap => {
         if (docSnap.exists()) {
             const comment_data = docSnap.data();
             localStorage.removeItem("pulled_comments")
             localStorage.removeItem("pulled_commentnames")
             localStorage.removeItem("pulled_commenttimes")
-            localStorage.setItem("pulled_comments",JSON.stringify(comment_data.comments.values()))
-            localStorage.setItem("pulled_commentnames",JSON.stringify(comment_data.names.values()))
-            localStorage.setItem("pulled_commenttimes",JSON.stringify(comment_data.times.values()))
-            console.log(comment_data.comments)
-            console.log(comment_data.comments.values())
-            console.log(comment_data.times)
-            console.log(comment_data.times.values())
-            console.log(comment_data.names)
-            console.log(comment_data.names.values())
-            console.log("THIS IS PULLING DATA!!!")
+            localStorage.setItem("pulled_comments",JSON.stringify(comment_data.comments))
+            localStorage.setItem("pulled_commentnames",JSON.stringify(comment_data.names))
+            localStorage.setItem("pulled_commenttimes",JSON.stringify(comment_data.times))
         }
         else {
             //pass
         }
     });
+    console.log("PULLED DATA")
 });
 
 document.getElementById("new_comment").addEventListener("click", function() {
@@ -92,9 +85,7 @@ document.getElementById("submit").addEventListener("click", function() {
         localStorage.removeItem("pulled_comments")
         localStorage.removeItem("pulled_commentnames")
         localStorage.removeItem("pulled_commenttimes")
-        console.log("PUSHED DATA!!!")
         setTimeout(function() {window.location.reload()},1000)
-        
     } else {
         document.getElementById("fields_required").innerHTML = "You must fill out all fields to continue.<br>"
     }
