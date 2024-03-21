@@ -22,22 +22,20 @@ const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
 
 //Pull comments, pass into local variables
-window.addEventListener("load", function() {
-    getDoc(doc(db, "blog", "plastic")).then(docSnap => {
-        if (docSnap.exists()) {
-            const comment_data = docSnap.data();
-            localStorage.removeItem("pulled_commentsplastic")
-            localStorage.removeItem("pulled_commentnamesplastic")
-            localStorage.removeItem("pulled_commenttimesplastic")
-            localStorage.setItem("pulled_commentsplastic",JSON.stringify(comment_data.comments))
-            localStorage.setItem("pulled_commentnamesplastic",JSON.stringify(comment_data.names))
-            localStorage.setItem("pulled_commenttimesplastic",JSON.stringify(comment_data.times))
-            console.log("Pulled data!!!!")
-        }
-        else {
-            console.log("NO DATA")
-        }
-    });
+getDoc(doc(db, "blog", "plastic")).then(docSnap => {
+    if (docSnap.exists()) {
+        const comment_data = docSnap.data();
+        localStorage.removeItem("pulled_commentsplastic")
+        localStorage.removeItem("pulled_commentnamesplastic")
+        localStorage.removeItem("pulled_commenttimesplastic")
+        localStorage.setItem("pulled_commentsplastic",JSON.stringify(comment_data.comments))
+        localStorage.setItem("pulled_commentnamesplastic",JSON.stringify(comment_data.names))
+        localStorage.setItem("pulled_commenttimesplastic",JSON.stringify(comment_data.times))
+        console.log("Pulled data!!!!")
+    }
+    else {
+        console.log("NO DATA")
+    }
 });
 
 document.getElementById("new_comment").addEventListener("click", function() {
