@@ -1,5 +1,6 @@
 .contact-section {
     padding: 80px 0;
+   
 }
 
 .section-title {
@@ -60,4 +61,56 @@
 label{
     font-size: 18px;
     margin-right: 10px;
+}
+
+/* Custom CSS for Modal */
+.modal-content {
+    border-radius: 10px;
+}
+
+.modal-header {
+    background-color: #357960; /* Custom color for modal header */
+    color: #ffffff; /* Text color for modal header */
+    border-bottom: none; /* Remove border from modal header */
+    display: flex;
+    justify-content: center;
+}
+
+.modal-body {
+    padding: 20px; /* Add padding to modal body */
+}
+
+.modal-footer {
+    border-top: none; /* Remove border from modal footer */
+}
+
+/* Custom CSS for Close Button */
+.close {
+    font-size: 1.5rem; /* Adjust close button size */
+    color: #ffffff; /* Text color for close button */
+    opacity: 0.8; /* Adjust opacity for close button */
+    transition: opacity 0.3s ease; /* Add transition effect */
+}
+
+.close:hover {
+    color: #ffffff; /* Text color on hover */
+    opacity: 1; /* Adjust opacity on hover */
+}
+
+/* Custom CSS for Outline Button */
+a.outline-button {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 16px;
+    border: 2px solid #00AD51; /* Change this to your preferred color */
+    border-radius: 10px;
+    color: #00AD51; /* Change this to your preferred color */
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+}
+
+a.outline-button:hover {
+    background-color: #00AD51; /* Change this to your preferred color */
+    color: #fff; /* Change this to your preferred color */
 }
