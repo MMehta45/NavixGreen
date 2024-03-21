@@ -129,15 +129,10 @@ Timeline Code
     height: 40%;
 }
 
-.Container {
-	width: 1160px;
-	margin: 0 auto;
-	position: relative;
+.Main{
+  padding-top: 50px;
 }
 
-.Main {
-	padding: 300px 0;
-}
 .TopTitle {
 	padding: 0 0 30px;
 	text-align: center;
