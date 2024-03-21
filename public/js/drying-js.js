@@ -22,7 +22,7 @@ const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
 
 //Pull comments, pass into local variables
-getDoc(doc(db, "blog", "plastic")).then(docSnap => {
+getDoc(doc(db, "blog", "drying")).then(docSnap => {
     if (docSnap.exists()) {
         const comment_data = docSnap.data();
         const pulled_comments = comment_data.comments;
@@ -108,7 +108,7 @@ document.getElementById("submit").addEventListener("click", function() {
         document.getElementById("fields_required").innerHTML = "";
         document.getElementById("new_comment").style.display = "block";
         document.getElementById("comment_form").style.display = "none";
-        updateDoc(doc(db, "blog", "plastic"), {
+        updateDoc(doc(db, "blog", "drying"), {
             [`comments.${differentiated_time}`]: comment,
             [`names.${differentiated_time}`]: name, 
             [`emails.${differentiated_time}`]: email,

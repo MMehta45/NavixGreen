@@ -164,53 +164,9 @@
         <section class="mx-5 px-5">
             <hr>
             <h2 class="display-4 text-center text_logo_gradient mb-4">Comments</h2>
-            <div class="mx-5 px-5">
-                <!--
-                <div>
-                    <div class="row">
-                        <p class="d-block col-4" style="font-weight: 600; font-size: 24px;">
-                            Hrutvik Palutla
-                        </p>
-                        <p class="d-block col-8" style="font-weight: lighter; font-size: 24px; text-align: right;">
-                            January 13th, 2024 at 5:37 PM
-                        </p>
-                    </div>
-                    <div class="row">
-                        <p class='d-block col-4' style='font-weight: lighter; font-size: 18px;'>
-                            dfjnasdflkgjdafskgjdsf,hv,sadf
-                        </p>
-                    </div>
-                </div>
-                -->
-                <script>
-                    function fill_comments() {
-                        const pulled_comments = JSON.parse(localStorage.getItem("pulled_comments"));
-                        const pulled_commentnames = JSON.parse(localStorage.getItem("pulled_commentnames"));
-                        const pulled_commenttimes = JSON.parse(localStorage.getItem("pulled_commenttimes"));
-                        for (let i = 0; i < pulled_comments.length; i++) {
-                            document.write("<div>")
-                            document.write("<div class='row'>")
-                            document.write("<p class='d-block col-4' style='font-weight: 600; font-size: 24px;'>")
-                            document.write(pulled_commentnames[i])
-                            document.write("</p>")
-                            document.write("<p class='d-block col-8' style='font-weight: lighter; font-size: 24px; text-align: right;'>")
-                            document.write(pulled_commenttimes[i])
-                            document.write("</p>")
-                            document.write("</div>")
-                            document.write("<div class='row'>")
-                            document.write("<p class='d-block col-12' style='font-weight: lighter; font-size: 18px;'>")
-                            document.write(pulled_comments[i])
-                            document.write("</p>")
-                            document.write("</div>")
-                            document.write("</div>")
-                            document.write("<hr>")
-                        };
-                    };
-                    fill_comments()
-                </script>
-            </div>
-            <span id="new_comment" class="text_logo_gradient mb-4" style="display: block; text-align: center; font-weight: 550; font-size: 24px; cursor: pointer;">Click here to add a comment...</span>
-            <div id="comment_form" class="mb-4 mx-5 px-5" style="display: none;">
+            <div class="mx-5 px-5" id="comment_holder"></div>
+            <span id="new_comment" class="text_logo_gradient mb-5" style="display: block; text-align: center; font-weight: 550; font-size: 24px; cursor: pointer;">Click here to add a comment...</span>
+            <div id="comment_form" class="mb-5 mx-5 px-5" style="display: none;">
                 <h2 class="display-6 text-center text_logo_gradient mb-4">Enter your comment:</h2>
                 <div class="row">
                     <div class="mb-3 form_field col-5">
@@ -236,7 +192,7 @@
                 </div>
                 <div class="text-center">
                     <span id="fields_required" style="color: red;"></span>
-                    <button id="submit" type="button" class="btn" style="background-color: #00ad51 !important; color: #ffffff !important; text-align: center !important">&nbsp;&nbsp; Submit Comment&nbsp;&nbsp;</button></span>
+                    <button onclick="write_comment()" id="submit" type="button" class="btn" style="background-color: #00ad51 !important; color: #ffffff !important; text-align: center !important">&nbsp;&nbsp; Submit Comment&nbsp;&nbsp;</button></span>
                 </div>
             </div>
             <hr>
@@ -271,14 +227,15 @@
                     </a>
                 </div>
                 <div class="col-md-4">
-                    <a href="plastic.html">
-                        <div class="card info mb-4 border-dark hvr-grow-shadow h-100" style="width: 20rem;" >
+                    <a href="garden.html">
+                        <div class="card info mb-4 border-dark hvr-grow-shadow h-100" style="width: 20rem;">
                             <figure class="figure">
-                                <img src="img/plastic.jpg"  class="card-img-top img-fluid rounded-top" alt="...">
+                                <img src="img/cropped-gardern.jpg" href="" class="card-img-top img-fluid rounded-top" alt="..." style="width: 30rem;">
                             </figure>
                             <div class="card-body">
-                                <h5><span class="badge rounded-pill text-dark fw-normal">Observational</span></h5>
-                                <h4 class="card-title display-6">Plastic: It's Everyhwere</h4>
+                                <h5><span class="badge rounded-pill text-dark fw-normal">Tips</span></h5>
+                                <h4 class="card-title display-6">Green Gardens & Other Tips</h4>
+                                <p></p>
                             </div>
                         </div>
                     </a>
@@ -337,6 +294,71 @@
             </div>
         </footer>
         <!--Scripts! DO NOT DELETE-->
+        <script>
+            function write_comment() {
+                const comment = document.getElementById('commentField').value;
+                const name = document.getElementById('nameField').value;
+                const email = document.getElementById('emailField').value;
+                const date_today = new Date();
+                const time = date_today.toLocaleString("en-US", {
+                    day: "numeric",
+                    month: "long",
+                    year: "numeric",
+                    hour: "numeric",
+                    minute: "2-digit"
+                });
+                
+                let name_filled = false;
+                let email_filled = false;
+                let comment_filled = false;
+                
+                if (name != "") {
+                    name_filled = true;
+                };
+                if (email != "") {
+                    email_filled = true;
+                };
+                if (comment != "") {
+                    comment_filled = true;
+                };
+
+                if (name_filled && email_filled && comment_filled) {
+                    const comment_line = document.createElement("hr")
+                    const comment_div = document.createElement("div")
+                    const comment_nametime = document.createElement("div")
+                    comment_nametime.classList.add("row")
+                    const comment_comment = document.createElement("div")
+                    comment_comment.classList.add("row")
+                    const nametext = document.createElement("p")
+                    nametext.classList.add("d-block")
+                    nametext.classList.add("col-4")
+                    nametext.style.fontWeight = "600"
+                    nametext.style.fontSize = "24px"
+                    nametext.innerHTML = name
+                    const timetext = document.createElement("p")
+                    timetext.classList.add("d-block")
+                    timetext.classList.add("col-8")
+                    timetext.style.fontWeight = "lighter"
+                    timetext.style.fontSize = "24px"
+                    timetext.style.textAlign = "right"
+                    timetext.innerHTML = time
+                    const commenttext = document.createElement("p")
+                    commenttext.classList.add("d-block")
+                    commenttext.classList.add("col-12")
+                    commenttext.style.fontWeight = "light"
+                    commenttext.style.fontSize = "18px"
+                    commenttext.innerHTML = comment
+                    comment_nametime.appendChild(nametext)
+                    comment_nametime.appendChild(timetext)
+                    comment_comment.appendChild(commenttext)
+                    comment_div.appendChild(comment_nametime)
+                    comment_div.appendChild(comment_comment)
+                    document.getElementById("comment_holder").appendChild(comment_div)
+                    document.getElementById("comment_holder").appendChild(comment_line)
+                    console.log("WRITING")
+                }
+            };
+        </script>
         <!--GSAP SCRIPTS-->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/gsap.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/gsap.min.js"></script>

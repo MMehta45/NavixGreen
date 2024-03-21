@@ -13,6 +13,7 @@
         <!--AOS v2.3.1--><link  rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
     </head>
     <body class="light-theme">
+        <script type="module" src="js/waterwise-js.js"></script>
         <nav class="navbar navbar-expand-lg navbar-dark sticky-top main_pagetop_navbar_background">
             <div class="container-fluid">
                 <a class="navbar-brand" href="index.html">
@@ -163,7 +164,42 @@
             </p>
     </article>
 </section>
-
+<section class="mx-5 px-5">
+    <hr>
+    <h2 class="display-4 text-center text_logo_gradient mb-4">Comments</h2>
+    <div class="mx-5 px-5" id="comment_holder"></div>
+    <span id="new_comment" class="text_logo_gradient mb-5" style="display: block; text-align: center; font-weight: 550; font-size: 24px; cursor: pointer;">Click here to add a comment...</span>
+    <div id="comment_form" class="mb-5 mx-5 px-5" style="display: none;">
+        <h2 class="display-6 text-center text_logo_gradient mb-4">Enter your comment:</h2>
+        <div class="row">
+            <div class="mb-3 form_field col-5">
+                <label for="nameField" class="lead">
+                    <span id="name_required" style="color: red;">*</span>Name:
+                </label>
+                <input type="text" class="form-control" id="nameField" aria-describedby="nameHelp">
+            </div>
+            <div class="mb-3 form_field col-7">
+                <label for="emailField" class="lead">
+                    <span id="email_required" style="color: red;">*</span>Email:
+                </label>
+                <input type="text" class="form-control" id="emailField" aria-describedby="emailHelp">
+            </div>
+        </div>
+        <div class="row">
+            <div class="mb-3 form_field">
+                <label for="commentField" class="lead">
+                    <span id="comment_required" style="color: red;">*</span>Comment:
+                </label>
+                <textarea type="textarea" class="form-control" id="commentField" aria-describedby="commentHelp"></textarea>
+            </div>
+        </div>
+        <div class="text-center">
+            <span id="fields_required" style="color: red;"></span>
+            <button onclick="write_comment()" id="submit" type="button" class="btn" style="background-color: #00ad51 !important; color: #ffffff !important; text-align: center !important">&nbsp;&nbsp; Submit Comment&nbsp;&nbsp;</button></span>
+        </div>
+    </div>
+    <hr>
+</section>
 <section class="read_more container">
     <h2 class="display-4 text-center text_logo_gradient mb-4">Recommended Articles</h2>
     <div class="row mb-5">
@@ -263,6 +299,71 @@
             </div>
         </footer>
         <!--Scripts! DO NOT DELETE-->
+        <script>
+            function write_comment() {
+                const comment = document.getElementById('commentField').value;
+                const name = document.getElementById('nameField').value;
+                const email = document.getElementById('emailField').value;
+                const date_today = new Date();
+                const time = date_today.toLocaleString("en-US", {
+                    day: "numeric",
+                    month: "long",
+                    year: "numeric",
+                    hour: "numeric",
+                    minute: "2-digit"
+                });
+                
+                let name_filled = false;
+                let email_filled = false;
+                let comment_filled = false;
+                
+                if (name != "") {
+                    name_filled = true;
+                };
+                if (email != "") {
+                    email_filled = true;
+                };
+                if (comment != "") {
+                    comment_filled = true;
+                };
+
+                if (name_filled && email_filled && comment_filled) {
+                    const comment_line = document.createElement("hr")
+                    const comment_div = document.createElement("div")
+                    const comment_nametime = document.createElement("div")
+                    comment_nametime.classList.add("row")
+                    const comment_comment = document.createElement("div")
+                    comment_comment.classList.add("row")
+                    const nametext = document.createElement("p")
+                    nametext.classList.add("d-block")
+                    nametext.classList.add("col-4")
+                    nametext.style.fontWeight = "600"
+                    nametext.style.fontSize = "24px"
+                    nametext.innerHTML = name
+                    const timetext = document.createElement("p")
+                    timetext.classList.add("d-block")
+                    timetext.classList.add("col-8")
+                    timetext.style.fontWeight = "lighter"
+                    timetext.style.fontSize = "24px"
+                    timetext.style.textAlign = "right"
+                    timetext.innerHTML = time
+                    const commenttext = document.createElement("p")
+                    commenttext.classList.add("d-block")
+                    commenttext.classList.add("col-12")
+                    commenttext.style.fontWeight = "light"
+                    commenttext.style.fontSize = "18px"
+                    commenttext.innerHTML = comment
+                    comment_nametime.appendChild(nametext)
+                    comment_nametime.appendChild(timetext)
+                    comment_comment.appendChild(commenttext)
+                    comment_div.appendChild(comment_nametime)
+                    comment_div.appendChild(comment_comment)
+                    document.getElementById("comment_holder").appendChild(comment_div)
+                    document.getElementById("comment_holder").appendChild(comment_line)
+                    console.log("WRITING")
+                }
+            };
+        </script>
         <!--GSAP SCRIPTS-->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/gsap.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/gsap.min.js"></script>
