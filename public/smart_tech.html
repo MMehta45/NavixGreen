@@ -281,6 +281,71 @@
             </div>
         </footer>
         <!--Scripts! DO NOT DELETE-->
+        <script>
+            function write_comment() {
+                const comment = document.getElementById('commentField').value;
+                const name = document.getElementById('nameField').value;
+                const email = document.getElementById('emailField').value;
+                const date_today = new Date();
+                const time = date_today.toLocaleString("en-US", {
+                    day: "numeric",
+                    month: "long",
+                    year: "numeric",
+                    hour: "numeric",
+                    minute: "2-digit"
+                });
+                
+                let name_filled = false;
+                let email_filled = false;
+                let comment_filled = false;
+                
+                if (name != "") {
+                    name_filled = true;
+                };
+                if (email != "") {
+                    email_filled = true;
+                };
+                if (comment != "") {
+                    comment_filled = true;
+                };
+
+                if (name_filled && email_filled && comment_filled) {
+                    const comment_line = document.createElement("hr")
+                    const comment_div = document.createElement("div")
+                    const comment_nametime = document.createElement("div")
+                    comment_nametime.classList.add("row")
+                    const comment_comment = document.createElement("div")
+                    comment_comment.classList.add("row")
+                    const nametext = document.createElement("p")
+                    nametext.classList.add("d-block")
+                    nametext.classList.add("col-4")
+                    nametext.style.fontWeight = "600"
+                    nametext.style.fontSize = "24px"
+                    nametext.innerHTML = name
+                    const timetext = document.createElement("p")
+                    timetext.classList.add("d-block")
+                    timetext.classList.add("col-8")
+                    timetext.style.fontWeight = "lighter"
+                    timetext.style.fontSize = "24px"
+                    timetext.style.textAlign = "right"
+                    timetext.innerHTML = time
+                    const commenttext = document.createElement("p")
+                    commenttext.classList.add("d-block")
+                    commenttext.classList.add("col-12")
+                    commenttext.style.fontWeight = "light"
+                    commenttext.style.fontSize = "18px"
+                    commenttext.innerHTML = comment
+                    comment_nametime.appendChild(nametext)
+                    comment_nametime.appendChild(timetext)
+                    comment_comment.appendChild(commenttext)
+                    comment_div.appendChild(comment_nametime)
+                    comment_div.appendChild(comment_comment)
+                    document.getElementById("comment_holder").appendChild(comment_div)
+                    document.getElementById("comment_holder").appendChild(comment_line)
+                    console.log("WRITING")
+                }
+            };
+        </script>
         <!--GSAP SCRIPTS-->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/gsap.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/gsap.min.js"></script>

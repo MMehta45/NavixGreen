@@ -25,12 +25,44 @@ const db = getFirestore(app);
 getDoc(doc(db, "blog", "plastic")).then(docSnap => {
     if (docSnap.exists()) {
         const comment_data = docSnap.data();
-        localStorage.removeItem("pulled_commentsplastic")
-        localStorage.removeItem("pulled_commentnamesplastic")
-        localStorage.removeItem("pulled_commenttimesplastic")
-        localStorage.setItem("pulled_commentsplastic",JSON.stringify(comment_data.comments))
-        localStorage.setItem("pulled_commentnamesplastic",JSON.stringify(comment_data.names))
-        localStorage.setItem("pulled_commenttimesplastic",JSON.stringify(comment_data.times))
+        const pulled_comments = comment_data.comments;
+        const pulled_commentnames = comment_data.names;
+        const pulled_commenttimes = comment_data.times;
+        for (let key in pulled_comments) {
+            const comment_line = document.createElement("hr")
+            const comment_div = document.createElement("div")
+            const comment_nametime = document.createElement("div")
+            comment_nametime.classList.add("row")
+            const comment_comment = document.createElement("div")
+            comment_comment.classList.add("row")
+            const nametext = document.createElement("p")
+            nametext.classList.add("d-block")
+            nametext.classList.add("col-4")
+            nametext.style.fontWeight = "600"
+            nametext.style.fontSize = "24px"
+            nametext.innerHTML = pulled_comments[key]
+            const timetext = document.createElement("p")
+            timetext.classList.add("d-block")
+            timetext.classList.add("col-8")
+            timetext.style.fontWeight = "lighter"
+            timetext.style.fontSize = "24px"
+            timetext.style.textAlign = "right"
+            timetext.innerHTML = pulled_commenttimes[key]
+            const commenttext = document.createElement("p")
+            commenttext.classList.add("d-block")
+            commenttext.classList.add("col-12")
+            commenttext.style.fontWeight = "light"
+            commenttext.style.fontSize = "18px"
+            commenttext.innerHTML = pulled_commentnames[key]
+            comment_nametime.appendChild(nametext)
+            comment_nametime.appendChild(timetext)
+            comment_comment.appendChild(commenttext)
+            comment_div.appendChild(comment_nametime)
+            comment_div.appendChild(comment_comment)
+            document.getElementById("comment_holder").appendChild(comment_div)
+            document.getElementById("comment_holder").appendChild(comment_line)
+            console.log("WRITING")
+        }
         console.log("Pulled data!!!!")
     }
     else {
@@ -38,44 +70,6 @@ getDoc(doc(db, "blog", "plastic")).then(docSnap => {
     }
 });
 
-const pulled_commentsplastic = JSON.parse(localStorage.getItem("pulled_commentsplastic"));
-const pulled_commentnamesplastic = JSON.parse(localStorage.getItem("pulled_commentnamesplastic"));
-const pulled_commenttimesplastic = JSON.parse(localStorage.getItem("pulled_commenttimesplastic"));
-for (let key in pulled_commentsplastic) {
-    const comment_line = document.createElement("hr")
-    const comment_div = document.createElement("div")
-    const comment_nametime = document.createElement("div")
-    comment_nametime.classList.add("row")
-    const comment_comment = document.createElement("div")
-    comment_comment.classList.add("row")
-    const nametext = document.createElement("p")
-    nametext.classList.add("d-block")
-    nametext.classList.add("col-4")
-    nametext.style.fontWeight = "600"
-    nametext.style.fontSize = "24px"
-    nametext.innerHTML = pulled_commentsplastic[key]
-    const timetext = document.createElement("p")
-    timetext.classList.add("d-block")
-    timetext.classList.add("col-8")
-    timetext.style.fontWeight = "lighter"
-    timetext.style.fontSize = "24px"
-    timetext.style.textAlign = "right"
-    timetext.innerHTML = pulled_commenttimesplastic[key]
-    const commenttext = document.createElement("p")
-    commenttext.classList.add("d-block")
-    commenttext.classList.add("col-12")
-    commenttext.style.fontWeight = "light"
-    commenttext.style.fontSize = "18px"
-    commenttext.innerHTML = pulled_commentnamesplastic[key]
-    comment_nametime.appendChild(nametext)
-    comment_nametime.appendChild(timetext)
-    comment_comment.appendChild(commenttext)
-    comment_div.appendChild(comment_nametime)
-    comment_div.appendChild(comment_comment)
-    document.getElementById("comment_holder").appendChild(comment_div)
-    document.getElementById("comment_holder").appendChild(comment_line)
-    console.log("WRITING")
-}
 
 document.getElementById("new_comment").addEventListener("click", function() {
     document.getElementById("new_comment").style.display = "none";
