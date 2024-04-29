@@ -1,4 +1,4 @@
-
+/*
 .rowtext{
     margin: 25px;
 }
@@ -8,9 +8,6 @@ img{
 .whole-card {
     border: 1px black solid; 
     
-}
-.badge{
-    background-color:#F4F4F5;
 }
 .hero-image {
     height: 100vh;
@@ -58,3 +55,59 @@ img{
         width: 100px; 
     } 
 }
+
+*/
+
+.hero-container{
+        background-color: #357960;
+        color: white;
+}
+
+.page-text{
+    padding: 5px;
+}
+.hero-image{
+   width: 100%;
+   margin-bottom: 20px;
+}
+.hero{
+    padding: 50px;
+}
+  .profile-line {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+  }
+  .profile-icon {
+    width: 50px;
+    height: 30px;
+    margin-right: 10px;
+  }
+  .blog-link{
+    text-decoration: none;
+    color: inherit;
+  }
+ 
+  /* By Navix Section */
+  .by_navix{
+    padding: 50px;
+  }
+
+  .by_navix_text{
+    padding: 10px;
+  }
+  .text-area{
+    background-color:#EFEFEF;
+    padding: 16px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+  }
+  .small_posts_btn{
+    display: block;
+    background-color: #EFEFEF;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+   padding: 22px;
+   border-radius: 10px;
+  }
