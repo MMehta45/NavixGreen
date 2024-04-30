@@ -111,3 +111,102 @@ img{
    padding: 22px;
    border-radius: 10px;
   }
+/*News Letter Section */
+.DesktopEMailSubscriptionSection1 {
+    width: 1440px;
+    height: 560px;
+    position: relative;
+    background: #357960;
+  }
+  
+  .Base {
+    width: 1073px;
+    height: 476px;
+    left: 0;
+    top: 84px;
+    position: absolute;
+    background: linear-gradient(to right, #357960, #00AD51, #02ec88);
+  }
+  
+  .Ornament {
+    width: 491px;
+    height: 74px;
+    left: 162px;
+    top: 486px;
+    position: absolute;
+    opacity: 0.80;
+    background: #357960;
+  }
+  
+  .FormInput {
+    width: 657px;
+    height: 95px;
+    left: 653px;
+    top: 391px;
+    position: absolute;
+  }
+  
+  .FormBase {
+    width: 420px;
+    height: 95px;
+    left: 0;
+    top: 0;
+    position: absolute;
+    background: white;
+  }
+  
+  .Youremail123GmailCom {
+    width: calc(100% - 60px);
+    height: 55px;
+    padding-left: 20px;
+    border: none;
+    outline: none;
+    position: absolute;
+    left: 30px;
+    top: 20px;
+    font-size: 18px;
+    font-weight: 400;
+    color: #57656C;
+    background: transparent;
+  }
+  
+  .BtnBase {
+    width: 237px;
+    height: 95px;
+    left: 420px;
+    top: 0;
+    position: absolute;
+    background: #02EC88;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 3.20px;
+  }
+  
+  .SubsribeToOurNewsletter {
+    width: 505px;
+    left: 130px;
+    top: 164px;
+    position: absolute;
+    color: white;
+    font-size: 62px;
+    font-weight: 500;
+    line-height: 74.40px;
+    letter-spacing: 0.62px;
+  }
+  
+  .GetUpdatesAndNewBlogUpdatesStraightToYourEmailNoSpamGuaranteed {
+    width: 323px;
+    left: 696px;
+    top: 202px;
+    position: absolute;
+    color: rgba(250, 250, 250, 0.90);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    letter-spacing: 0.18px;
+  }
+  
