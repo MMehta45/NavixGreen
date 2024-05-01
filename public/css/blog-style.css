@@ -209,4 +209,21 @@ img{
     line-height: 27px;
     letter-spacing: 0.18px;
   }
-  
+  /*Tools Section */
+    .tools{
+        padding: 50px;
+    }
+    .box{
+        background-color:#EFEFEF !important;
+        padding: 20px;
+        height: 220px;
+    }
+    .badge{
+        background-color: #00AD51;
+        color: black;
+        padding: 7px!important;
+    }
+    /*Community Section */
+    .community{
+        padding: 50px;
+    }
