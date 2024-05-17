@@ -17,7 +17,7 @@ Important Points:
 
 /* General Elements*/
 
-body {
+html, body {
     color: #ffffff;
     background-color: #292b2c;
     overflow-x: hidden;

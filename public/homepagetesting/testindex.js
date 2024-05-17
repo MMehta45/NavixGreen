@@ -1,3 +1,22 @@
+const videoContainer = document.querySelector('.video-container');
+const video = document.querySelector('.video');
+
+const controller = new ScrollMagic.Controller();
+
+const scene = new ScrollMagic.Scene({
+  triggerElement: videoContainer,
+  triggerHook: 0,
+  duration: '100%'
+})
+.setTween(video, { transform: 'translateY(0%)' })
+.addTo(controller);
+
+// After the animation is complete, adjust the height of the container to fit the video
+scene.on('update', () => {
+  const height = video.offsetHeight;
+  videoContainer.style.height = `${height}px`;
+});
+
 gsap.registerPlugin(ScrollTrigger);
 
 // Function to animate the count-up
@@ -42,3 +61,4 @@ gsap.from('.slant-row', {
     });
   },
 });
+
