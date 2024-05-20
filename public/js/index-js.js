@@ -52,9 +52,10 @@ textElements.forEach(text => {
     ease: 'none',
     scrollTrigger: {
       trigger: text,
-      start: 'center 80%',
+      start: 'center 60%',
       end: 'center 20%',
       scrub: true,
     },
+    duration: 10, // Increase the duration to slow down the animation
   });
 });
