@@ -129,8 +129,81 @@
   }
   
  
-
-/* background-color: #fff;
+/*Soluions*/
+ .sol-card {
+    position: relative;
+    overflow: hidden;
+    transition: background-color 0.3s ease;
+    width: 100% !important;
+    height: 250px;
+    background-color: whitesmoke;
+    margin-right: 0;
+}
+.sol-card:hover {
+    color: white;
+}
+.sol-card .sol-body {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+.sol-card .sol-body h5 {
+    margin: 0;
+    flex-grow: 1;
+    margin-top: 50px;
+}
+.sol-card .sol-body .sol-content {
+    max-width: 45%;
+    margin-top: 50px;
+}
+.sol-card .hover-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+.sol-card:hover .hover-video {
+    opacity: 1;
+}
+.sol-card .sol-body, .sol-card .sol-btn {
+    position: relative;
+    z-index: 1;
+}
+.sol-card .sol-btn {
+    margin-top: 10px;
+}
+.sol-card:hover .sol-btn{
+    width: 100%;
+    padding: 10px 10px;
+    border: 1px solid #00AD51;
+    background-color: #00AD51;
+    color: #fff;
+}
+.sol-btn{
+    width: 100%;
+    padding: 10px 10px;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #00AD51;
+    border: 1px solid #00AD51;
+    
+}
+.sol-btn:hover{
+    width: 100%;
+    padding: 10px 10px;
+    border: 1px solid #00AD51;
+    background-color: #00AD51;
+    color: #fff;
+}
+/*
+ background-color: #fff;
     color: #00AD51;
     border: 1px solid #00AD51;
     border-radius: 5px; */

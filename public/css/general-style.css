@@ -21,6 +21,7 @@ html, body {
     color: #ffffff;
     background-color: #292b2c;
     overflow-x: hidden;
+    width: 100%;
     
 }
 .light-theme{
@@ -232,6 +233,7 @@ nav {
     padding: 30px;
     color: azure;
     margin-top: 200px;
+   
 }
 .slant-container:after{
     position: absolute;
@@ -245,7 +247,7 @@ nav {
     bottom: 0;
     left: 0;
     transform-origin: top left;
-    transform: skewY(-6deg);
+    transform: skewY(-10deg);
 }
 .slant-content {
     position: relative;
