@@ -6,7 +6,7 @@ document.getElementsByTagName('head')[0].appendChild(script);
 
 product_count = 0
 
-function get_random_product(){
+function get_products(amount) {
     $.ajax({
         url: "https://data.energystar.gov/resource/ebgj-qsf7.json",
         type: "GET",
@@ -14,28 +14,42 @@ function get_random_product(){
 
     }).done(function(data) {
 
-    let rand = Math.floor(Math.random() * data.length);
-    let model = data[rand];
-    console.log(model);
+    for (let i = 0; i < amount; i++) {
+        let rand = Math.floor(Math.random() * data.length);
+        let model = data[rand];
+        console.log(model);
 
-    let name = model["brand_name"] + " " + model["model_number"];
 
-    const light_info_div = document.createElement("div");
-    light_info_div.className = "light-info"
-    light_info_div.id = "product" + String(product_count)
-    console.log(light_info_div.id)
-    product_count = product_count + 1
-    
-    const light_name = document.createTextNode(name)
+        const light_info_div = document.createElement("div");
+        let current_div_id = "product" + String(product_count)
+        light_info_div.className = "light-info card"
+        light_info_div.id = current_div_id
+        
+        const model_name = document.createElement("p")
+        model_name.innerHTML = model["model_name"] + "\n"
 
-    light_info_div.appendChild(light_name)
+        const light_name = document.createElement("p")
+        light_name.innerHTML = model["brand_name"] + "\n"
 
-    // light_info_div.innerHTML = "hi";
-    document.getElementById("api-container").appendChild(light_info_div);
+        const model_number = document.createElement("p")
+        model_number.innerHTML = model["model_number"] + "\n"
+        
+        const brightness = document.createElement("p")
+        brightness.innerHTML = model["brightness_lumens"]
 
+        light_info_div.appendChild(light_name)
+        light_info_div.appendChild(model_name)
+        light_info_div.appendChild(model_number)
+        light_info_div.appendChild(brightness)
+        product_count ++
+
+        document.getElementById("api-container").appendChild(light_info_div);
+    }
     });
 }
 
 window.onload = function() {
-    get_random_product();
+    // for (let i = 0; i < 8; i++) {
+    get_products(15);
+    // }
   };

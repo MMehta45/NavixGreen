@@ -18,27 +18,20 @@
             }
             #api-container{
                 display: grid;
-                grid-template-columns:33% 33% 33%;
+                grid-template-columns: 33.3% 33.3% 33.3%;
+                /* grid-template-columns: 100%; */
                 padding: 10px;
+
             }
             .light-info {
                 background-color: #83e4b0;
-                border: 2px solid black;
+                padding: 10px;
+                margin: 10px;
+                white-space: pre;
             }
         </style>
     </head>
     <body class="light-theme">
-
-        <!-- use google image api to get images to display when content is loaded -->
-        <!-- maybe implement a grid of images and products so that if there is a low resolution image its not as visible -->
-
-        <button onclick="get_random_product()">
-            click me for cool api!!!!!!!
-        </button>
-        <div id="api-container">
-
-        </div>
-
         <nav class="navbar navbar-expand-lg navbar-dark sticky-top main_pagetop_navbar_background">
             <div class="container-fluid">
                 <a class="navbar-brand" href="index.html">
@@ -98,6 +91,18 @@
             <span id="progress-value"><i class="fa-solid fa-arrow-up"></i></span>
         </div>
        
+        <!-- use google image api to get images to display when content is loaded -->
+        <!-- maybe implement a grid of images and products so that if there is a low resolution image its not as visible -->
+
+        <button onclick="get_products(3)">
+            click me to see more cool results!!!!!!!
+        </button>
+
+        <div id="api-container">
+
+        </div>
+
+
         <footer>
         <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
             <symbol id="facebook" viewBox="0 0 16 16">
