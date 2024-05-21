@@ -114,35 +114,33 @@ img{
 /*News Letter Section */
 .DesktopEMailSubscriptionSection1 {
     width: 100%;
-    height: 560px;
+    height: 376px;
     position: relative;
     background: #357960;
   }
   
   .Base {
-    width: 1073px;
-    height: 476px;
+    width: 1116px;
+    height: 376px;
     left: 0;
-    top: 84px;
     position: absolute;
     background: linear-gradient(to right, #357960, #00AD51, #02ec88);
   }
   
   .Ornament {
-    width: 491px;
+    width: 696px;
     height: 74px;
-    left: 162px;
-    top: 486px;
+    top: 302px;
     position: absolute;
     opacity: 0.80;
     background: #357960;
   }
   
   .FormInput {
-    width: 657px;
+    width: 700px;
     height: 95px;
-    left: 653px;
-    top: 391px;
+    left: 696px;
+    top: 207px;
     position: absolute;
   }
   
@@ -171,7 +169,7 @@ img{
   }
   
   .BtnBase {
-    width: 237px;
+    width: 280px;
     height: 95px;
     left: 420px;
     top: 0;
@@ -189,7 +187,7 @@ img{
   .SubsribeToOurNewsletter {
     width: 505px;
     left: 130px;
-    top: 164px;
+    top: 64px;
     position: absolute;
     color: white;
     font-size: 62px;
@@ -201,7 +199,7 @@ img{
   .GetUpdatesAndNewBlogUpdatesStraightToYourEmailNoSpamGuaranteed {
     width: 323px;
     left: 696px;
-    top: 202px;
+    top: 102px;
     position: absolute;
     color: rgba(250, 250, 250, 0.90);
     font-size: 18px;
