@@ -19,10 +19,13 @@ function get_products(amount) {
         console.log(model);
 
 
+        const light_card = document.createElement("div");
+        light_card.className = "light-info-card card";
+
         const light_div = document.createElement("div");
-        light_div.className = "light-info-card card";
+        light_div.className = "card-body"
         
-        const brand_name = document.createElement("h2");
+        const brand_name = document.createElement("h3");
         brand_name.innerHTML = model["brand_name"];
         brand_name.className = "brand-name card-title";
 
@@ -57,18 +60,22 @@ function get_products(amount) {
             light_data_div.appendChild(current_data);
         });
 
+
+        
         light_div.appendChild(brand_name);
         light_div.appendChild(model_name);
         light_div.appendChild(light_data_div);
 
-        document.getElementById("light-card-grid").appendChild(light_div);
+        light_card.appendChild(light_div)
+
+        document.getElementById("light-card-grid").appendChild(light_card);
     }
     });
 }
 
 window.onload = function() {
     // for (let i = 0; i < 8; i++) {
-    get_products(9);
+    get_products(6);
     // }
   };
 
@@ -77,5 +84,5 @@ function refresh_data() {
     while(grid_div.firstChild){
         grid_div.removeChild(grid_div.firstChild);
     }
-    get_products(9)
+    get_products(6)
 };
