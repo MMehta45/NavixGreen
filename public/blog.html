@@ -13,6 +13,7 @@
         <!--AOS v2.3.1--><link  rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
     </head>
     <body class="light-theme">
+        <script type="module" src="js/newsletter-backend-js.js"></script>
         <nav class="navbar navbar-expand-lg navbar-dark sticky-top main_pagetop_navbar_background">
             <div class="container-fluid">
                 <a class="navbar-brand" href="index.html">
@@ -219,7 +220,7 @@
                                             <img src="img/cropped-aircondtiong.jpg" alt="Image" class="blog_post_img img-fluid w-100" style="border-top-left-radius: 15px; border-top-right-radius: 15px;">
                                             <!-- Text -->
                                             <div class="text-area">
-                                                <h5><span class="badge rounded-pill text-dark fw-normal" style="background-color: gray !important; color: white !important;">Green Practices</span></h5>
+                                                <h5><span class="badge rounded-pill text-dark fw-normal" style="background-color: #6ad46c !important; color: white !important;">Green Practices</span></h5>
                                                 <h2 class="display-6 text-dark">A Greener Way To Cool?</h2>
                                                 <p class="text-dark">In the quest for a greener lifestyle, finding energy-efficient ways to cool your home not only benefits the environment but also puts money back in your pocket. This guide explores sustainable and cost-effective methods to keep your home cool while minimizing your carbon footprint.</p>
                                             </div>
@@ -239,7 +240,7 @@
                                 </div>
                                 <div class="col-md-6">
                                     <a href="blog/smart_tech.html" class="blog-link">
-                                        <h5><span class="badge rounded-pill text-dark fw-normal" style="background-color: gray !important; color: white !important;">Informational</span></h5>
+                                        <h5><span class="badge rounded-pill text-dark fw-normal" style="background-color: #6ad46c !important; color: white !important;">Informational</span></h5>
                                         <h4 class="small_posts_title">Smart Tech, Green Tech</h4>
                                     </a>
                                 </div>
@@ -253,7 +254,7 @@
                                     </div>
                                     <div class="col-md-6">
                                         <a href="blog/garden.html" class="blog-link">
-                                            <h5><span class="badge rounded-pill text-dark fw-normal" style="background-color: gray !important; color: white !important;">Tips</span></h5>
+                                            <h5><span class="badge rounded-pill text-dark fw-normal" style="background-color: #6ad46c !important; color: white !important;">Tips</span></h5>
                                             <h4 class="small_posts_title">Green Gardens & Other Tips</h4>
                                         </a>
                                     </div>
@@ -268,7 +269,7 @@
                                     </div>
                                     <div class="col-md-6">
                                         <a href="blog/lighting.html" class="blog-link">
-                                            <h5><span class="badge rounded-pill text-dark fw-normal" style="background-color: gray !important; color: white !important;">Tips</span></h5>
+                                            <h5><span class="badge rounded-pill text-dark fw-normal" style="background-color: #6ad46c !important; color: white !important;">Tips</span></h5>
                                             <h4 class="small_posts_title">Energy-Saving Lighting Tips</h4>
                                         </a>
                                     </div>
@@ -287,11 +288,11 @@
                 <div class="Ornament"></div>
                 <div class="FormInput">
                     <div class="FormBase"></div>
-                        <input type="email" class="Youremail123GmailCom" placeholder="enter your email here">
-                    <div class="BtnBase" style="cursor: pointer !important;">SUBSCRIBE</div>
+                        <input id="emailField" type="email" class="Youremail123GmailCom" placeholder="enter your email here">
+                    <div class="BtnBase" style="cursor: pointer !important;" id="newsletter_submit">SUBSCRIBE</div>
                 </div>
                 <h2 class="SubsribeToOurNewsletter">Subscribe to Our Newsletter</h2>
-                <div class="GetUpdatesAndNewBlogUpdatesStraightToYourEmailNoSpamGuaranteed lead">
+                <div id = "newslettertext" class="GetUpdatesAndNewBlogUpdatesStraightToYourEmailNoSpamGuaranteed lead">
                     Want in? Get updates and new blog posts straight to your email, with no spam guaranteed.
                 </div>
             </div>
@@ -349,7 +350,7 @@
                                             <img src="img/plastic.jpg" alt="Image" class="blog_post_img img-fluid w-100" style="border-top-left-radius: 15px; border-top-right-radius: 15px;">
                                             <!-- Text -->
                                             <div class="text-area">
-                                                <h5><span class="badge rounded-pill text-dark fw-normal" style="background-color: gray !important; color: white !important;">Observational</span></h5>
+                                                <h5><span class="badge rounded-pill text-dark fw-normal" style="background-color: #6ad46c !important; color: white !important;">Observational</span></h5>
                                                 <h2 class="display-6 text-dark">Plastic: It's Everywhere</h2>
                                                 <p class="text-dark">Living an eco-friendly lifestyle involves conscious choices, and one choice is reducing plastic usage. By adopting simple yet effective strategies, individuals can play a pivotal role in preserving the planet.</p>
                                             </div>
@@ -370,7 +371,7 @@
                                             <img src="img/water2.jpg" alt="Image" class="blog_post_img img-fluid w-100" style="border-top-left-radius: 15px; border-top-right-radius: 15px;">
                                             <!-- Text -->
                                             <div class="text-area">
-                                                <h5><span class="badge rounded-pill text-dark fw-normal" style="background-color: gray !important; color: white !important;">Tips</span></h5>
+                                                <h5><span class="badge rounded-pill text-dark fw-normal" style="background-color: #6ad46c !important; color: white !important;">Tips</span></h5>
                                                 <h2 class="display-6 text-dark">Water-Wise Tips</h2>
                                                 <p class="text-dark">Water is a precious resource, and conserving it is essential for a sustainable future. Here are six practical tips to help you minimize wastage and become a responsible steward of this vital resource.</p>
                                             </div>

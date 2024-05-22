@@ -21,46 +21,28 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
 
-document.getElementById("submit").addEventListener("click", function() {
+document.getElementById("newsletter_submit").addEventListener("click", function() {
     const email = document.getElementById('emailField').value;
-    const name = document.getElementById('nameField').value;
-    const subject = document.getElementById('subjectField').value;
-    const message = document.getElementById('messageField').value;
     const date_today = new Date();
-    const differentiated_time = Date.now()
-    const contact_time = date_today.toLocaleString("en-US", {
+    const request_time = date_today.toLocaleString("en-US", {
         day: "numeric",
         month: "long",
         year: "numeric",
         hour: "numeric",
         minute: "2-digit"
     });
-    
-    let name_filled = false;
     let email_filled = false;
-    let subject_filled = false;
-    let message_filled = false;
-    
-    if (name != "") {
-        name_filled = true;
-    };
+
     if (email != "") {
         email_filled = true;
     };
-    if (subject != "") {
-        subject_filled = true;
-    };
-    if (message != "") {
-        message_filled = true;
-    };
 
-    if (name_filled && email_filled && subject_filled && message_filled && document.getElementById("agreeField").checked) {
-        addDoc(collection(db, "contactrequests"), {
-            name: name, 
+    if (email_filled) {
+        addDoc(collection(db, "newsletterrequests"), {
             email: email,
-            subject: subject, 
-            message: message,
-            contact_time: contact_time
+            request_time: request_time
         })
+        document.getElementById("newslettertext").innerHTML = "Thanks for your interest! Check your email (including spam) for confirmation.";
+        document.getElementById('emailField').value = ""
     }
 });
