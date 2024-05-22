@@ -16,19 +16,45 @@
                 color: #00ad51;
                 text-decoration: none;
             }
-            #api-container{
+            #light-card-grid{
                 display: grid;
+                /* grid-template-columns: 25% 25% 25% 25%; */
                 grid-template-columns: 33.3% 33.3% 33.3%;
+                /* grid-template-columns: 50% 50%; */
                 /* grid-template-columns: 100%; */
                 padding: 10px;
 
             }
-            .light-info {
-                background-color: #83e4b0;
+
+            .light-data-grid {
+                display: grid;
+                grid-template-columns: 50% 50%;
+            }
+
+            .light-info-card {
+                background-color: #60dfb0;
                 padding: 10px;
                 margin: 10px;
                 white-space: pre;
             }
+
+            .brand-name {
+                margin-top: 10px;
+                font-weight: bold;
+                text-align: center;
+            }
+
+            .model-name {
+                color: rgb(82, 82, 82);
+                text-align: center;
+            }
+
+            .light-data {
+                font-weight: bold;
+                overflow-wrap: break-word;
+                /* I CANT GET THE WORD TO WRAP IDK HOW */
+            }
+
         </style>
     </head>
     <body class="light-theme">
@@ -94,11 +120,13 @@
         <!-- use google image api to get images to display when content is loaded -->
         <!-- maybe implement a grid of images and products so that if there is a low resolution image its not as visible -->
 
-        <button onclick="get_products(3)">
-            click me to see more cool results!!!!!!!
+        <button onclick="refresh_data()">
+            More Results
         </button>
 
-        <div id="api-container">
+        <p>View more at <a href="https://www.energystar.gov/productfinder/product/certified-light-bulbs/results">Energy Star's</a> official website.</p>
+
+        <div id="light-card-grid">
 
         </div>
 
