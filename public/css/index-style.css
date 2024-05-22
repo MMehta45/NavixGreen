@@ -135,13 +135,15 @@
     overflow: hidden;
     transition: background-color 0.3s ease;
     width: 100% !important;
-    height: 250px;
+    height: 300px;
     background-color: whitesmoke;
-    margin-right: 0;
+   
 }
 .sol-card:hover {
     color: white;
+    
 }
+
 .sol-card .sol-body {
     display: flex;
     justify-content: space-between;
@@ -166,10 +168,13 @@
     z-index: 0;
     opacity: 0;
     transition: opacity 0.3s ease;
+    background-color: rgba(0, 0, 0, 1); /* Adjust the opacity as needed */
 }
 .sol-card:hover .hover-video {
     opacity: 1;
 }
+
+
 .sol-card .sol-body, .sol-card .sol-btn {
     position: relative;
     z-index: 1;
@@ -201,6 +206,11 @@
     border: 1px solid #00AD51;
     background-color: #00AD51;
     color: #fff;
+}
+
+.sol-link{
+    text-decoration: none;
+    color: inherit;
 }
 /*
  background-color: #fff;
