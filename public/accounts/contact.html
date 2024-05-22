@@ -13,6 +13,7 @@
         <!--AOS v2.3.1--><link  rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
     </head>
     <body class="light-theme">
+        <script type="module" src="../js/contact-backend-js.js"></script>
         <nav class="navbar navbar-expand-lg navbar-dark sticky-top main_pagetop_navbar_background">
             <div class="container-fluid">
                 <a class="navbar-brand" href="index.html">
@@ -74,57 +75,56 @@
         <div class="col-md-8 offset-md-2">
             <h2 class="section-title text-center text_logo_gradient display-1">Contact Us</h2>
         </div>
-<!--Contact Us-->
-<section class="contact-section container">
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <div class="contact-form">
-                    <form id="contactForm">
-                        <div class="form-group">
-                            <label for="name">Name:<span style="color: red;">*</span></label>
-                            <input type="text" class="form-control" id="nm" placeholder="Enter your name" required>
+        <!--Contact Us-->
+        <section class="contact-section container">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="contact-form">
+                            <form id="contactForm">
+                                <div class="form-group">
+                                    <label for="name">Name:<span style="color: red;">*</span></label>
+                                    <input type="text" class="form-control" id="nameField" placeholder="enter your name here" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email:<span style="color: red;">*</span></label>
+                                    <input type="email" class="form-control" id="emailField" placeholder="enter your email here" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="subject">Subject:<span style="color: red;">*</span></label>
+                                    <input type="text" class="form-control" id="subjectField" placeholder="enter your subject here" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="message">Message:<span style="color: red;">*</span></label>
+                                    <textarea class="form-control" id="messageField" rows="5" placeholder="enter your message here" required></textarea>
+                                </div>
+                                <div class="form-group form-check">
+                                    <input type="checkbox" class="form-check-input" id="agreeField" required>
+                                    <label class="form-check-label" for="agree">I agree to Navix Energy's <a id="tm" href="../terms-conditions.html">terms and conditions</a>.<span style="color: red;">*</span></label>
+                                </div>
+                                <button type="submit" id="submit" class="contact-button">Submit Message</button>
+                            </form>
                         </div>
-                        <div class="form-group">
-                            <label for="email">Email:<span style="color: red;">*</span></label>
-                            <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="subject">Subject:<span style="color: red;">*</span></label>
-                            <input type="text" class="form-control" id="subject" placeholder="Enter subject" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="message">Message:<span style="color: red;">*</span></label>
-                            <textarea class="form-control" id="message" rows="5" placeholder="Enter your message" required></textarea>
-                        </div>
-                        <div class="form-group form-check">
-                            <input type="checkbox" class="form-check-input" id="agree" required>
-                            <label class="form-check-label" for="agree" id="tm">I agree to the <a id="tm" href="../terms-conditions.html">Terms and Conditions</a><span style="color: red;">*</span></label>
-                        </div>
-                        <button type="submit" class="contact-button">Send Message</button>
-                    </form>
-                </div>
-                <div id="confirmationModal" class="modal fade" tabindex="-1" role="dialog">
-                    <div class="modal-dialog" role="document">
-                        <div class="modal-content">
-                            <div class="modal-header text-center">
-                                <h5 class="modal-title display-4 w-100 ">Message Sent</h5>
-                               
-                            </div>
-                            <div class="modal-body">
-                                <p class="lead">Your message has been successfully sent. We will get back to you as soon as possible.</p>
-                                <p class="lead">Thank you for contacting us!</p>
-                            </div>
-                            <div class="modal-footer">
-                                <a href="../index.html" class="outline-button">Return Home</a>
+                        <div id="confirmationModal" class="modal fade" tabindex="-1" role="dialog">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header text-center">
+                                        <h5 class="modal-title display-4 w-100 ">Message Sent!</h5>
+                                    </div>
+                                    <div class="modal-body" style="color: #000000 !important">
+                                        <p class="lead">Your message has been successfully sent. Check your email for confirmation; we'll get back to you as soon as possible.</p>
+                                        <p class="lead">Thank you for contacting us!</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <a href="../index.html" class="outline-button text-center">Return Home</a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                
-</section>
-    
-
+            </div>
+        </section>
         <footer class="text-light pt-5 pb-3">
             <div class="container">
                 <div class="row">
@@ -190,7 +190,7 @@
         <!--Font Awesome--><script src="https://kit.fontawesome.com/9a3636e96b.js" crossorigin="anonymous"></script>
         <!--AnimeJS v3.2.2--><script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.2/anime.js" integrity="sha512-FSNQjUUq97PtDnAJyMlBTH8EhV4o5X5FLVbzS9ttrdEVVbmrssJBh/PgXFQbxS+6yYx5n5irOj7de6Th0TRQZA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <!--AOS--><script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script><script>AOS.init();</script>
-         <!--General JS Script--><script src="../js/general-js.js"></script>
+        <!--General JS Script--><script src="../js/general-js.js"></script>
         <!--Contact JS Script--><script src="../js/contact-js.js"></script>
         <script type="module">
             // Import the functions you need from the SDKs you need

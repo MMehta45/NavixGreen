@@ -20,7 +20,7 @@
     font-size: 18px;
     font-weight: bold;
 }
-#nm{
+#nameField{
     width: 100%;
 }
 .contact-form {
@@ -55,7 +55,7 @@
     padding-top: 10px;
     padding-bottom: 10px;
 }
-#message{
+#messageField {
     height: 200px;
 }
 label{

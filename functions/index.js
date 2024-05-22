@@ -1,19 +1,48 @@
-/**
- * Import function triggers from their respective submodules:
- *
- * const {onCall} = require("firebase-functions/v2/https");
- * const {onDocumentWritten} = require("firebase-functions/v2/firestore");
- *
- * See a full list of supported triggers at https://firebase.google.com/docs/functions
- */
+const functions = require("firebase-functions");
+const admin = require("firebase-admin");
+admin.initializeApp();
 
-const {onRequest} = require("firebase-functions/v2/https");
-const logger = require("firebase-functions/logger");
 
-// Create and deploy your first functions
-// https://firebase.google.com/docs/functions/get-started
+exports.sendNewsletterEmail = functions.firestore.document('newsletterrequests/{newsletterId}').onCreate((snapshot, context) => {
+    //Pull data
+    const userdata = snapshot.data();
+    const email = userdata.email;
+    const request_time = userdata.request_time;
 
-// exports.helloWorld = onRequest((request, response) => {
-//   logger.info("Hello logs!", {structuredData: true});
-//   response.send("Hello from Firebase!");
-// });
+    //Send data
+    admin.firestore().collection("email").add({
+        to: email,
+        template: {
+            name: "newsletter",
+            data: {
+                email: email,
+                request_time: request_time
+            }
+        }
+    });
+});
+
+exports.sendContactEmail = functions.firestore.document('contactrequests/{contactId}').onCreate((snapshot, context) => {
+    //Pull data
+    const userdata = snapshot.data();
+    const email = userdata.email;
+    const name = userdata.name;
+    const subject = userdata.subject;
+    const message = userdata.message;
+    const contact_time = userdata.contact_time;
+
+    //Send data
+    admin.firestore().collection("email").add({
+        to: email,
+        template: {
+            name: "contactreply",
+            data: {
+                email: email,
+                name: name,
+                subject: subject,
+                message: message,
+                contact_time: contact_time
+            }
+        }
+    });
+});
