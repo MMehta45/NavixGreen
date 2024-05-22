@@ -483,5 +483,35 @@
             };
 
         </script>
+        <div class="pre-loader">
+            <div class="content">
+                <div class="pretext">Navix Energy</div>
+                <div class="loader"></div>
+            </div>
+        </div>
+        <script>
+            gsap.from(".pretext", 0.8, {
+                y:40, 
+                opacity: 0,
+                ease: "power2.inOut",
+                delay :1,
+            });
+    
+            gsap.from(".loader", 2, {
+                y: 0, 
+                ease: "power4.inOut",
+                delay :2,
+            });
+            gsap.from(".pre-loader", 2, {
+            top: "-100%", 
+            ease: "power4.inOut",
+            delay :4,
+        });
+        gsap.to(".pre-loader", 2, {
+            top: "-100%", 
+            ease: "power4.inOut",
+            delay :4,
+        });
+    </script>
     </body>
 </html>
