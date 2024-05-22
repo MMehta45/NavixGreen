@@ -235,7 +235,7 @@ nav {
     margin-top: 200px;
    
 }
-.slant-container:after{
+.slant-container::after{
     position: absolute !important;
     width: 100% !important;
     height: 100% !important;
@@ -247,7 +247,7 @@ nav {
     bottom: 0 !important;
     left: 0 !important;
     transform-origin: top left !important;
-    transform: skewY(-10deg) !important;
+    transform: skewX(-10deg) !important;
 }
 .slant-content {
     position: relative;
@@ -258,7 +258,6 @@ nav {
     display: block;
     margin-top: 30px;
     position: relative;
-   
   }
 
   .fire{
@@ -284,7 +283,8 @@ nav {
   .slanttitle{
     width: 70vw;
     position: relative;
-    left:-30%;
+    left: -20%;
+    
   }
 @media screen and (max-width: 768px) {
     .slant-container {
