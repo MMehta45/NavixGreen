@@ -95,6 +95,7 @@ body {
     color: #fff;
     transition: background-color 0.3s, color 0.3s;
     border-radius: 5px;
+    border: 1px solid #00AD51;
     margin: auto !important;
     text-align: center;
 }
