@@ -233,11 +233,11 @@ Timeline Code
 	font-weight: bold;
 	font-size: 28px;
 	color: #00AD51;color: transparent !important;
-    background: linear-gradient(to right, #357960, #00AD51, #02ec88);
-    background: -webkit-linear-gradient(to right, #357960, #00AD51, #02ec88);
-    background: -moz-linear-gradient(to right, #357960, #00AD51, #02ec88);
-    background: -ms-linear-gradient(to right, #357960, #00AD51, #02ec88);
-    background: -o-linear-gradient(to right, #357960, #00AD51, #02ec88);
+    background: linear-gradient(to bottom, #357960, #00AD51, #02ec88);
+    background: -webkit-linear-gradient(to bottom, #357960, #00AD51, #02ec88);
+    background: -moz-linear-gradient(to bottom, #357960, #00AD51, #02ec88);
+    background: -ms-linear-gradient(to bottom, #357960, #00AD51, #02ec88);
+    background: -o-linear-gradient(to bottom, #357960, #00AD51, #02ec88);
     background-clip: text;
     -webkit-background-clip: text;
     -ms-background-clip: text;
@@ -388,3 +388,4 @@ Timeline Code
   }
 }
 /*--- Responsive Code End ---*/
+
