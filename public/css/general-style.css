@@ -223,32 +223,6 @@ nav {
 .toggle-text{
     color:whitesmoke
 }
-/*Slant Container*/
-.slant-container{
-    position: relative;
-    width: 100%;
-    height: auto;
-    background:#357960;
-    box-sizing: border-box;
-    padding: 30px;
-    color: azure;
-    margin-top: 200px;
-   
-}
-.slant-container::after{
-    position: absolute !important;
-    width: 100% !important;
-    height: 100% !important;
-    content: '' !important;
-    background: inherit !important;
-    z-index: -1 !important;
-    top: 0 !important;
-    right: 0 !important; 
-    bottom: 0 !important;
-    left: 0 !important;
-    transform-origin: top left !important;
-    transform: skewX(-10deg) !important;
-}
 .slant-content {
     position: relative;
     top: 20%;
@@ -258,8 +232,7 @@ nav {
     display: block;
     margin-top: 30px;
     position: relative;
-  }
-
+}
   .fire{
     font-family: 'Montserrat', sans-serif;
    
