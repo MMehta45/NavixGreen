@@ -28,11 +28,13 @@
 
             .view-more-alert {
                 text-align: center;
+                margin-top: 1%;
+                margin-bottom: 1%;
                 margin-left: 5%;
                 margin-right: 5%;
             }
 
-            #light-card-grid{
+            #light-card-grid, #washer-card-grid, #dryer-card-grid{
                 display: grid;
                 /* grid-template-columns: 25% 25% 25% 25%; */
                 grid-template-columns: 33.3% 33.3% 33.3%;
@@ -42,13 +44,13 @@
 
             }
 
-            .light-data-grid {
+            .custom-data-grid {
                 display: grid;
                 grid-template-columns: 50% 50%;
                 /* grid-template-columns: 100%; */
             }
 
-            .light-info-card {
+            .custom-info-card {
                 background-color: #60dfb0;
                 padding: 10px;
                 margin: 10px;
@@ -137,19 +139,43 @@
        
         <!-- use google image api to get images to display when content is loaded -->
         <!-- maybe implement a grid of images and products so that if there is a low resolution image its not as visible -->
-
-        <h1 class="display-3 text-center mt-3 text_logo_gradient typewriter">Find a Lightbulb that suits you!</h1>
-
         
         <div class="view-more-alert alert alert-info" role="alert">View more at <a href="https://www.energystar.gov/productfinder/product/certified-light-bulbs/results">Energy Star's</a> official website.</div>
+
+        <h1 class="display-3 text-center mt-3 text_logo_gradient typewriter">Find a Lightbulb that Suits You!</h1>
+
+        
         
         <div id="light-card-grid"></div>
         
         <div class="button-container">
-            <button type="button" class="refresh-button btn btn-primary btn-lg" onclick="refresh_data()">
-                Refresh Content
+            <button type="button" class="refresh-button btn btn-primary btn-lg" onclick="refresh_lights()">
+                Get Lightbulbs!
             </button>
         </div>       
+
+        
+        <h1 class="display-3 text-center mt-3 text_logo_gradient typewriter">Find a Washer that Suits You!</h1>
+        
+        <div id="washer-card-grid"></div>
+
+        <div class="button-container">
+            <button type="button" class="refresh-button btn btn-primary btn-lg" onclick="refresh_washers()">
+                Get Washers!
+            </button>
+        </div>  
+
+
+        <h1 class="display-3 text-center mt-3 text_logo_gradient typewriter">Find a Dryer that Suits You!</h1>
+        
+        <div id="dryer-card-grid"></div>
+
+        <div class="button-container">
+            <button type="button" class="refresh-button btn btn-primary btn-lg" onclick="refresh_dryers()">
+                Get Dryers!
+            </button>
+        </div>  
+
         
         <footer>
             <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
