@@ -1,0 +1,30 @@
+/*Option container for small screens*/
+
+.custom-btn2 {
+    display: block;
+    width: 60%;
+    padding: 10px 20px;
+    background-color: #00AD51;
+    text-decoration: none;
+    color: #fff;
+    transition: background-color 0.3s, color 0.3s;
+    border-radius: 5px;
+    border: 1px solid #00AD51;
+    margin: auto !important;
+    text-align: center;
+}
+.custom-btn2:hover {
+    display: block;
+    width: 60%;
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #00AD51;
+    margin: auto !important;
+    text-align: center;
+    border: 1px solid #00AD51;
+}
+
+img{
+    width: 500px;
+    height: 320px;
+}
