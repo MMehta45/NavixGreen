@@ -61,6 +61,7 @@ img{
 .hero-container{
         background-color: #357960;
         color: white;
+        
 }
 
 .page-text{
@@ -71,7 +72,7 @@ img{
    margin-bottom: 20px;
 }
 .hero{
-    padding: 50px;
+    padding: 70px;
 }
   .profile-line {
     display: flex;
@@ -88,6 +89,10 @@ img{
     color: inherit;
   }
  
+
+
+
+
   /* By Navix Section */
   .by_navix{
     padding: 50px;
@@ -207,6 +212,12 @@ img{
     line-height: 27px;
     letter-spacing: 0.18px;
   }
+
+  @media (max-width: 1328px) {
+    .newsletter {
+        display: none;
+    }
+}
   /*Tools Section */
     .tools{
         padding: 50px;
